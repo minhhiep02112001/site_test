@@ -1,17 +1,11 @@
-@php
-    $ver = 11368;
-    $config_website = getValueSetting('config_website');
-    $config_seo = getValueSetting('config_seo');
-    $config_social = getValueSetting('config_social');
-@endphp
-
 <!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @include('front_end.block.config_seo_header')
+    <title>Vang Đỏ Cao Cấp Bronzeo- The Best Wine</title>
+    <link rel="icon" type="image/png" href="./assets/logo/logo-thebestwine-ico.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
         tailwind.config = {
@@ -187,17 +181,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <img style="max-height: 60px;" src="{!! getImageThumb($config_website?->logo) !!}" id="logo"
-                        class="h-12 md:h-16 w-auto p-1" alt="{{ $config_website?->website }}">
-
+                    <img src="./assets/logo/logo-thebestwine-official.png" alt="The Best Wine Logo"
+                        class="h-12 md:h-16 w-auto p-1">
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-primary hover:text-primary/80 transition-colors font-medium">Trang
-                        chủ</a>
+                    <a href="#" class="text-primary hover:text-primary/80 transition-colors font-medium">Về chúng
+                        tôi</a>
                     <a href="#product" class="text-primary hover:text-primary/80 transition-colors font-medium">Sản
                         phẩm</a>
-                    <a href="#features" class="text-primary hover:text-primary/80 transition-colors font-medium">Đặc
-                        điểm</a>
+                    <a href="#features" class="text-primary hover:text-primary/80 transition-colors font-medium">Khuyến
+                        Mại</a>
                     <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium">Liên
                         hệ</a>
                 </nav>
@@ -207,30 +200,24 @@
             </div>
             <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
                 <a href="#"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Trang chủ</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Về
+                    chúng tôi</a>
                 <a href="#product"
                     class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Sản phẩm</a>
                 <a href="#features"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Đặc điểm</a>
-                <a href="#gallery"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Thư viện</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Khuyến Mại</a>
                 <a href="#contact"
                     class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Liên hệ</a>
             </nav>
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section class="py-12 mt-[1.8rem] min-h-screen h-screen flex items-center "
-        style="background-image: url('./assets/images/bg-event.jpg'); background-size: cover; background-position: center;">
-        <div class="max-w-8xl mx-auto px-4 sm:px-8 lg:px-12 sm:mt-12">
-            <div class="flex flex-col md:flex-row items-center gap-10 h-full">
-                <div class="w-full md:w-1/2">
-                    <img src="https://static.readdy.ai/image/1f4438e38b74ed87371441e676e628ff/1a60f71912f8cd467f961b5cfb3accb7.jfif"
-                        alt="Cách đọc nhãn chai rượu vang"
-                        class="w-full rounded-2xl shadow-2xl object-cover h-full md:h-auto lg:max-h-auto">
-                </div>
-                <div class="w-full md:w-1/2">
-                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-4xl lg:text-5xl font-bold leading-tight mb-8 p-6 sm:p-8 lg:p-10 rounded-2xl shadow-2xl tracking-[1px] bg-white"
+    <section class=" flex items-center mt-[66px]">
+        <div class="max-w-8xl mx-auto px-4 sm:px-8   ">
+            <div class="w-full max-w-[1100px] ">
+                <div class="flex flex-col md:flex-row items-center gap-10 h-full">
+
+                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-4xl lg:text-5xl font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px] bg-white"
                         style="line-height: 1.5;">
                         PHÂN BIỆT RƯỢU VANG GIẢ, RƯỢU VANG ĐÓNG CHAI TRONG NƯỚC VÀ RƯỢU VANG NHẬP KHẨU NGUYÊN CHAI
                     </h1>
@@ -238,13 +225,183 @@
             </div>
         </div>
     </section>
-    <!-- Product Introduction -->
+
+    <section class="py-12  md:min-h-screen md:h-screen flex items-center "
+        style="background-image: url('./assets/images/bg-event.jpg'); background-size: cover; background-position: center;">
+        <div class="max-w-8xl mx-auto px-4 sm:px-8 lg:px-12 sm:mt-12 md:pt-16">
+            <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
+                <div class="w-full  ">
+                    <img src="https://static.readdy.ai/image/1f4438e38b74ed87371441e676e628ff/1a60f71912f8cd467f961b5cfb3accb7.jfif"
+                        alt="Cách đọc nhãn chai rượu vang" class="w-full rounded-2xl shadow-2xl object-cover h-[100%] ">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Produ
+     ct Introduction -->
     <section id="product" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FDF7F9] transform -skew-y-6 origin-top-left"></div>
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <div>
+                    <div class="product-info">
+                        <div class="product-info-slide active">
+                            <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
+                                style="line-height: 1.4;">
+                                Bạn lo sợ... <span class="text-primary ">Mua phải rượu vang giả, kém chất
+                                    lượng???</span>
+                            </h2>
+                            <p class="  mb-2">💥 Vậy, làm sao để phân biệt khi 2 loại đều có tem, mác nhập khẩu giống
+                                hệt
+                                nhau?</p>
+                            <p class="  mb-2">Tem & nhãn mác: Vang nguyên chai thường có cấp độ rõ ràng, có chỉ dẫn địa
+                                lý
+                                và có trên các website của nước ngoài.</p>
+                            <p class="  mb-2">Tem phụ: có ghi rõ ràng “nhập khẩu nguyên chai”, vang đóng chai chỉ ghi
+                                lách
+                                luật: “rượu vang nhập khẩu”</p>
+                            <p class="  mb-2">Mức giá: Vang nhập khẩu nguyên chai thường cao hơn rõ rệt.</p>
+                            <p class="  mb-2">Các chứng từ: Hoá đơn, Packing List, chứng nhận COA, công bố sản phẩm là
+                                các
+                                giấy tờ bạn có thể yêu cầu bên bán.</p>
+                            <p class="  mb-2">⚡️ CẢNH BÁO: Nếu bạn bỏ tiền triệu để mua vang “xịn” mà lại cầm về chai
+                                vang…
+                                đóng ở VN thì đúng là mất tiền oan! Vậy nên ngoài các lưu ý trên thì hãy lựa chọn các
+                                địa
+                                chỉ bán hàng uy tín: có địa chỉ, có pháp lý công ty rõ ràng:
+                            </p>
+                            <p class="  mb-2">👉 Và tại The Best Wine chúng tôi cam kết chỉ bán rượu vang nhập khẩu
+                                nguyên
+                                chai:</p>
+                            <div class="grid grid-cols-2 gap-6 mb-8">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+                                        <i class="ri-award-line text-primary ri-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rượu vang nhập khẩu nguyên chai</h4>
+                                        <p class="text-sm text-gray-600">Đạt chuẩn quốc tế</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+                                        <i class="ri-time-line text-secondary ri-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rượu vang đóng chai trong nước</h4>
+                                        <p class="text-sm text-gray-600">Hương vị không đạt chuẩn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info-slide hidden">
+                            <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
+                                style="line-height: 1.4;">
+                                Bạn lo sợ... <span class="text-primary ">Mua phải rượu vang giả, kém chất
+                                    lượng???</span>
+                            </h2>
+                            <p class="  mb-2">💥 Vậy, làm sao để phân biệt khi 2 loại đều có tem, mác nhập khẩu giống
+                                hệt
+                                nhau?</p>
+                            <p class="  mb-2">Tem & nhãn mác: Vang nguyên chai thường có cấp độ rõ ràng, có chỉ dẫn địa
+                                lý
+                                và có trên các website của nước ngoài.</p>
+                            <p class="  mb-2">Tem phụ: có ghi rõ ràng “nhập khẩu nguyên chai”, vang đóng chai chỉ ghi
+                                lách
+                                luật: “rượu vang nhập khẩu”</p>
+                            <p class="  mb-2">Mức giá: Vang nhập khẩu nguyên chai thường cao hơn rõ rệt.</p>
+                            <p class="  mb-2">Các chứng từ: Hoá đơn, Packing List, chứng nhận COA, công bố sản phẩm là
+                                các
+                                giấy tờ bạn có thể yêu cầu bên bán.</p>
+                            <p class="  mb-2">⚡️ CẢNH BÁO: Nếu bạn bỏ tiền triệu để mua vang “xịn” mà lại cầm về chai
+                                vang…
+                                đóng ở VN thì đúng là mất tiền oan! Vậy nên ngoài các lưu ý trên thì hãy lựa chọn các
+                                địa
+                                chỉ bán hàng uy tín: có địa chỉ, có pháp lý công ty rõ ràng:
+                            </p>
+                            <p class="  mb-2">👉 Và tại The Best Wine chúng tôi cam kết chỉ bán rượu vang nhập khẩu
+                                nguyên
+                                chai:</p>
+                            <div class="grid grid-cols-2 gap-6 mb-8">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+                                        <i class="ri-award-line text-primary ri-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rượu vang nhập khẩu nguyên chai</h4>
+                                        <p class="text-sm text-gray-600">Đạt chuẩn quốc tế</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+                                        <i class="ri-time-line text-secondary ri-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rượu vang đóng chai trong nước</h4>
+                                        <p class="text-sm text-gray-600">Hương vị không đạt chuẩn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info-slide hidden">
+                            <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
+                                style="line-height: 1.4;">
+                                Bạn lo sợ... <span class="text-primary ">Mua phải rượu vang giả, kém chất
+                                    lượng???</span>
+                            </h2>
+                            <p class="  mb-2">💥 Vậy, làm sao để phân biệt khi 2 loại đều có tem, mác nhập khẩu giống
+                                hệt
+                                nhau?</p>
+                            <p class="  mb-2">Tem & nhãn mác: Vang nguyên chai thường có cấp độ rõ ràng, có chỉ dẫn địa
+                                lý
+                                và có trên các website của nước ngoài.</p>
+                            <p class="  mb-2">Tem phụ: có ghi rõ ràng “nhập khẩu nguyên chai”, vang đóng chai chỉ ghi
+                                lách
+                                luật: “rượu vang nhập khẩu”</p>
+                            <p class="  mb-2">Mức giá: Vang nhập khẩu nguyên chai thường cao hơn rõ rệt.</p>
+                            <p class="  mb-2">Các chứng từ: Hoá đơn, Packing List, chứng nhận COA, công bố sản phẩm là
+                                các
+                                giấy tờ bạn có thể yêu cầu bên bán.</p>
+                            <p class="  mb-2">⚡️ CẢNH BÁO: Nếu bạn bỏ tiền triệu để mua vang “xịn” mà lại cầm về chai
+                                vang…
+                                đóng ở VN thì đúng là mất tiền oan! Vậy nên ngoài các lưu ý trên thì hãy lựa chọn các
+                                địa
+                                chỉ bán hàng uy tín: có địa chỉ, có pháp lý công ty rõ ràng:
+                            </p>
+                            <p class="  mb-2">👉 Và tại The Best Wine chúng tôi cam kết chỉ bán rượu vang nhập khẩu
+                                nguyên
+                                chai:</p>
+                            <div class="grid grid-cols-2 gap-6 mb-8">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+                                        <i class="ri-award-line text-primary ri-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rượu vang nhập khẩu nguyên chai</h4>
+                                        <p class="text-sm text-gray-600">Đạt chuẩn quốc tế</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+                                        <i class="ri-time-line text-secondary ri-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Rượu vang đóng chai trong nước</h4>
+                                        <p class="text-sm text-gray-600">Hương vị không đạt chuẩn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
                         <div class="product-slides flex transition-transform duration-300">
@@ -276,106 +433,49 @@
                         <button class="carousel-dot w-2 h-2 rounded-full bg-primary/30" data-index="2"></button>
                     </div>
                 </div>
-                <div>
-                    <div class="product-info">
-                        <div class="product-info-slide active">
-                            <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
-                                style="line-height: 1.4;">
-                                Bạn lo sợ... <span class="text-primary ">Mua phải rượu vang giả, kém chất
-                                    lượng???</span>
-                            </h2>
-                            <h3 class="text-2xl font-playfair font-bold text-black mb-4">Bạn biết rằng rượu vang là thứ
-                                <span class="text-primary">đồ uống có lợi cho sức khỏe:</span> chống ung thư, tiểu
-                                đường, tim mạch...đã được kiểm chứng 8000 năm trong suốt chiều dài lịch sử nhân loại.
-                            </h3>
-                            <p class="text-lg text-black-600 font-semibold mb-2 leading-relaxed">
-                                Tuy nhiên, bạn cũng như nhiều người khác, bạn lo lắng vì chưa chọn được loại vang phù
-                                hợp thậm chí là rượu GIẢ vì thị trường có quá nhiều loại.
-                            </p>
-                            <p class="text-lg text-black-600 font-semibold mb-8 leading-relaxed">
-                                Tin vui, là hầu như không có rượu vang giả, mà chỉ có 2 loại đang bán tại Việt Nam như
-                                sau:
-                            </p>
-                            <div class="grid grid-cols-2 gap-6 mb-8">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
-                                        <i class="ri-award-line text-primary ri-lg"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900">Rượu vang nhập khẩu nguyên chai</h4>
-                                        <p class="text-sm text-gray-600">Đạt chuẩn quốc tế</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
-                                        <i class="ri-time-line text-secondary ri-lg"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-gray-900">Rượu vang đóng chai trong nước</h4>
-                                        <p class="text-sm text-gray-600">Hương vị không đạt chuẩn</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-info-slide hidden">
-                            <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
-                                style="line-height: 1.4;">
-                                Nghe thì giống nhau, nhưng sự thật lại <span class="text-primary">KHÁC BIỆT</span> một
-                                trời một vực:
-                            </h2>
-                            <h3 class="text-2xl font-playfair font-bold text-primary mb-4">✅ Vang nhập khẩu nguyên chai
-                            </h3>
-                            <p class="text-lg font-bold text-black-600 mb-2 leading-relaxed">
-                                Được sản xuất – đóng chai trực tiếp tại <span class="text-primary font-bold">Pháp, Ý,
-                                    Chile…,</span> vận chuyển về Việt Nam. Giữ nguyên hương vị, chuẩn chất lượng quốc
-                                tế.
-                            </p>
-                            <h3 class="text-2xl font-playfair font-bold text-primary mb-4">✅ Vang đóng chai tại VN</h3>
-                            <p class="text-lg font-bold text-black-600 mb-0 leading-relaxed">
-                                Rượu vang nhập về dạng bồn, sau đó <span class="text-primary font-bold">đóng chai lại ở
-                                    Việt Nam</span>. Giá rẻ hơn, nhưng hương vị, độ “nguyên bản” không còn như ban đầu
-                                vì các rủi ro sau:</span>
-                            </p>
-                            <ul class="text-lg px-4 font-bold text-black-600 mb-8 leading-relaxed">
-                                <li>1. Quy trình đóng chai không đảm bảo chất lượng.</li>
-                                <li>2. Loại rượu có phẩm cấp thấp, chất lượng kém vì không được kiểm định của các hiệp
-                                    hội rượu vang nước sở tại.</li>
-                                <li>3. Hàm lượng khí <span class="text-primary font-bold">SULPHITES</span> không được
-                                    kiểm soát.</li>
-                            </ul>
-                        </div>
-                        <div class="product-info-slide hidden">
-                            <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
-                                style="line-height: 1.4;">
-                                💥 Vậy, làm sao để phân biệt khi 2 loại đều có tem, mác nhập khẩu giống hệt nhau?
-                            </h2>
-                            <ul class="text-lg text-black-600 font-semibold mb-8 leading-relaxed">
-                                <li> <span class="text-primary font-bold">1. Tem & nhãn mác:</span> Vang nguyên chai
-                                    thường có cấp độ rõ ràng, có chỉ dẫn địa lý và có
-                                    trên các website của nước ngoài.</li>
-                                <li> <span class="text-primary font-bold">2. Tem phụ:</span> có ghi rõ ràng “nhập khẩu
-                                    nguyên chai”, vang đóng chai chỉ ghi lách luật: “rượu vang nhập khẩu”.</li>
-                                <li> <span class="text-primary font-bold">3. Mức giá:</span> Vang nhập khẩu nguyên chai
-                                    thường cao hơn rõ rệt.</li>
-                                <li> <span class="text-primary font-bold">4. Các chứng từ:</span> Hoá đơn, Packing
-                                    List,
-                                    chứng nhận COA, công bố sản phẩm là các giấy tờ bạn có thể yêu cầu bên bán.</li>
-                            </ul>
-                            <h3 class="text-2xl font-playfair font-bold text-primary mb-4">⚡CẢNH BÁO: Nếu bạn bỏ tiền
-                                triệu để mua vang “xịn” mà lại cầm về chai vang… đóng ở VN thì đúng là mất tiền oan! Vậy
-                                nên ngoài các lưu ý trên thì hãy lựa chọn các địa chỉ bán hàng uy tín: có địa chỉ, có
-                                pháp lý công ty rõ ràng.</h3>
-                        </div>
-                    </div>
-                    <button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold whitespace-nowrap">
-                        Đặt hàng ngay
-                    </button>
-                </div>
+
             </div>
         </div>
     </section>
     <!-- Features Section -->
+    <section id="features" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white"></div>
+        <div class="absolute inset-0"
+            style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
+        </div>
+        <div class="absolute top-0 right-0 w-1/2 h-1/2 opacity-20"
+            style="background: radial-gradient(circle at 70% 30%, #D4AF37 0%, transparent 70%)"></div>
+        <div class="absolute bottom-0 left-0 w-1/2 h-1/2 opacity-20"
+            style="background: radial-gradient(circle at 30% 70%, #8B1538 0%, transparent 70%)"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+            <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <div class="text-center lg:text-left mb-8 lg:mb-0">
+                        <p class="  mb-2">👉 Nghe thì giống nhau, nhưng sự thật lại KHÁC BIỆT một
+                            trời một vực:</p>
+                        <p class=" mb-2"> ✅ Vang nhập khẩu nguyên chai: Được sản xuất – đóng chai
+                            trực tiếp tại Pháp, Ý, Chile…, vận
+                            chuyển về Việt Nam. Giữ nguyên hương vị, chuẩn chất lượng quốc tế.
+                        </p>
+                        <p class="  mb-2"> ✅ Vang đóng chai tại VN: Rượu vang nhập về dạng bồn,
+                            sau đó đóng chai lại ở Việt Nam → Giá rẻ
+                            hơn, nhưng hương vị, độ “nguyên bản” không còn như ban đầu vì các rủi ro sau:
+                            Quy trình đóng chai không đảm bảo chất lượng.
+                            Loại rượu có phẩm cấp thấp, chất lượng kém vì không được kiểm định của các hiệp hội rượu
+                            vang
+                            nước sở tại.
+                            Hàm lượng khí SULPHITES không được kiểm soát.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
     <section id="features" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
@@ -741,7 +841,104 @@
             </div>
         </div>
     </section>
-    @include('front_end.layout.footer')
+    <!-- Footer -->
+    <footer class="bg-white text-red-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col md:flex-row items-start gap-8 mb-16">
+                <div class="w-full md:w-1/3">
+                    <img src="./assets/logo/logo-thebestwine-official.png" alt="Rượu Nhập Logo" class="h-24 mb-6">
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH HÀ NỘI</h3>
+                            <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                            <p class="text-red-600">Hotline: <a href="tel:0988393000"
+                                    class="hover:text-red-700">0988.393.000</a></p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH TP.HCM</h3>
+                            <p class="text-red-600">Địa chỉ: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
+                            <p class="text-red-600">Hotline: <a href="tel:093623919"
+                                    class="hover:text-red-700">090.464.1325</a></p>
+                        </div>
+                        <div class="flex space-x-4 mt-6">
+                            <a href="#" class="text-red-800 hover:text-red-600 transition-colors">
+                                <i class="ri-facebook-fill ri-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 w-full">
+                    <h2 class="text-2xl font-bold text-red-900 mb-8">BẢN ĐỒ</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-red-900 mb-4">Chi nhánh Hà Nội</h3>
+                            <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.9085414087895!2d105.801156!3d21.014502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab005f399e4d%3A0x76cb4c55e88d43b3!2sThe%20Best%20Wine!5e0!3m2!1svi!2s!4v1756420834643!5m2!1svi!2s"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-red-900 mb-4">Chi nhánh TP HCM</h3>
+                            <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1899815783077!2d106.68876817584616!3d10.796756758816784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cef41a3e99%3A0x6d9f736ab46da8bc!2zMjMgSG9hIExhbiwgUGjGsOG7nW5nIDcsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmggNzI1NTA3LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1756202313395!5m2!1svi!2s"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-red-200 pt-8">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <img src="./assets/logo/logo-vuong.png" alt="The Best Wine Logo"
+                        class="w-40 h-40 object-contain shadow-md">
+                    <div class="text-red-800 text-lg leading-relaxed">
+                        <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
+                            thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
+                            để khách hàng lựa chọn các sản phẩm rượu vang nhập khẩu chính hãng uy tín và chất lượng.</p>
+                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS BEST"</span>, chúng tôi luôn cam kết sự
+                            lựa chọn của khách hàng ở The Best Wine sẽ luôn là TỐT NHẤT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="cta-container" class="fixed w-full md:w-[150px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
+        <div id="cta-full" class="  flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
+            <div class="hidden justify-end p-1 md:flex ">
+                <button id="cta-close" class="text-white hover:text-gray-300">
+                    <i class="ri-close-line text-lg"></i>
+                </button>
+            </div>
+            <a href="tel:0988393000"
+                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                <i class="ri-phone-line text-2xl mb-1"></i>
+                <span class="text-sm font-bold">Hotline HN</span>
+            </a>
+            <a href="tel:0904641325"
+                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                <i class="ri-phone-line text-2xl mb-1"></i>
+                <span class="text-sm font-bold">Hotline SG</span>
+            </a>
+            <a href="https://zalo.me/0988393000"
+                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                <i class="ri-chat-1-line text-2xl mb-1"></i>
+                <span class="text-sm font-bold">Zalo</span>
+            </a>
+            <a href="https://m.me/yourmessenger"
+                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                <i class="ri-messenger-line text-2xl mb-1"></i>
+                <span class="text-sm font-bold">Messenger</span>
+            </a>
+        </div>
+        <button id="cta-toggle"
+            class="hidden bg-[#990F07] text-white p-2 rounded-full shadow-md hover:bg-[#800D05] transition-colors">
+            <i class="ri-chat-smile-3-line text-xl"></i>
+        </button>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
