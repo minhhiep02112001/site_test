@@ -185,7 +185,7 @@
                         class="h-12 md:h-16 w-auto p-1">
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-primary hover:text-primary/80 transition-colors font-medium">Về chúng
+                    <a href="#ve-chung-toi" class="text-primary hover:text-primary/80 transition-colors font-medium">Về chúng
                         tôi</a>
                     <a href="#product" class="text-primary hover:text-primary/80 transition-colors font-medium">Sản
                         phẩm</a>
@@ -199,7 +199,7 @@
                 </button>
             </div>
             <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
-                <a href="#"
+                <a href="#ve-chung-toi"
                     class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Về
                     chúng tôi</a>
                 <a href="#product"
@@ -217,7 +217,7 @@
             <div class="w-full max-w-[1100px] ">
                 <div class="flex flex-col md:flex-row items-center gap-10 h-full">
 
-                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-4xl lg:text-5xl font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px] bg-white"
+                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-[2.2rem]   font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px] bg-white"
                         style="line-height: 1.5;">
                         PHÂN BIỆT RƯỢU VANG GIẢ, RƯỢU VANG ĐÓNG CHAI TRONG NƯỚC VÀ RƯỢU VANG NHẬP KHẨU NGUYÊN CHAI
                     </h1>
@@ -240,7 +240,7 @@
     </section>
     <!-- Produ
      ct Introduction -->
-    <section id="product" class="py-20 relative overflow-hidden">
+    <section  class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FDF7F9] transform -skew-y-6 origin-top-left"></div>
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
@@ -438,7 +438,7 @@
         </div>
     </section>
     <!-- Features Section -->
-    <section id="features" class="py-20 relative overflow-hidden">
+    <section  class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
@@ -476,7 +476,7 @@
         </div>
     </section>
 
-    <section id="features" class="py-20 relative overflow-hidden">
+    <section id="product" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
@@ -745,7 +745,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="py-20 relative overflow-hidden"
+    <section class="py-20 relative overflow-hidden"
         style="background-image: url('./assets/uploads/201b5a32936c69ad19ba28013da9b877.jpg')">
         <div class="absolute inset-0 wine-gradient opacity-90"></div>
         <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -816,7 +816,7 @@
         </div>
     </section>
     <!-- Warnning -->
-    <section class="py-20 relative overflow-hidden">
+    <section class="py-20 relative overflow-hidden" id="ve-chung-toi">
         <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
         <div class="absolute inset-0 opacity-25"
             style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
@@ -842,7 +842,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-white text-red-800 py-16">
+    <footer class="bg-white text-red-800 py-16"  id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex flex-col md:flex-row items-start gap-8 mb-16">
                 <div class="w-full md:w-1/3">
