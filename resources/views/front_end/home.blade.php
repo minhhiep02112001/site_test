@@ -179,19 +179,23 @@
     <!-- Header -->
     <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm" id="main-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="flex items-center justify-between h-16">
+            <div class="flex items-center justify-between h-[100px]">
                 <div class="flex items-center">
-                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-12 md:h-16 w-auto p-1">
+                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#ve-chung-toi" class="text-primary hover:text-primary/80 transition-colors font-medium">Về
+                    <a href="#ve-chung-toi"
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Về
                         chúng
                         tôi</a>
-                    <a href="#product" class="text-primary hover:text-primary/80 transition-colors font-medium">Sản
+                    <a href="#product"
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Sản
                         phẩm</a>
-                    <a href="#features" class="text-primary hover:text-primary/80 transition-colors font-medium">Khuyến
+                    <a href="#features"
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Khuyến
                         Mại</a>
-                    <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium">Liên
+                    <a href="#contact"
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Liên
                         hệ</a>
                 </nav>
                 <button class="md:hidden w-8 h-8 flex items-center justify-center text-primary">
@@ -212,14 +216,15 @@
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section class=" flex items-center mt-[66px]">
+    <section class=" flex items-center mt-[100px]">
         <div class="max-w-8xl mx-auto px-4 sm:px-8   ">
             <div class="w-full max-w-[1100px] ">
                 <div class="flex flex-col md:flex-row items-center gap-10 h-full">
 
-                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-[2.2rem]   font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px] bg-white"
+                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-[2.2rem]  ml-auto mr-auto max-w-[750px] text-center  font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px]  "
                         style="line-height: 1.5;">
-                        PHÂN BIỆT RƯỢU VANG GIẢ, RƯỢU VANG ĐÓNG CHAI TRONG NƯỚC VÀ RƯỢU VANG NHẬP KHẨU NGUYÊN CHAI
+                        <div class="text-center">PHÂN BIỆT RƯỢU VANG GIẢ,</div>
+                        <div class="text-center">RƯỢU VANG ĐÓNG CHAI TRONG NƯỚC VÀ RƯỢU VANG NHẬP KHẨU NGUYÊN CHAI</div>
                     </h1>
                 </div>
             </div>
@@ -240,7 +245,7 @@
     </section>
     <!-- Produ
      ct Introduction -->
-    <section class="py-20 relative overflow-hidden">
+    <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FDF7F9] transform -skew-y-6 origin-top-left"></div>
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
@@ -302,7 +307,8 @@
                                 tiểu đường, tim mạch...đã được kiểm chứng 8000 năm trong suốt chiều dài lịch sử nhân
                                 loại.</p>
 
-                            <p class="  mb-2">😱 Tuy nhiên, bạn cũng như nhiều người khác, bạn lo lắng vì chưa chọn được
+                            <p class="  mb-2">😱 Tuy nhiên, bạn cũng như nhiều người khác, bạn lo lắng vì chưa chọn
+                                được
                                 loại vang phù hợp thậm chí là rượu GIẢ vì thị trường có quá nhiều loại.</p>
                             <p class="  mb-2">Tin vui, là hầu như không có rượu vang giả, mà chỉ có 2 loại đang bán tại
                                 Việt Nam như sau:</p>
@@ -409,15 +415,11 @@
         </div>
     </section>
     <!-- Features Section -->
-    <section class="py-20 relative overflow-hidden">
+    <section class="  relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
         </div>
-        <div class="absolute top-0 right-0 w-1/2 h-1/2 opacity-20"
-            style="background: radial-gradient(circle at 70% 30%, #D4AF37 0%, transparent 70%)"></div>
-        <div class="absolute bottom-0 left-0 w-1/2 h-1/2 opacity-20"
-            style="background: radial-gradient(circle at 30% 70%, #8B1538 0%, transparent 70%)"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
@@ -455,7 +457,7 @@
         </div>
     </section>
 
-    <section id="product" class="py-20 relative overflow-hidden">
+    <section  id="ve-chung-toi" class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
@@ -466,23 +468,22 @@
             style="background: radial-gradient(circle at 30% 70%, #8B1538 0%, transparent 70%)"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6" >
                     Tại <span class="text-primary" style="line-height: 1.2;">The Best Wine </span>chúng tôi cam kết
                     chỉ
                     bán rượu vang nhập khẩu nguyên chai
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Những yếu tố làm nên sự khác biệt và đẳng cấp của sản phẩm vang đỏ cao cấp
-                </p>
             </div>
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
-                <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="flex flex-col lg:flex-row items-center justify-between" id="product" >
                     <div class="text-center lg:text-left mb-8 lg:mb-0">
-                        <h3 class="text-4xl font-playfair font-bold text-[#990F07] mb-4 uppercase">Ưu đãi khi mua 6
+                        <h3 class="text-4xl text-center font-playfair font-bold text-[#990F07] mb-4 uppercase">Ưu đãi
+                            khi mua 6
                             chai
                             vang nhập
                             khẩu chính hãng Bronzeo</h3>
-                        <p class="text-2xl text-[#0E5E22] mb-2">Giá chỉ 395K/chai, tổng thanh toán 2.370.000VND cho 6
+                        <p class="text-2xl text-center text-[#0E5E22] mb-2">Giá chỉ 395K/chai, tổng thanh toán
+                            2.370.000VND cho 6
                             chai
                             vang Bronzeo nhập khẩu nguyên chai:</p>
                         <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-4">
@@ -504,7 +505,7 @@
         </div>
     </section>
     <!-- Special Promotion Form -->
-    <section class="py-16 bg-white relative overflow-hidden" id="special-promotion">
+    <section class="py-5 bg-white relative overflow-hidden" id="special-promotion">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-[#FEF2F2] rounded-2xl p-8 md:p-12 relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-secondary animate-pulse">
@@ -523,11 +524,19 @@
                                 <ul class="space-y-3 text-gray-600">
                                     <li class="flex items-center gap-2">
                                         <i class="ri-check-line text-primary"></i>
-                                        <span>Bộ ly pha lê cao cấp</span>
+                                        <span>Bộ ly Pha Lê </span>
                                     </li>
                                     <li class="flex items-center gap-2">
                                         <i class="ri-check-line text-primary"></i>
-                                        <span>Hộp gỗ đựng rượu sang trọng</span>
+                                        <span>Hộp gỗ</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-check-line text-primary"></i>
+                                        <span>Bình Decanter</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-check-line text-primary"></i>
+                                        <span>Mở chai cao cấp</span>
                                     </li>
                                 </ul>
                             </div>
@@ -559,7 +568,7 @@
                             <div class="absolute inset-0 opacity-10"
                                 style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                             </div>
-                            <h4 class="text-2xl font-bold text-red-900 mb-6 relative z-10">Đăng ký nhận ưu đãi</h4>
+                            <h4 class="text-2xl font-bold text-red-900 mb-6 relative z-10 uppercase">Đăng ký nhận ưu đãi</h4>
                             <div class="space-y-4 relative z-10">
                                 <div>
                                     <label class="block text-sm font-medium text-red-800 mb-1">Họ và tên</label>
@@ -587,7 +596,7 @@
                                         rows="3" placeholder="Nhập ghi chú nếu có"></textarea>
                                 </div>
                                 <button type="submit"
-                                    class="w-full bg-red-800 text-white px-6 py-4 rounded-full font-semibold whitespace-nowrap">
+                                    class="w-full uppercase bg-red-800 text-white px-6 py-4 rounded-full font-semibold whitespace-nowrap">
                                     Đăng ký ngay
                                 </button>
                             </div>
@@ -603,8 +612,8 @@
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-center justify-between">
                     <div class="text-center text-align: justify; text-[#000] lg:text-left mb-8 lg:mb-0">
-                        <p class=" text-[#001dfa]  mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...</p>
-                        <h3 class="text-2xl font-bold  mb-2">Kể cả khi bạn mua được loại vang nhập khẩu nguyên chai
+                        <p class=" text-[#001dfa]  font-bold text-2xl   mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...</p>
+                        <h3 class="text-3xl font-bold  mb-2">Kể cả khi bạn mua được loại vang nhập khẩu nguyên chai
                             thì bạn vẫn sẽ có những vấn đề, vì với rượu vang chưa hẳn đắt tiền đã là ngon.</h3>
                         <p class="  mb-2">
                             QUAN TRỌNG nhất khi lựa chọn rượu vang là phải phù hợp với khẩu vị của bạn chứ không hẳn là
@@ -619,9 +628,7 @@
                         <p class="  mb-2">
                             Và với những ưu đãi đi kèm trong Combo trên, bạn sẽ tận hưởng những chai rượu vang một cách
                             trọng vẹn nhất.</p>
-                        <p class="text-[20px]  mb-2">
-                            Vì vậy...</p>
-
+                         
                     </div>
                 </div>
             </div>
@@ -630,7 +637,7 @@
 
 
     <!-- Features Section -->
-    <section id="features" class="py-20 relative overflow-hidden">
+    <section id="features" class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
@@ -643,11 +650,10 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Vì vậy...</h2>
                 <h3 class="text-5xl font-bold mb-4">Hãy đăng kí <span class="text-[#0E5E22]">COMBO</span></h3>
-                <h3 class="text-5xl font-bold text-[#0E5E22] mb-4">2.370.000VNĐ</h3>
+                <h3 class="text-5xl font-bold text-[#0E5E22] mb-4"><del>2.370</del>.000VNĐ</h3>
                 <h3 class="text-5xl font-bold mb-6">ngay hôm nay để được</h3>
                 <p class="text-2xl">
-                    <span class="text-[#CD853F]">Nhận ưu đãi</span> <span class="text-[#0E5E22]">trọn bộ rượu và quà
-                        tặng kèm</span> <span class="text-[#CD853F]">dưới đây</span>
+                    <span class="text-[#CD853F]">Nhận ưu đãi</span> <span class="text-[#0E5E22]">trọn bộ 06 chai rượu và quà tặng kèm</span> <span class="text-[#CD853F]">dưới đây</span>
                 </p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -693,19 +699,19 @@
         </div>
     </section>
     <!-- Reason to choose us -->
-    <section id="reasons" class="py-20 relative overflow-hidden">
+    <section id="reasons" class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
         <div class="absolute inset-0 opacity-25"
             style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="text-center mb-16">
-                <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <div class="text-center mb-10">
+                <h2 class="font-playfair text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
                     Lý do khách hàng <span class="text-primary">chọn chúng tôi</span>
                 </h2>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-checkbox-circle-line text-primary text-4xl"></i>
                     </div>
@@ -713,7 +719,7 @@
                         Sản phẩm được tuyển chọn kỹ lưỡng qua 5 vòng, được bảo quản kho lạnh theo tiêu chuẩn quốc tế.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-money-dollar-circle-line text-primary text-4xl"></i>
                     </div>
@@ -721,7 +727,7 @@
                         Giá bán luôn tốt nhất.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-global-line text-primary text-4xl"></i>
                     </div>
@@ -729,7 +735,7 @@
                         Hàng nhập khẩu nguyên chai có giấy tờ nhập khẩu, xuất xứ rõ ràng, có hóa đơn đỏ VAT.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-loop-left-line text-primary text-4xl"></i>
                     </div>
@@ -737,7 +743,7 @@
                         Cam kết đổi trả hàng, hoàn tiền 100% nếu khách hàng không hài lòng.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-truck-line text-primary text-4xl"></i>
                     </div>
@@ -745,7 +751,7 @@
                         Thời gian giao hàng nhanh nhất, chỉ 30 phút trong nội thành Hà Nội và TP HCM.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-headphone-line text-primary text-4xl"></i>
                     </div>
@@ -757,7 +763,7 @@
             </div>
         </div>
     </section>
-    <section class="py-20 relative overflow-hidden"
+    <section class="py-10 relative overflow-hidden"
         style="background-image: url('./assets/uploads/201b5a32936c69ad19ba28013da9b877.jpg')">
         <div class="absolute inset-0 wine-gradient opacity-90"></div>
         <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -788,7 +794,7 @@
                                     placeholder="">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">SĐ Điện Thoại</label>
+                                <label class="block text-sm font-medium text-red-800 mb-1">Số Điện Thoại</label>
                                 <input type="tel" name="phone" required
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                     placeholder="">
@@ -812,15 +818,15 @@
                                     rows="3" placeholder=""></textarea>
                             </div>
                             <button type="submit"
-                                class="w-full bg-red-800 text-white px-6 py-3 rounded-md font-semibold">
+                                class="w-full bg-[#990e06]  text-white px-6 py-3 rounded-md font-semibold">
                                 ĐĂNG KÍ NGAY
                             </button>
                         </div>
                     </form>
                     <div class="mt-4 space-y-2 text-center">
                         <a href="./uu-dai-dac-biet"
-                            class="block bg-red-700 text-white px-6 py-2 rounded-md font-medium">
-                            NO, TÔI MUỐN ƯU ĐÃI KHÁC
+                            class="block bg-[#990e06] text-white px-6 py-2 rounded-md font-medium">
+                            Không, TÔI MUỐN ƯU ĐÃI KHÁC
                         </a>
                     </div>
                 </div>
@@ -828,7 +834,7 @@
         </div>
     </section>
     <!-- Warnning -->
-    <section class="py-20 relative overflow-hidden" id="ve-chung-toi">
+    <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
         <div class="absolute inset-0 opacity-25"
             style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
@@ -861,13 +867,13 @@
                     <img src="./assets/uploads/logo.png" alt="Rượu Nhập Logo" class="h-24 mb-6">
                     <div class="space-y-4">
                         <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH HÀ NỘI</h3>
+                            <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG HÀ NỘI</h3>
                             <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
                             <p class="text-red-600">Hotline: <a href="tel:0988393000"
                                     class="hover:text-red-700">0988.393.000</a></p>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH TP.HCM</h3>
+                            <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
                             <p class="text-red-600">Địa chỉ: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
                             <p class="text-red-600">Hotline: <a href="tel:093623919"
                                     class="hover:text-red-700">090.464.1325</a></p>
@@ -883,7 +889,7 @@
                     <h2 class="text-2xl font-bold text-red-900 mb-8">BẢN ĐỒ</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-4">Chi nhánh Hà Nội</h3>
+                            <h3 class="text-xl font-bold text-red-900 mb-4">Văn Phòng Hà Nội</h3>
                             <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.9085414087895!2d105.801156!3d21.014502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab005f399e4d%3A0x76cb4c55e88d43b3!2sThe%20Best%20Wine!5e0!3m2!1svi!2s!4v1756420834643!5m2!1svi!2s"
@@ -892,7 +898,7 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-4">Chi nhánh TP HCM</h3>
+                            <h3 class="text-xl font-bold text-red-900 mb-4">Văn Phòng TP HCM</h3>
                             <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1899815783077!2d106.68876817584616!3d10.796756758816784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cef41a3e99%3A0x6d9f736ab46da8bc!2zMjMgSG9hIExhbiwgUGjGsOG7nW5nIDcsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmggNzI1NTA3LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1756202313395!5m2!1svi!2s"
@@ -911,15 +917,15 @@
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
                             thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
                             để khách hàng lựa chọn các sản phẩm rượu vang nhập khẩu chính hãng uy tín và chất lượng.</p>
-                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS BEST"</span>, chúng tôi luôn cam kết sự
+                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết sự
                             lựa chọn của khách hàng ở The Best Wine sẽ luôn là TỐT NHẤT.</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div id="cta-container" class="fixed w-full md:w-[150px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
-        <div id="cta-full" class="  flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
+    <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
+        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
             <div class="hidden justify-end p-1 md:flex ">
                 <button id="cta-close" class="text-white hover:text-gray-300">
                     <i class="ri-close-line text-lg"></i>
@@ -928,12 +934,12 @@
             <a href="tel:0988393000"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-phone-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold">Hotline HN</span>
+                <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
             </a>
             <a href="tel:0904641325"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-phone-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold">Hotline SG</span>
+                <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
             </a>
             <a href="https://zalo.me/0988393000"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">

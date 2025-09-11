@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -9,7 +7,32 @@
     <title>Ưu Đãi Đặc Biệt - Elletra Primitivo</title>
     <link rel="icon" type="image/png" href="./assets/logo/logo-thebestwine-ico.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { primary: '#8B1538', secondary: '#D4AF37', wineRed: '#8B0000', waveBg: '#A61D4D' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B1538',
+                        secondary: '#D4AF37',
+                        wineRed: '#8B0000',
+                        waveBg: '#A61D4D'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -115,6 +138,7 @@
             transform: translateX(-50%) translateY(0);
             opacity: 1;
         }
+
         .font-playfair {
             font-family: 'Playfair Display', serif;
         }
@@ -236,9 +260,9 @@
 
 <body class="font-inter bg-white">
     <!-- Header -->
-    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <header class="fixed w-full top-0 z-50 bg-white/95  backdrop-blur-md border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+            <div class="flex items-center justify-between h-[100px]">
                 <div class="flex items-center space-x-4">
                     <a href="./index.php" data-readdy="true"
                         class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
@@ -246,6 +270,13 @@
                     </a>
                     <h1 class="font-playfair text-xl font-bold text-gray-900">Ưu Đãi Đặc Biệt</h1>
                 </div>
+
+                <div class="flex items-center">
+                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
+                </div> 
+                <a href="#registration-form" class=" w-[100px] whitespace-nowrap p-4 h-8 flex items-center justify-center text-primary">
+                    Đăng ký ngay
+                </a>
             </div>
         </div>
     </header>
@@ -257,18 +288,20 @@
             <div class="wave-animation"></div>
             <div class="wave-animation"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="font-playfair text-2xl lg:text-5xl font-semibold text-wineRed mb-4">Cám ơn bạn đã đăng kí, để
-                    cảm ơn sự ủng hộ tuyệt vời này của bạn, chúng tôi giành thêm 1 ưu đãi cuối cùng và chỉ giành riêng
-                    cho khách hàng đã đăng kí Combo 1.</h2>
+                <h2 class="italic text-2xl lg:text-4xl  text-wineRed mb-4">Cám ơn bạn đã đăng kí, để cảm ơn sự ủng hộ
+                    tuyệt vời này của bạn, chúng tôi giành thêm 1 ưu đãi cuối cùng và duy nhất.</h2>
                 <div class="wine-badge mb-6 inline-block">Ưu Đãi Duy Nhất - Hôm Nay Thôi!</div>
                 <h1 class="font-playfair text-4xl lg:text-5xl font-bold text-wineRed mb-4">ƯU ĐÃI DUY NHẤT TRONG NGÀY
                     HÔM NAY KHI BẠN MUA 06 CHAI RƯỢU VANG ELLETRA PRIMITIVO</h1>
-                <img src="./assets/uploads/thu-vien-2.jpg" alt="Banner gt chai rượu"
+                <img src="./assets/uploads/photo_2025.jpg" alt="Banner gt chai rượu"
                     class="max-w-full rounded-lg h-auto mx-auto mb-8">
                 <blockquote class="text-2xl italic text-gray-800 mb-6 max-w-4xl mx-auto">
-                    “Elettra là ngọn hải đăng của chúng tôi, là ngôi sao dẫn đường trong đêm khi chúng tôi khám phá
-                    những cảnh quan và phong cách mới, cũng giống như những ngôi sao này là phương hướng trên đại đương
-                    cho các nhà hàng hải trên khắp thế giới trong hàng thiên niên kỷ.”
+                    “Elettra là biểu tượng của
+                    nhà làm rượu vang Provinco miền Nam nước Ý. Rượu được làm từ những trái nho Primitivo của những
+                    khu vườn cổ Pugila, nơi sở hữu những gốc nho già hơn 100 năm tuổi, được coi là di sản thế giới.
+                    Rượu được ủ 12 tháng trong thùng gỗ sồi mới của Pháp nên có màu của Ruby hồng ngọc đậm đặc,
+                    hương thơm của anh đào đen, violet, cam thảo, sô cô la, và cà phê..., cấu trúc rượu mềm mại với
+                    tannin chát mịn, hậu vị sâu và hài hòa.”
                     <footer class="mt-2 text-right">Andrea Bernardini<br>(Nhà sản xuất rượu Elettra)</footer>
                 </blockquote>
             </div>
@@ -279,43 +312,37 @@
             <div class="wave-animation" style="animation-duration: 12s; opacity: 0.3;"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
-                    class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-wineRed/20 transform hover:scale-105 transition-all duration-500">
-                    <p class="text-lg text-gray-800 mb-6 leading-relaxed text-center italic">Elettra là biểu tượng của
-                        nhà làm rượu vang Provinco miền Nam nước Ý. Rượu được làm từ những trái nho Primitivo của những
-                        khu vườn cổ Pugila, nơi sở hữu những gốc nho già hơn 100 năm tuổi, được coi là di sản thế giới.
-                        Rượu được ủ 12 tháng trong thùng gỗ sồi mới của Pháp nên có màu của Ruby hồng ngọc đậm đặc,
-                        hương thơm của anh đào đen, violet, cam thảo, sô cô la, và cà phê..., cấu trúc rượu mềm mại với
-                        tannin chát mịn, hậu vị sâu và hài hòa.</p>
-                    <h3 class="font-playfair text-4xl font-extrabold text-wineRed mb-8 text-center animate-pulse">Và đây
+                    class="bg-[#990e06]  backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-wineRed/20 transform hover:scale-105 transition-all duration-500">
+                    <h3 class="font-playfair text-4xl font-extrabold text-[#fff] mb-8 text-center animate-pulse">Và đây
                         là 8 ưu đãi bạn nhận được khi mua Combo này:</h3>
                     <ol class="list-decimal list-inside space-y-6 text-gray-800 mb-10 text-lg grid gap-4">
-                        <li
+                        <li  
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Giảm 10%, giá chỉ còn 1.350.000/chai, tổng Thanh Toán chỉ là 8.100.000VNĐ</li>
-                        <li
-                            class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
+                        <li style="margin-top:5px!important;"
+                            class="bg-gray-50 p-4  rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 06 bộ hộp túi Elettra</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 06c rượu vang nhập khẩu Bronzeo</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 01 bộ ly Pha Lê Bohemia 06 chiếc</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 01 Decanter Pha Lê Bohemia</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 01 mở chai cao cấp</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng 1 buổi miễn phí thử rượu và tư vấn nghệ thuật thuởng thức rượu vang trên bàn tiệc với 6
                             loại rượu khác nhau, cùng chuyên gia rượu vang hơn 10 năm kinh nghiệm của The Best Wine.
                         </li>
                     </ol>
                     <div
-                        class="bg-gradient-to-r from-wineRed/10 to-secondary/10 p-8 rounded-2xl text-center mb-10 shadow-lg transform hover:shadow-2xl transition-shadow duration-500">
-                        <h3 class="font-bold text-3xl text-wineRed mb-4 animate-bounce">Tổng giá trị quà tặng:
+                        class="bg-gradient-to-r from-wineRed/10  to-secondary/10 p-8 rounded-2xl text-center mb-10 shadow-lg transform hover:shadow-2xl transition-shadow duration-500">
+                        <h3 class="font-bold text-3xl text-[#fff] mb-4 animate-bounce">Tổng giá trị quà tặng:
                             5.868.000VNĐ</h3>
                         <p class="text-xl text-gray-800 mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
                             chúng tôi với chỉ một lần thanh toán 8.100.000VNĐ duy nhất.</p>
@@ -332,43 +359,43 @@
             <div class="wave-animation opacity-30"></div>
             <div class="wave-animation" style="animation-duration: 14s; opacity: 0.2;"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-wineRed/10">
-                    <h2 class="font-playfair text-4xl font-extrabold text-wineRed mb-8 text-center animate-fade-in">Sản
+                <div class="bg-[#990e06] backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-wineRed/10">
+                    <h2 class="font-playfair text-4xl font-extrabold text-[#fff] mb-8 text-center animate-fade-in">Sản
                         phẩm này giành cho ai:</h2>
                     <ul class="list-disc list-inside space-y-5 text-gray-800 mb-10 text-lg grid gap-4">
-                        <li
+                        <li 
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Các Doanh nhân muốn có một sản phẩm đẳng cấp và nâng tầm giao tiếp trên bàn tiệc.</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Quý khách hàng hay phải tiếp khách mà cần uống rượu một cách văn minh, có lợi cho sức khỏe.
                         </li>
                     </ul>
-                    <h2 class="font-playfair text-4xl font-extrabold text-wineRed mb-8 text-center animate-fade-in">
+                    <h2 class="font-playfair text-4xl font-extrabold text-[#fff] mb-4 text-center animate-fade-in">
                         Những lưu ý khi bạn mua hàng của The Best Wine:</h2>
                     <ul class="list-disc list-inside space-y-5 text-gray-800 mb-10 text-lg grid gap-4">
-                        <li
-                            class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
+                        <li style="margin-top:5px!important;"
+                            class="bg-gray-50 p-4 mb-2 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Điều tuyệt vời là chúng tôi sẵn sàng đổi trả sản phẩm nếu quý khách không hài lòng khi sử
                             dụng.</li>
-                        <li
+                        <li style="margin-top:5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng thêm 01 chai Elettra Primitivo khi bạn giới thiệu khách hàng hoặc mua thêm 1 Combo thứ
                             2.</li>
                     </ul>
-                    <h2 class="font-playfair text-4xl font-extrabold text-wineRed mb-8 text-center animate-fade-in">THỜI
+                    <h2 class="font-playfair text-4xl font-extrabold text-[#fff] mb-8 text-center animate-fade-in">THỜI
                         HẠN ĐĂNG KÍ COMBO CỦA BẠN</h2>
                     <div id="countdown" class="countdown-timer mb-10 flex justify-center gap-6">
                         <div
-                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-wineRed shadow-lg transform hover:scale-110 transition-all duration-300">
+                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
                             <span id="hours">00</span><span class="block text-sm">Giờ</span>
                         </div>
                         <div
-                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-wineRed shadow-lg transform hover:scale-110 transition-all duration-300">
+                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
                             <span id="minutes">00</span><span class="block text-sm">Phút</span>
                         </div>
                         <div
-                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-wineRed shadow-lg transform hover:scale-110 transition-all duration-300">
+                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
                             <span id="seconds">00</span><span class="block text-sm">Giây</span>
                         </div>
                     </div>
@@ -376,7 +403,7 @@
             </div>
         </section>
         <!-- Gallery & Testimonials -->
-    <!-- <section id="gallery" class="py-20 relative overflow-hidden">
+        <!-- <section id="gallery" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
         <div class="absolute inset-0 opacity-25"
             style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
@@ -485,45 +512,46 @@
             <div class="wave-animation opacity-50"></div>
             <div class="wave-animation" style="animation-duration: 12s; opacity: 0.3;"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="font-playfair text-4xl font-extrabold text-wineRed mb-10 text-center animate-pulse">Form Đăng
+                <h2 class="font-playfair text-4xl font-extrabold text-wineRed mb-10 text-center animate-pulse uppercase">Form
+                    Đăng
                     Ký</h2>
                 <form id="register-form"
-                    class="bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-wineRed/20 space-y-6 max-w-xl mx-auto transform hover:scale-102 transition-all duration-500">
+                    class="bg-[#990e06]  text-[#fff] backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-wineRed/20 space-y-6 max-w-xl mx-auto transform hover:scale-102 transition-all duration-500">
                     <div class="relative">
                         <label
-                            class="block text-base font-medium text-gray-700 mb-2 after:content-['*'] after:text-red-500 after:ml-1">Họ
+                            class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Họ
                             và Tên</label>
                         <input type="text" name="name" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
                     <div class="relative">
                         <label
-                            class="block text-base font-medium text-gray-700 mb-2 after:content-['*'] after:text-red-500 after:ml-1">Số
+                            class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Số
                             Điện Thoại</label>
                         <input type="tel" name="phone" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
                     <div class="relative">
                         <label
-                            class="block text-base font-medium text-gray-700 mb-2 after:content-['*'] after:text-red-500 after:ml-1">Email</label>
-                        <input type="email" name="email" required
+                            class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Địa chỉ nhận hàngl</label>
+                        <input type="text" name="email" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
                     <div class="relative">
                         <label
-                            class="block text-base font-medium text-gray-700 mb-2 after:content-['*'] after:text-red-500 after:ml-1">Số
+                            class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Số
                             lượng Combo</label>
                         <input type="number" name="quantity" min="1" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
                     <div class="relative">
-                        <label class="block text-base font-medium text-gray-700 mb-2">Ghi chú</label>
+                        <label class="block text-base font-medium text-[#fff] mb-2">Ghi chú</label>
                         <textarea name="note" rows="5"
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white resize-none"></textarea>
                     </div>
                     <button type="submit"
                         class="w-full bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        <span class="relative z-10">Gửi Đăng Ký</span>
+                        <span class="relative z-10 uppercase">Gửi Đăng Ký</span>
                         <span
                             class="absolute inset-0 bg-white/10 rounded-xl opacity-0 hover:opacity-20 transition-opacity duration-300"></span>
                     </button>
@@ -531,53 +559,58 @@
             </div>
         </section>
         <div id="cta-container" class="fixed bottom-4 right-4 z-50">
-    <div id="cta-full" class="flex flex-col bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
-        <div class="flex justify-end p-1">
-            <button id="cta-close" class="text-white hover:text-gray-300">
-                <i class="ri-close-line text-lg"></i>
+            <div id="cta-full" class="flex flex-col bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
+                <div class="flex justify-end p-1">
+                    <button id="cta-close" class="text-white hover:text-gray-300">
+                        <i class="ri-close-line text-lg"></i>
+                    </button>
+                </div>
+                <a href="tel:0988393000"
+                    class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                    <i class="ri-phone-line text-2xl mb-1"></i>
+                    <span class="text-sm font-bold">Hotline HN</span>
+                </a>
+                <a href="tel:0904641325"
+                    class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                    <i class="ri-phone-line text-2xl mb-1"></i>
+                    <span class="text-sm font-bold">Hotline SG</span>
+                </a>
+                <a href="https://zalo.me/0988393000"
+                    class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                    <i class="ri-chat-1-line text-2xl mb-1"></i>
+                    <span class="text-sm font-bold">Zalo</span>
+                </a>
+                <a href="https://m.me/yourmessenger"
+                    class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+                    <i class="ri-messenger-line text-2xl mb-1"></i>
+                    <span class="text-sm font-bold">Messenger</span>
+                </a>
+            </div>
+            <button id="cta-toggle"
+                class="hidden bg-[#990F07] text-white p-2 rounded-full shadow-md hover:bg-[#800D05] transition-colors">
+                <i class="ri-chat-smile-3-line text-xl"></i>
             </button>
         </div>
-        <a href="tel:0988393000" class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-            <i class="ri-phone-line text-2xl mb-1"></i>
-            <span class="text-sm font-bold">Hotline HN</span>
-        </a>
-        <a href="tel:0904641325" class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-            <i class="ri-phone-line text-2xl mb-1"></i>
-            <span class="text-sm font-bold">Hotline SG</span>
-        </a>
-        <a href="https://zalo.me/0988393000" class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-            <i class="ri-chat-1-line text-2xl mb-1"></i>
-            <span class="text-sm font-bold">Zalo</span>
-        </a>
-        <a href="https://m.me/yourmessenger" class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-            <i class="ri-messenger-line text-2xl mb-1"></i>
-            <span class="text-sm font-bold">Messenger</span>
-        </a>
-    </div>
-    <button id="cta-toggle" class="hidden bg-[#990F07] text-white p-2 rounded-full shadow-md hover:bg-[#800D05] transition-colors">
-        <i class="ri-chat-smile-3-line text-xl"></i>
-    </button>
-</div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const fullCta = document.getElementById('cta-full');
-        const toggleBtn = document.getElementById('cta-toggle');
-        const closeBtn = document.getElementById('cta-close');
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const fullCta = document.getElementById('cta-full');
+                const toggleBtn = document.getElementById('cta-toggle');
+                const closeBtn = document.getElementById('cta-close');
 
-        closeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            fullCta.classList.add('hidden');
-            toggleBtn.classList.remove('hidden');
-        });
+                closeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    fullCta.classList.add('hidden');
+                    toggleBtn.classList.remove('hidden');
+                });
 
-        toggleBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            fullCta.classList.remove('hidden');
-            toggleBtn.classList.add('hidden');
-        });
-    });
-</script>
+                toggleBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    fullCta.classList.remove('hidden');
+                    toggleBtn.classList.add('hidden');
+                });
+            });
+        </script>
         <style>
             @keyframes pulse {
 
@@ -661,8 +694,8 @@
                             <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.9085414087895!2d105.801156!3d21.014502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab005f399e4d%3A0x76cb4c55e88d43b3!2sThe%20Best%20Wine!5e0!3m2!1svi!2s!4v1756420834643!5m2!1svi!2s"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div>
@@ -670,8 +703,8 @@
                             <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1899815783077!2d106.68876817584616!3d10.796756758816784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cef41a3e99%3A0x6d9f736ab46da8bc!2zMjMgSG9hIExhbiwgUGjGsOG7nW5nIDcsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmggNzI1NTA3LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1756202313395!5m2!1svi!2s"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -724,11 +757,16 @@
 
         // Buy Now Button - Scroll to Form
         document.getElementById('buy-now-btn').addEventListener('click', () => {
-            document.getElementById('registration-form').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('registration-form').scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     </script>
-    
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"192c87cdce3a4ada85917427f34033cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"192c87cdce3a4ada85917427f34033cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

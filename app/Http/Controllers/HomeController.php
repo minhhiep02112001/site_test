@@ -32,7 +32,7 @@ class HomeController extends Controller
 
     public function dashboard(Request $request)
     {
-
+        return view('front_end.home', []);
         // get sản phẩm bestseller config từ admin:
         $data = [];
         $page = $request->page ?? 1;
@@ -56,7 +56,6 @@ class HomeController extends Controller
             'select' => ['id', 'title', 'slug', 'thumbnail', 'description'],
         ]);
         $data['banners'] = Banner::getType('home');
-        return view('front_end.home', $data);
     }
 
     public function post($slug, $id = 0)
