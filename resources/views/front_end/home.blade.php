@@ -598,9 +598,8 @@
         </div>
     </section>
 
-    <section class="py-20 relative overflow-hidden">
+    <section class="relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden" style="background: #2e2c2c">
                 <div class="flex flex-col lg:flex-row items-center justify-between">
                     <div class="text-center text-align: justify; text-[#fff] lg:text-left mb-8 lg:mb-0">
