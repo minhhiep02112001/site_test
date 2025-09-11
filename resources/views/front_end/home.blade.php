@@ -601,19 +601,19 @@
     <section class="py-20 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
-            <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
+            <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden" style="background: #2e2c2c">
                 <div class="flex flex-col lg:flex-row items-center justify-between">
-                    <div class="text-center lg:text-left mb-8 lg:mb-0">
-                        <p class="  mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...</p>
-                        <p class=" mb-2">Kể cả khi bạn mua được loại vang nhập khẩu nguyên chai
-                            thì bạn vẫn sẽ có những vấn đề, vì với rượu vang chưa hẳn đắt tiền đã là ngon.</p>
+                    <div class="text-center text-align: justify; text-[#fff] lg:text-left mb-8 lg:mb-0">
+                        <p class=" text-[#f5e900]  mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...</p>
+                        <h3 class="text-2xl font-bold text-[#fff]  mb-2">Kể cả khi bạn mua được loại vang nhập khẩu nguyên chai
+                            thì bạn vẫn sẽ có những vấn đề, vì với rượu vang chưa hẳn đắt tiền đã là ngon.</h3>
                         <p class="  mb-2">
                             QUAN TRỌNG nhất khi lựa chọn rượu vang là phải phù hợp với khẩu vị của bạn chứ không hẳn là
                             đắt tiền và cấp độ cao, điều này được thể hiện rõ nhất với hai yếu tố:
 
                         </p>
-                        <p class="  mb-2">- Giống nho</p>
-                        <p class="  mb-2">- Khí hậu, thổ nhưỡng của vùng trồng nho</p>
+                        <p class="text-[#f5e900]  mb-2">- Giống nho</p>
+                        <p class=" text-[#f5e900] mb-2">- Khí hậu, thổ nhưỡng của vùng trồng nho</p>
                         <p class="  mb-2">
                             Do đó khi mua rượu vang, bạn cần quan tâm những yếu tố này trên nhãn chai rượu vang rồi mới
                             là giá tiền. </p>
