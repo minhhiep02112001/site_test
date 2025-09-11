@@ -181,8 +181,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo"
-                        class="h-12 md:h-16 w-auto p-1">
+                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-12 md:h-16 w-auto p-1">
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="#ve-chung-toi" class="text-primary hover:text-primary/80 transition-colors font-medium">Về
@@ -251,8 +250,7 @@
                 <div>
                     <div class="product-info">
                         <div class="product-info-slide active">
-                            <h2 class="  text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
-                                style="line-height: 1.4;">
+                            <h2 class="  text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6" style="line-height: 1.4;">
                                 <div><i class="text-3xl">Bạn lo sợ...</i></div>
                                 <div>
                                     <span class="text-primary ">Mua phải rượu vang</span>
@@ -292,8 +290,7 @@
                             </div>
                         </div>
                         <div class="product-info-slide hidden">
-                             <h2 class="  text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6"
-                                style="line-height: 1.4;">
+                            <h2 class="  text-4xl lg:text-5xl font-bold text-[#0E5E22] mb-6" style="line-height: 1.4;">
                                 <div><i class="text-3xl">Bạn lo sợ...</i></div>
                                 <div>
                                     <span class="text-primary ">Mua phải rượu vang</span>
@@ -600,6 +597,39 @@
             </div>
         </div>
     </section>
+
+    <section class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+            <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <div class="text-center lg:text-left mb-8 lg:mb-0">
+                        <p class="  mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...</p>
+                        <p class=" mb-2">Kể cả khi bạn mua được loại vang nhập khẩu nguyên chai
+                            thì bạn vẫn sẽ có những vấn đề, vì với rượu vang chưa hẳn đắt tiền đã là ngon.</p>
+                        <p class="  mb-2">
+                            QUAN TRỌNG nhất khi lựa chọn rượu vang là phải phù hợp với khẩu vị của bạn chứ không hẳn là
+                            đắt tiền và cấp độ cao, điều này được thể hiện rõ nhất với hai yếu tố:
+
+                        </p>
+                        <p class="  mb-2">- Giống nho</p>
+                        <p class="  mb-2">- Khí hậu, thổ nhưỡng của vùng trồng nho</p>
+                        <p class="  mb-2">
+                            Do đó khi mua rượu vang, bạn cần quan tâm những yếu tố này trên nhãn chai rượu vang rồi mới
+                            là giá tiền. </p>
+                        <p class="  mb-2">
+                            Và với những ưu đãi đi kèm trong Combo trên, bạn sẽ tận hưởng những chai rượu vang một cách
+                            trọng vẹn nhất.</p>
+                        <p class="  mb-2">
+                            Vì vậy...</p>
+
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
     <!-- Features Section -->
     <section id="features" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
