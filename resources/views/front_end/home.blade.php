@@ -387,11 +387,11 @@
                                     class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
                             </div>
                             <div class="product-slide w-full flex-shrink-0 pb-4">
-                                <img src="./assets/images/cac-loai-vang.png" alt="Vang Đỏ Cabernet"
+                                <img src="./assets/images/vang-gia.png" alt="Vang Đỏ Bordeaux"
                                     class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
                             </div>
                             <div class="product-slide w-full flex-shrink-0 pb-4">
-                                <img src="./assets/images/phan-biet-ruou.png" alt="Vang Đỏ Merlot"
+                               <img src="./assets/images/vang-gia.png" alt="Vang Đỏ Bordeaux"
                                     class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
                             </div>
                         </div>
@@ -650,7 +650,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Vì vậy...</h2>
                 <h3 class="text-5xl font-bold mb-4">Hãy đăng kí <span class="text-[#0E5E22]">COMBO</span></h3>
-                <h3 class="text-5xl font-bold text-[#0E5E22] mb-4"><del>2.370</del>.000VNĐ</h3>
+                <h3 class="text-5xl font-bold text-[#0E5E22] mb-4"><del>2.370.000 VNĐ</del></h3>
                 <h3 class="text-5xl font-bold mb-6">ngay hôm nay để được</h3>
                 <p class="text-2xl">
                     <span class="text-[#CD853F]">Nhận ưu đãi</span> <span class="text-[#0E5E22]">trọn bộ 06 chai rượu và quà tặng kèm</span> <span class="text-[#CD853F]">dưới đây</span>
@@ -825,7 +825,7 @@
                     </form>
                     <div class="mt-4 space-y-2 text-center">
                         <a href="./uu-dai-dac-biet"
-                            class="block bg-[#990e06] text-white px-6 py-2 rounded-md font-medium">
+                            class="block bg-[#990e06] text-white px-6 py-2 rounded-md font-medium uppercase">
                             Không, TÔI MUỐN ƯU ĐÃI KHÁC
                         </a>
                     </div>

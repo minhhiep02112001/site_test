@@ -98,12 +98,7 @@
             border-radius: 8px;
             text-align: center;
         }
-
-        .countdown-unit span {
-            display: block;
-            font-size: 0.875rem;
-            color: #666;
-        }
+ 
 
         .wine-badge {
             background: linear-gradient(135deg, #8B1538 0%, #A61D4D 100%);
@@ -268,15 +263,20 @@
                         class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
                         <i class="ri-arrow-left-line text-primary ri-lg"></i>
                     </a>
-                    <h1 class="font-playfair text-xl font-bold text-gray-900">Ưu Đãi Đặc Biệt</h1>
+                    <h1 class="hidden md:flex font-playfair text-xl font-bold text-gray-900">Ưu Đãi Đặc Biệt</h1>
                 </div>
 
                 <div class="flex items-center">
                     <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
-                </div> 
-                <a href="#registration-form" class=" w-[100px] whitespace-nowrap p-4 h-8 flex items-center justify-center text-primary">
-                    Đăng ký ngay
-                </a>
+                </div>
+                <button type="button"
+                    class="w-[120px] md:w-[200px] bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white  py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <a href="#registration-form"
+                        class="  text-white p-4 h-8 flex items-center justify-center ">
+                        Đăng ký ngay
+                    </a> </button>
+
+
             </div>
         </div>
     </header>
@@ -316,7 +316,7 @@
                     <h3 class="font-playfair text-4xl font-extrabold text-[#fff] mb-8 text-center animate-pulse">Và đây
                         là 8 ưu đãi bạn nhận được khi mua Combo này:</h3>
                     <ol class="list-decimal list-inside space-y-6 text-gray-800 mb-10 text-lg grid gap-4">
-                        <li  
+                        <li
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Giảm 10%, giá chỉ còn 1.350.000/chai, tổng Thanh Toán chỉ là 8.100.000VNĐ</li>
                         <li style="margin-top:5px!important;"
@@ -344,7 +344,7 @@
                         class="bg-gradient-to-r from-wineRed/10  to-secondary/10 p-8 rounded-2xl text-center mb-10 shadow-lg transform hover:shadow-2xl transition-shadow duration-500">
                         <h3 class="font-bold text-3xl text-[#fff] mb-4 animate-bounce">Tổng giá trị quà tặng:
                             5.868.000VNĐ</h3>
-                        <p class="text-xl text-gray-800 mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
+                        <p class="text-xl  text-[#fff] mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
                             chúng tôi với chỉ một lần thanh toán 8.100.000VNĐ duy nhất.</p>
                         <button id="buy-now-btn"
                             class="bg-wineRed hover:bg-wineRed/80 text-white px-10 py-5 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-110 animate-pulse">
@@ -363,7 +363,7 @@
                     <h2 class="font-playfair text-4xl font-extrabold text-[#fff] mb-8 text-center animate-fade-in">Sản
                         phẩm này giành cho ai:</h2>
                     <ul class="list-disc list-inside space-y-5 text-gray-800 mb-10 text-lg grid gap-4">
-                        <li 
+                        <li
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Các Doanh nhân muốn có một sản phẩm đẳng cấp và nâng tầm giao tiếp trên bàn tiệc.</li>
                         <li style="margin-top:5px!important;"
@@ -388,131 +388,33 @@
                     <div id="countdown" class="countdown-timer mb-10 flex justify-center gap-6">
                         <div
                             class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
-                            <span id="hours">00</span><span class="block text-sm">Giờ</span>
+                            <span id="hours " class="text-[#fff]">00</span><span
+                                class="block text-sm text-[#fff]">Giờ</span>
                         </div>
                         <div
                             class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
-                            <span id="minutes">00</span><span class="block text-sm">Phút</span>
+                            <span id="minutes" class="text-[#fff]">00</span><span
+                                class="block text-sm text-[#fff]">Phút</span>
                         </div>
                         <div
                             class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
-                            <span id="seconds">00</span><span class="block text-sm">Giây</span>
+                            <span id="seconds" class="text-[#fff]">00</span><span
+                                class="block text-sm text-[#fff]">Giây</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Gallery & Testimonials -->
-        <!-- <section id="gallery" class="py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
-        <div class="absolute inset-0 opacity-25"
-            style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="text-center mb-16">
-                <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                    Thư Viện & <span class="text-primary">Đánh Giá</span>
-                </h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <img src="./assets/uploads/thu-vien-1.jpg" alt="Bữa tối sang trọng"
-                    class="w-full h-auto object-top object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <img src="./assets/uploads/thu-vien-2.jpg" alt="Hầm rượu"
-                    class="w-full h-auto object-top object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <img src="./assets/uploads/thu-vien-3.jpg" alt="Sự kiện thưởng thức"
-                    class="w-full h-auto object-top object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <img src="./assets/uploads/thu-vien-4.jpg" alt="Bữa tối sang trọng"
-                    class="w-full h-auto object-top object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <img src="./assets/uploads/thu-vien-5.jpg" alt="Hầm rượu"
-                    class="w-full h-auto object-top object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <img src="./assets/uploads/thu-vien-6.jpg" alt="Sự kiện thưởng thức"
-                    class="w-full h-auto object-top object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-secondary">
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">
-                        "Hương vị tuyệt vời, rất phù hợp cho những bữa tiệc quan trọng.
-                        Chất lượng vượt trội so với giá tiền."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                            <i class="ri-user-line text-white ri-lg"></i>
-                        </div>
-                        <div>
-                            <h5 class="font-semibold text-gray-900">Nguyễn Minh Hạnh</h5>
-                            <p class="text-sm text-gray-600">Chủ nhà hàng</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-secondary">
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">
-                        "Đây là chai vang tôi luôn chọn cho những dịp đặc biệt.
-                        Hương vị phong phú và dư vị kéo dài rất ấn tượng."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                            <i class="ri-user-line text-white ri-lg"></i>
-                        </div>
-                        <div>
-                            <h5 class="font-semibold text-gray-900">Trần Quốc Bảo</h5>
-                            <p class="text-sm text-gray-600">Chuyên gia ẩm thực</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-secondary">
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                            <i class="ri-star-fill ri-lg"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">
-                        "Giao hàng nhanh chóng, đóng gói cẩn thận.
-                        Sản phẩm chất lượng cao, tôi sẽ tiếp tục ủng hộ."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                            <i class="ri-user-line text-white ri-lg"></i>
-                        </div>
-                        <div>
-                            <h5 class="font-semibold text-gray-900">Lê Thị Phương</h5>
-                            <p class="text-sm text-gray-600">Khách hàng thân thiết</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
         <!-- Registration Form -->
         <section id="registration-form"
             class="py-16 relative overflow-hidden bg-gradient-to-br from-wineRed/10 to-secondary/10">
             <div class="wave-animation opacity-50"></div>
             <div class="wave-animation" style="animation-duration: 12s; opacity: 0.3;"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="font-playfair text-4xl font-extrabold text-wineRed mb-10 text-center animate-pulse uppercase">Form
+                <h2
+                    class="font-playfair text-4xl font-extrabold text-wineRed mb-10 text-center animate-pulse uppercase">
+                    Form
                     Đăng
                     Ký</h2>
                 <form id="register-form"
@@ -533,7 +435,8 @@
                     </div>
                     <div class="relative">
                         <label
-                            class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Địa chỉ nhận hàngl</label>
+                            class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Địa
+                            chỉ nhận hàngl</label>
                         <input type="text" name="email" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
@@ -558,9 +461,10 @@
                 </form>
             </div>
         </section>
-        <div id="cta-container" class="fixed bottom-4 right-4 z-50">
-            <div id="cta-full" class="flex flex-col bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
-                <div class="flex justify-end p-1">
+        <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
+            <div id="cta-full"
+                class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
+                <div class="hidden justify-end p-1 md:flex ">
                     <button id="cta-close" class="text-white hover:text-gray-300">
                         <i class="ri-close-line text-lg"></i>
                     </button>
@@ -568,12 +472,12 @@
                 <a href="tel:0988393000"
                     class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                     <i class="ri-phone-line text-2xl mb-1"></i>
-                    <span class="text-sm font-bold">Hotline HN</span>
+                    <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
                 </a>
                 <a href="tel:0904641325"
                     class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                     <i class="ri-phone-line text-2xl mb-1"></i>
-                    <span class="text-sm font-bold">Hotline SG</span>
+                    <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
                 </a>
                 <a href="https://zalo.me/0988393000"
                     class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
@@ -591,7 +495,6 @@
                 <i class="ri-chat-smile-3-line text-xl"></i>
             </button>
         </div>
-
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const fullCta = document.getElementById('cta-full');
