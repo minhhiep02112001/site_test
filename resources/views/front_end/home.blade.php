@@ -184,7 +184,7 @@
                     <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[80px] w-auto p-1">
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#ve-chung-toi"
+                    <a href="Javascript:void(0)" id="scrollBtn"
                         class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Về
                         chúng
                         tôi</a>
@@ -1038,6 +1038,19 @@
             updateSlide(0);
         });
     </script>
+    <script>
+document.getElementById("scrollBtn").addEventListener("click", function() {
+  const element = document.getElementById("ve-chung-toi");
+  const headerOffset = 80; // chiều cao header
+  const elementPosition = element.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+});
+</script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"192c87cdce3a4ada85917427f34033cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
