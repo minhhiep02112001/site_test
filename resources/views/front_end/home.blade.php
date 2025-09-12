@@ -203,7 +203,7 @@
                 </button>
             </div>
             <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
-                <a href="#ve-chung-toi"
+                <a href="Javascript:void(0)" id="scrollBtnMB"
                     class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Về
                     chúng tôi</a>
                 <a href="#product"
@@ -294,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                      
+
                     </div>
                 </div>
                 <div class="relative">
@@ -303,9 +303,9 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/images/vang-gia.png" alt="Vang Đỏ Bordeaux"
                                     class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
-                            </div> 
-                        </div> 
-                    </div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -322,7 +322,8 @@
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-center justify-between">
                     <div class="text-center lg:text-left mb-8 lg:mb-0">
-                        <p class="text-[20px]  mb-2">👉 Nghe thì giống nhau, nhưng sự thật lại KHÁC BIỆT một trời một vực:</p>
+                        <p class="text-[20px]  mb-2">👉 Nghe thì giống nhau, nhưng sự thật lại KHÁC BIỆT một trời một
+                            vực:</p>
                         <p class=" mb-2">✅ Vang nhập khẩu nguyên chai: Được sản xuất – đóng chai trực tiếp tại Pháp,
                             Ý, Chile…, vận chuyển về Việt Nam. Giữ nguyên hương vị, chuẩn chất lượng quốc tế.</p>
                         <p class="  mb-2"> ✅ ✅ Vang đóng chai tại VN: Rượu vang nhập về dạng bồn, sau đó đóng chai lại
@@ -335,12 +336,15 @@
                         <p class="  mb-2">3, Hàm lượng khí SULPHITES không được kiểm soát.</p>
                         <p class="  mb-2">💥 Vậy, làm sao để phân biệt khi 2 loại đều có tem, mác nhập khẩu giống hệt
                             nhau?</p>
-                        <p class="  mb-2">- Tem & nhãn mác: Vang nguyên chai thường có cấp độ rõ ràng, có chỉ dẫn địa lý
+                        <p class="  mb-2">- Tem & nhãn mác: Vang nguyên chai thường có cấp độ rõ ràng, có chỉ dẫn địa
+                            lý
                             và có trên các website của nước ngoài.</p>
-                        <p class="  mb-2">- Tem phụ: có ghi rõ ràng “nhập khẩu nguyên chai”, vang đóng chai chỉ ghi lách
+                        <p class="  mb-2">- Tem phụ: có ghi rõ ràng “nhập khẩu nguyên chai”, vang đóng chai chỉ ghi
+                            lách
                             luật: “rượu vang nhập khẩu”</p>
                         <p class="  mb-2">- Mức giá: Vang nhập khẩu nguyên chai thường cao hơn rõ rệt.</p>
-                        <p class="  mb-2">- Các chứng từ: Hoá đơn, Packing List, chứng nhận COA, công bố sản phẩm là các
+                        <p class="  mb-2">- Các chứng từ: Hoá đơn, Packing List, chứng nhận COA, công bố sản phẩm là
+                            các
                             giấy tờ bạn có thể yêu cầu bên bán. </p>
                         <p class="  mb-2">⚡️ CẢNH BÁO: Nếu bạn bỏ tiền triệu để mua vang “xịn” mà lại cầm về chai vang…
                             đóng ở VN thì đúng là mất tiền oan! Vậy nên ngoài các lưu ý trên thì hãy lựa chọn các địa
@@ -354,7 +358,7 @@
         </div>
     </section>
 
-    <section  id="ve-chung-toi" class="py-10 relative overflow-hidden">
+    <section id="ve-chung-toi" class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-white"></div>
         <div class="absolute inset-0"
             style="background: linear-gradient(135deg, rgba(139, 21, 56, 0.05) 0%, transparent 50%), linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%)">
@@ -365,14 +369,14 @@
             style="background: radial-gradient(circle at 30% 70%, #8B1538 0%, transparent 70%)"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6" >
+                <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                     Tại <span class="text-primary" style="line-height: 1.2;">The Best Wine </span>chúng tôi cam kết
                     chỉ
                     bán rượu vang nhập khẩu nguyên chai
                 </h2>
             </div>
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
-                <div class="flex flex-col lg:flex-row items-center justify-between" id="product" >
+                <div class="flex flex-col lg:flex-row items-center justify-between" id="product">
                     <div class="text-center lg:text-left mb-8 lg:mb-0">
                         <h3 class="text-4xl text-center font-playfair font-bold text-[#990F07] mb-4 uppercase">Ưu đãi
                             khi mua 6
@@ -465,16 +469,19 @@
                             <div class="absolute inset-0 opacity-10"
                                 style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                             </div>
-                            <h4 class="text-2xl font-bold text-red-900 mb-6 relative z-10 uppercase">Đăng ký nhận ưu đãi</h4>
+                            <h4 class="text-2xl font-bold text-red-900 mb-6 relative z-10 uppercase">Đăng ký nhận ưu
+                                đãi</h4>
                             <div class="space-y-4 relative z-10">
                                 <div>
-                                    <label class="block text-sm font-medium text-red-800 mb-1">Họ và tên <span class="text-danger">*</span></label>
+                                    <label class="block text-sm font-medium text-red-800 mb-1">Họ và tên <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" name="name" required
                                         class="w-full px-4 py-3 rounded-full border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                         placeholder="Nhập họ tên của bạn">
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-red-800 mb-1">Số điện thoại <span class="text-danger">*</span></label>
+                                    <label class="block text-sm font-medium text-red-800 mb-1">Số điện thoại <span
+                                            class="text-danger">*</span></label>
                                     <input type="tel" name="phone" required
                                         class="w-full px-4 py-3 rounded-full border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                         placeholder="Nhập số điện thoại">
@@ -494,7 +501,7 @@
                                 </div>
                                 <button type="submit"
                                     class="w-full uppercase bg-red-800 text-white px-6 py-4 rounded-full font-semibold whitespace-nowrap">
-                                     ĐĂNG KÝ NGAY
+                                    ĐĂNG KÝ NGAY
                                 </button>
                             </div>
                         </form>
@@ -509,7 +516,8 @@
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-center justify-between">
                     <div class="text-center text-align: justify; text-[#000] lg:text-left mb-8 lg:mb-0">
-                        <p class=" text-[#001dfa]  font-bold text-2xl   mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...</p>
+                        <p class=" text-[#001dfa]  font-bold text-2xl   mb-2">TUY NHIÊN, BẠN CẦN PHẢI BIẾT ĐIỀU NÀY...
+                        </p>
                         <h3 class="text-3xl font-bold  mb-2">Kể cả khi bạn mua được loại vang nhập khẩu nguyên chai
                             thì bạn vẫn sẽ có những vấn đề, vì với rượu vang chưa hẳn đắt tiền đã là ngon.</h3>
                         <p class="  mb-2">
@@ -525,7 +533,7 @@
                         <p class="  mb-2">
                             Và với những ưu đãi đi kèm trong Combo trên, bạn sẽ tận hưởng những chai rượu vang một cách
                             trọng vẹn nhất.</p>
-                         
+
                     </div>
                 </div>
             </div>
@@ -550,7 +558,8 @@
                 <h3 class="text-5xl font-bold text-[#0E5E22] mb-4"><del>2.370.000 VNĐ</del></h3>
                 <h3 class="text-5xl font-bold mb-6">ngay hôm nay để được</h3>
                 <p class="text-2xl">
-                    <span class="text-[#CD853F]">Nhận ưu đãi</span> <span class="text-[#0E5E22]">trọn bộ 06 chai rượu và quà tặng kèm</span> <span class="text-[#CD853F]">dưới đây</span>
+                    <span class="text-[#CD853F]">Nhận ưu đãi</span> <span class="text-[#0E5E22]">trọn bộ 06 chai rượu
+                        và quà tặng kèm</span> <span class="text-[#CD853F]">dưới đây</span>
                 </p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -685,25 +694,29 @@
                         <h4 class="text-2xl font-bold text-red-900 mb-6 relative z-10">THÔNG TIN ĐẶT HÀNG</h4>
                         <div class="space-y-4 relative z-10">
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">Họ và Tên <span class="text-danger">*</span></label>
+                                <label class="block text-sm font-medium text-red-800 mb-1">Họ và Tên <span
+                                        class="text-danger">*</span></label>
                                 <input type="text" name="name" required
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                     placeholder="">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">Số Điện Thoại <span class="text-danger">*</span></label>
+                                <label class="block text-sm font-medium text-red-800 mb-1">Số Điện Thoại <span
+                                        class="text-danger">*</span></label>
                                 <input type="tel" name="phone" required
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                     placeholder="">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">Địa Chỉ Nhận Hàng <span class="text-danger">*</span></label>
+                                <label class="block text-sm font-medium text-red-800 mb-1">Địa Chỉ Nhận Hàng <span
+                                        class="text-danger">*</span></label>
                                 <input type="text" name="address" required
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                     placeholder="">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">Số Lượng combo <span class="text-danger">*</span></label>
+                                <label class="block text-sm font-medium text-red-800 mb-1">Số Lượng combo <span
+                                        class="text-danger">*</span></label>
                                 <input type="number" name="quantity" required min="1"
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                     placeholder="">
@@ -814,7 +827,8 @@
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
                             thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
                             để khách hàng lựa chọn các sản phẩm rượu vang nhập khẩu chính hãng uy tín và chất lượng.</p>
-                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết sự
+                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết
+                            sự
                             lựa chọn của khách hàng ở The Best Wine sẽ luôn là TỐT NHẤT.</p>
                     </div>
                 </div>
@@ -1039,18 +1053,29 @@
         });
     </script>
     <script>
-document.getElementById("scrollBtn").addEventListener("click", function() {
-  const element = document.getElementById("ve-chung-toi");
-  const headerOffset = 80; // chiều cao header
-  const elementPosition = element.getBoundingClientRect().top;
-  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        document.getElementById("scrollBtn").addEventListener("click", function() {
+            const element = document.getElementById("ve-chung-toi");
+            const headerOffset = 80; // chiều cao header
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth"
-  });
-});
-</script>
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+        document.getElementById("scrollBtnMB").addEventListener("click", function() {
+            const element = document.getElementById("ve-chung-toi");
+            const headerOffset = 80; // chiều cao header
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+    </script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"192c87cdce3a4ada85917427f34033cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
