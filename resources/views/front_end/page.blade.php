@@ -613,7 +613,7 @@
             </div>
             <div class="border-t border-red-200 pt-8">
                 <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img src="./assets/logo/logo-vuong.png" alt="The Best Wine Logo"
+                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo"
                         class="w-40 h-40 object-contain shadow-md">
                     <div class="text-red-800 text-lg leading-relaxed">
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
