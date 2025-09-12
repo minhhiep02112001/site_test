@@ -98,7 +98,7 @@
             border-radius: 8px;
             text-align: center;
         }
- 
+
 
         .wine-badge {
             background: linear-gradient(135deg, #8B1538 0%, #A61D4D 100%);
@@ -271,8 +271,7 @@
                 </div>
                 <button type="button"
                     class="w-[120px] md:w-[200px] bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white  py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    <a href="#registration-form"
-                        class="  text-white p-4 h-8 flex items-center justify-center ">
+                    <a href="#registration-form" class="  text-white p-4 h-8 flex items-center justify-center ">
                         Đăng ký ngay
                     </a> </button>
 
@@ -302,7 +301,6 @@
                     Rượu được ủ 12 tháng trong thùng gỗ sồi mới của Pháp nên có màu của Ruby hồng ngọc đậm đặc,
                     hương thơm của anh đào đen, violet, cam thảo, sô cô la, và cà phê..., cấu trúc rượu mềm mại với
                     tannin chát mịn, hậu vị sâu và hài hòa.”
-                    <footer class="mt-2 text-right">Andrea Bernardini<br>(Nhà sản xuất rượu Elettra)</footer>
                 </blockquote>
             </div>
         </section>
@@ -319,22 +317,22 @@
                         <li
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Giảm 10%, giá chỉ còn 1.350.000/chai, tổng Thanh Toán chỉ là 8.100.000VNĐ</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4  rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 06 bộ hộp túi Elettra</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 06c rượu vang nhập khẩu Bronzeo</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 01 bộ ly Pha Lê Bohemia 06 chiếc</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 01 Decanter Pha Lê Bohemia</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng kèm 01 mở chai cao cấp</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng 1 buổi miễn phí thử rượu và tư vấn nghệ thuật thuởng thức rượu vang trên bàn tiệc với 6
                             loại rượu khác nhau, cùng chuyên gia rượu vang hơn 10 năm kinh nghiệm của The Best Wine.
@@ -366,7 +364,7 @@
                         <li
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Các Doanh nhân muốn có một sản phẩm đẳng cấp và nâng tầm giao tiếp trên bàn tiệc.</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Quý khách hàng hay phải tiếp khách mà cần uống rượu một cách văn minh, có lợi cho sức khỏe.
                         </li>
@@ -374,11 +372,11 @@
                     <h2 class="font-playfair text-4xl font-extrabold text-[#fff] mb-4 text-center animate-fade-in">
                         Những lưu ý khi bạn mua hàng của The Best Wine:</h2>
                     <ul class="list-disc list-inside space-y-5 text-gray-800 mb-10 text-lg grid gap-4">
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 mb-2 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Điều tuyệt vời là chúng tôi sẵn sàng đổi trả sản phẩm nếu quý khách không hài lòng khi sử
                             dụng.</li>
-                        <li style="margin-top:5px!important;"
+                        <li style="margin-top:-5px!important;"
                             class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             Tặng thêm 01 chai Elettra Primitivo khi bạn giới thiệu khách hàng hoặc mua thêm 1 Combo thứ
                             2.</li>
@@ -388,7 +386,7 @@
                     <div id="countdown" class="countdown-timer mb-10 flex justify-center gap-6">
                         <div
                             class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
-                            <span id="hours " class="text-[#fff]">00</span><span
+                            <span id="hours" class="text-[#fff]">00</span><span
                                 class="block text-sm text-[#fff]">Giờ</span>
                         </div>
                         <div
@@ -436,7 +434,7 @@
                     <div class="relative">
                         <label
                             class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Địa
-                            chỉ nhận hàngl</label>
+                            chỉ nhận hàng</label>
                         <input type="text" name="email" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
@@ -651,6 +649,8 @@
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                console.log(hours, minutes,seconds);
+                
                 document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
                 document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
                 document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
