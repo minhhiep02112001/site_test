@@ -607,7 +607,7 @@
                     Lý do khách hàng <span class="text-primary">chọn chúng tôi</span>
                 </h2>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-4">
                 <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-center mb-4">
                         <i class="ri-checkbox-circle-line text-primary text-4xl"></i>
@@ -808,7 +808,7 @@
             </div>
             <div class="border-t border-red-200 pt-8">
                 <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img src="./assets/logo/logo-vuong.png" alt="The Best Wine Logo"
+                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo"
                         class="w-40 h-40 object-contain shadow-md">
                     <div class="text-red-800 text-lg leading-relaxed">
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật

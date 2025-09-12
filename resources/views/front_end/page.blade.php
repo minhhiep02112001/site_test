@@ -267,11 +267,11 @@
                 </div>
 
                 <div class="flex items-center">
-                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
+                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
                 </div>
                 <button type="button"
                     class="w-[120px] md:w-[200px] bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white  py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    <a href="#registration-form" class="  text-white p-4 h-8 flex items-center justify-center ">
+                    <a href="#registration-form" class="uppercase  text-white p-4 h-8 flex items-center justify-center ">
                         Đăng ký ngay
                     </a> </button>
 
