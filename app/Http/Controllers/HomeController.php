@@ -41,6 +41,7 @@ class HomeController extends Controller
             Mail::to($receiverEmail)->send(new \App\Mail\SendEmailBooking($booking));
             return response()->json(['status' => 'success'], 200);
         } catch (\Exception $ex) {
+            dd($ex);
             return response()->json(['status' => 'error'], 500);
         }
     }
