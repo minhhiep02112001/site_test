@@ -2,8 +2,8 @@
 return [
 
 
-    'email_receiver_1' => "thuongdn13@gmail.com",
-    'email_receiver_2' => "thuongdnft@gmail.com",
+    'email_receiver_1' => "chuminhhiep0394599501@gmail.com",
+    'email_receiver_2' => "chuminhhiep0394599501@gmail.com",
 
 
 
