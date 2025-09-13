@@ -7,6 +7,7 @@
     <title>Ưu Đãi Đặc Biệt - Elletra Primitivo</title>
     <link rel="icon" type="image/png" href="./assets/logo/logo-thebestwine-ico.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <meta name="csrf_token" value="{{ csrf_token() }}">
     <script>
         tailwind.config = {
             theme: {
@@ -271,7 +272,8 @@
                 </div>
                 <button type="button"
                     class="w-[120px] md:w-[200px] bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white  py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    <a href="#registration-form" class="uppercase  text-white p-4 h-8 flex items-center justify-center ">
+                    <a href="#registration-form"
+                        class="uppercase  text-white p-4 h-8 flex items-center justify-center ">
                         Đăng ký ngay
                     </a> </button>
 
@@ -415,8 +417,10 @@
                     Form
                     Đăng
                     Ký</h2>
-                <form id="register-form"
+                <form id="register-form" action="{{ route('booking') }}" method="post"
+                    data-redirect="{{ route('page') }}"
                     class="bg-[#990e06]  text-[#fff] backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-wineRed/20 space-y-6 max-w-xl mx-auto transform hover:scale-102 transition-all duration-500">
+                    <input type="hidden" name="form_type" value="form_2">
                     <div class="relative">
                         <label
                             class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Họ
@@ -435,20 +439,21 @@
                         <label
                             class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Địa
                             chỉ nhận hàng</label>
-                        <input type="text" name="email" required
+                        <input type="text" name="address" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
+                    
                     <div class="relative">
                         <label
                             class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Số
                             lượng Combo</label>
-                        <input type="number" name="quantity" min="1" required
-                            class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
+                        <input type="number" name="count_combo" min="1" required
+                            class="w-full px-6 py-3 border text-[#333] border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
                     <div class="relative">
                         <label class="block text-base font-medium text-[#fff] mb-2">Ghi chú</label>
                         <textarea name="note" rows="5"
-                            class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white resize-none"></textarea>
+                            class="w-full px-6 py-3 border text-[#333] border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white resize-none"></textarea>
                     </div>
                     <button type="submit"
                         class="w-full bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -518,6 +523,7 @@
                 0%,
                 100% {
                     transform: scale(1);
+                    register-form
                 }
 
                 50% {
@@ -530,24 +536,54 @@
             }
         </style>
 
-        <script>
-            document.getElementById('register-form').addEventListener('submit', (e) => {
-                e.preventDefault();
-                const submitBtn = e.target.querySelector('button[type="submit"]');
-                const originalText = submitBtn.querySelector('span').textContent;
-                submitBtn.querySelector('span').textContent = 'Đang gửi...';
-                submitBtn.disabled = true;
-                submitBtn.classList.add('opacity-75');
-                setTimeout(() => {
-                    const toast = document.getElementById('toast');
-                    toast.textContent = 'Đã gửi đăng ký thành công!';
-                    toast.classList.add('show');
-                    submitBtn.querySelector('span').textContent = originalText;
-                    submitBtn.disabled = false;
-                    submitBtn.classList.remove('opacity-75');
-                    e.target.reset();
-                    setTimeout(() => toast.classList.remove('show'), 3000);
-                }, 1000);
+        <script id="form-handling">
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('register-form');
+                const csrf_token = document.querySelector('meta[name="csrf_token"]')?.getAttribute('value');
+                const toast = document.getElementById('toast');
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    let status = false;
+                    const redirect = form.getAttribute('data-redirect');
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Đang xử lý...';
+                    submitButton.disabled = true;
+                    const formData = new FormData(form);
+                    toast.classList.remove('hidden');
+                    try {
+                        const response = await fetch(form.action, {
+                            method: form.method,
+                            headers: {
+                                'X-CSRF-TOKEN': csrf_token
+                            },
+                            body: formData
+                        });
+                        if (response.ok) {
+                            toast.textContent = 'Đã gửi đăng ký thành công!';
+                            toast.classList.add('show');
+                            form.reset();
+                            const result = await response.json();
+                            if (result.status == 'success') {
+                                status = true;
+                            }
+                        } else {
+                            toast.textContent = 'Có lỗi xảy ra, vui lòng thử lại!';
+                            toast.classList.add('show');
+                        }
+                    } catch (error) {
+                        toast.textContent = 'Lỗi kết nối!';
+                        toast.classList.add('show');
+                    }
+                    setTimeout(() => {
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                        if (status) window.location.href = redirect;
+                        toast.classList.remove('show');
+                        toast.classList.add('hidden');
+                    }, 3000);
+                    return;
+                });
             });
         </script>
 
@@ -649,8 +685,8 @@
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                console.log(hours, minutes,seconds);
-                
+                console.log(hours, minutes, seconds);
+
                 document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
                 document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
                 document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');

@@ -1,5 +1,12 @@
 <?php
 return [
+
+
+    'email_receiver_1' => "chuminhhiep0394599501@gmail.com",
+    'email_receiver_2' => "chuminhhiep0394599501@gmail.com",
+
+
+
     'limit_paginate_admin' => 10,
     'config_menu' => [
         'Header',
@@ -36,18 +43,6 @@ return [
         2 => ['title' => 'Mới cào', 'class' => "badge badge-primary"],
         3 => ['title' => 'Chờ cào', 'class' => "badge badge-secondary"],
         4 => ['title' => 'Bị từ chối', 'class' => "badge badge-danger"],
-    ],
-
-    'status_crawler' => [
-        0 => ['title' => 'Chờ crawler', 'class' => "badge badge-secondary"],
-        1 => ['title' => 'Chờ đồng bộ', 'class' => "badge badge-warning"],
-        2 => ['title' => 'Thành công', 'class' => "badge badge-success"],
-        3 => ['title' => 'Crawler lỗi', 'class' => "badge badge-danger"],
-    ],
-    'status_keyword' => [
-        0 => ['title' => 'Chờ crawler', 'class' => "badge badge-secondary"],
-        1 =>  ['title' => 'Thành công', 'class' => "badge badge-success"],
-        2 => ['title' => 'Crawler lỗi', 'class' => "badge badge-danger"],
     ],
 
 ];

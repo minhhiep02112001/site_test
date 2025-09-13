@@ -7,6 +7,9 @@
     <title>Vang Đỏ Cao Cấp Bronzeo- The Best Wine</title>
     <link rel="icon" type="image/png" href="./assets/uploads/logo.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+    <meta name="csrf_token" value="{{ csrf_token() }}">
+
     <script>
         tailwind.config = {
             theme: {
@@ -464,11 +467,12 @@
                         </div>
                     </div>
                     <div>
-                        <form
+                        <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
                             class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-3xl shadow-xl relative overflow-hidden">
                             <div class="absolute inset-0 opacity-10"
                                 style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                             </div>
+                            <input type="hidden" name="form_type" value="form_1">
                             <h4 class="text-2xl font-bold text-red-900 mb-6 relative z-10 uppercase">Đăng ký nhận ưu
                                 đãi</h4>
                             <div class="space-y-4 relative z-10">
@@ -683,8 +687,10 @@
             <div class="bg-white rounded-xl p-8 text-center max-w-3xl mx-auto mb-8">
                 <h4 class="text-3xl font-bold text-[#B91C1C] mb-8">THÔNG TIN ĐẶT HÀNG</h4>
                 <div class="space-y-8">
-                    <form
+                    <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
                         class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-xl mt-8 text-left relative overflow-hidden">
+                        @csrf
+                        <input type="hidden" name="form_type" value="form_2">
                         <div class="absolute inset-0 opacity-10"
                             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                         </div>
@@ -717,7 +723,7 @@
                             <div>
                                 <label class="block text-sm font-medium text-red-800 mb-1">Số Lượng combo <span
                                         class="text-danger">*</span></label>
-                                <input type="number" name="quantity" required min="1"
+                                <input type="number" name="count_combo" required min="1"
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
                                     placeholder="">
                             </div>
@@ -984,29 +990,52 @@
     <script id="form-handling">
         document.addEventListener('DOMContentLoaded', function() {
             const forms = document.querySelectorAll('form');
+            const csrf_token = document.querySelector('meta[name="csrf_token"]')?.getAttribute('value');
             const toast = document.getElementById('toast');
             forms.forEach(form => {
-                form.addEventListener('submit', function(e) {
+                form.addEventListener('submit', async function(e) {
                     e.preventDefault();
+                    let status = false;
+                    const redirect = form.getAttribute('data-redirect');
+
                     const submitButton = this.querySelector('button[type="submit"]');
                     const originalText = submitButton.textContent;
                     submitButton.textContent = 'Đang xử lý...';
                     submitButton.disabled = true;
-                    setTimeout(() => {
-                        toast.textContent =
-                            'Cảm ơn bạn đã đăng ký Combo 1 của chúng tôi! Bạn được nhận thêm một combo 2';
+                    const formData = new FormData(form);
+                    toast.classList.remove('hidden');
+                    try {
+                        const response = await fetch(form.action, {
+                            method: form.method,
+                            headers: {
+                                'X-CSRF-TOKEN': csrf_token
+                            },
+                            body: formData
+                        });
+                        if (response.ok) {
+                            toast.textContent = 'Cảm ơn bạn đã đăng ký combo của chúng tôi!';
+                            toast.classList.add('show');
+                            form.reset();
+                            const result = await response.json(); 
+                            if (result.status == 'success') {
+                                status = true;
+                            }
+                        } else {
+                            toast.textContent = 'Có lỗi xảy ra, vui lòng thử lại!';
+                            toast.classList.add('show');
+                        }
+                    } catch (error) {
+                        toast.textContent = 'Lỗi kết nối!';
                         toast.classList.add('show');
-                        this.reset();
+                    } 
+                    setTimeout(() => {
                         submitButton.textContent = originalText;
                         submitButton.disabled = false;
-                        setTimeout(() => {
-                            toast.classList.remove('show');
-                            setTimeout(() => {
-                                window.location.href =
-                                    './uu-dai-dac-biet.php';
-                            }, 500);
-                        }, 3000);
-                    }, 1500);
+                        if (status) window.location.href = redirect;
+                        toast.classList.remove('show');
+                        toast.classList.add('hidden');
+                    }, 3000);
+                    return;
                 });
             });
         });
@@ -1035,19 +1064,6 @@
                 currentSlide = index;
             }
 
-            prevBtn.addEventListener('click', () => {
-                const newIndex = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateSlide(newIndex);
-            });
-
-            nextBtn.addEventListener('click', () => {
-                const newIndex = (currentSlide + 1) % totalSlides;
-                updateSlide(newIndex);
-            });
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => updateSlide(index));
-            });
 
             updateSlide(0);
         });

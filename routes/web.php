@@ -1,6 +1,5 @@
 <?php
-
-use App\Http\Controllers\AjaxController;
+ 
 use App\Http\Controllers\ResizeImageController;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
@@ -112,23 +111,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => [
 
     Route::get('logout', [App\Http\Controllers\Admin\AuthController::class, 'logout'])->name('logout');
 });
-
-
-// Route::get('/sitemap_news.xml', function () {
-//     $posts =  \App\Models\Post::where([
-//         'is_status' => 1,
-//     ])->orderBy('updated_at', 'desc')->limit(100)->offset(0)->get();
-//     return response()->view('front_end.sitemap.sitemap_new', ['data' => $posts])->header('Content-Type', 'text/xml');
-// });
-
-Route::get('/rss', [App\Http\Controllers\FeedController::class, 'feed_rss'])->name('google-news');
-Route::get('/feeds/pinterestxxx.xml', [App\Http\Controllers\FeedController::class, 'pinterestxxx'])->name('pinterestxxx');
-Route::get('/feeds/rssxxx.xml', [App\Http\Controllers\FeedController::class, 'rssxxx'])->name('rssxxx');
-
+ 
 
 Route::group([
-    'middleware' => ['redirect_301']
+    // 'middleware' => ['redirect_301']
 ], function () {
     Route::get('/',  [App\Http\Controllers\HomeController::class, 'dashboard'])->name('home')->middleware('cacheResponse:300');
+    Route::post('/booking',  [App\Http\Controllers\HomeController::class, 'booking'])->name('booking');
     Route::get('/uu-dai-dac-biet', [App\Http\Controllers\HomeController::class, 'page'])->name('page')->where(['slug' => '[a-z0-9-_]+']);
 });
