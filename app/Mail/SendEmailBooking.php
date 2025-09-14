@@ -53,6 +53,7 @@ class SendEmailBooking extends Mailable
             'phone' => $this->booking->phone,
             'address' => $this->booking->address,
             'email' => $this->booking->email,
+            'form' => $this->booking->form_type,
             'note' => $this->booking->note,
             'count_combo' => $this->booking->count_combo,
         ];
