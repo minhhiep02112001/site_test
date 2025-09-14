@@ -593,7 +593,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex flex-col md:flex-row items-start gap-8 mb-16">
                 <div class="w-full md:w-1/3">
-                    <img src="./assets/logo/logo-thebestwine-official.png" alt="Rượu Nhập Logo" class="h-24 mb-6">
+                    <img src="/assets/logo/logo-thebestwine-official.png" alt="Rượu Nhập Logo" class="h-24 mb-6">
                     <div class="space-y-4">
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH HÀ NỘI</h3>
@@ -649,7 +649,7 @@
             </div>
             <div class="border-t border-red-200 pt-8">
                 <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo"
+                    <img src="/assets/uploads/logo_footer.png" alt="The Best Wine Logo"
                         class="w-40 h-40 object-contain shadow-md">
                     <div class="text-red-800 text-lg leading-relaxed">
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
