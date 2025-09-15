@@ -184,21 +184,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex items-center justify-between h-[80px]">
                 <div class="flex items-center">
-                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[80px] w-auto p-1">
+                    <a href="/">
+                        <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[80px] w-auto p-1">
+                    </a>
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="Javascript:void(0)" id="scrollBtn"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Về
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Về
                         chúng
                         tôi</a>
                     <a href="#product"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Sản
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Sản
                         phẩm</a>
                     <a href="#features"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Khuyến
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Khuyến
                         Mại</a>
                     <a href="#contact"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium">Liên
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Liên
                         hệ</a>
                 </nav>
                 <button class="md:hidden w-8 h-8 flex items-center justify-center text-primary">
@@ -207,40 +209,41 @@
             </div>
             <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
                 <a href="Javascript:void(0)" id="scrollBtnMB"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Về
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Về
                     chúng tôi</a>
                 <a href="#product"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Sản phẩm</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Sản phẩm</a>
                 <a href="#features"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Khuyến Mại</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Khuyến Mại</a>
                 <a href="#contact"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center">Liên hệ</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên hệ</a>
             </nav>
         </div>
     </header>
     <!-- Wine Education Banner -->
     <section class=" flex items-center mt-[100px]">
         <div class="max-w-8xl mx-auto px-4 sm:px-8   ">
-            <div class="w-full max-w-[1100px] ">
-                <div class="flex flex-col md:flex-row items-center gap-10 h-full">
+            <div class="w-full max-w-[1200px] ">
+                <div class="flex flex-col md:flex-row items-center gap-10 h-full pl-[.5em] pr-[.5em]">
 
-                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-[2.2rem]  ml-auto mr-auto max-w-[750px] text-center  font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px]  "
+                    <h1 class="font-roboto-slab text-[#0E5E22] text-4xl sm:text-[4rem] md:text-[1.7rem] lg:text-[2rem]  ml-auto mr-auto text-center  font-bold leading-tight m-auto  p-4  shadow-2xl tracking-[1px]  "
                         style="line-height: 1.5;">
-                        <div class="text-center">PHÂN BIỆT RƯỢU VANG GIẢ,</div>
-                        <div class="text-center">RƯỢU VANG ĐÓNG CHAI TRONG NƯỚC VÀ RƯỢU VANG NHẬP KHẨU NGUYÊN CHAI</div>
+                        <div class="text-center">PHÂN BIỆT RƯỢU VANG GIẢ, RƯỢU VANG ĐÓNG CHAI TRONG NƯỚC VÀ RƯỢU VANG
+                            NHẬP KHẨU NGUYÊN CHAI</div>
                     </h1>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-12  md:min-h-[850px]  md:h-[850px] xl:h-screen flex items-center "
+    <section
+        class="py-12  md:min-h-[850px] lg:min-h-[1000px]  md:h-[850px] lg:h-[1050px] xl:h-screen flex items-center "
         style="background-image: url('./assets/images/bg-event.jpg'); background-size: cover; background-position: center;">
-        <div class="max-w-8xl mx-auto px-4 sm:px-8 lg:px-12 sm:mt-12 md:pt-16">
+        <div class="lg:w-[1200px] mx-auto px-0 md:px-2  sm:mt-12 md:pt-16 lg:mt-[-50px]">
             <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
                 <div class="w-full  ">
-                    <img src="https://static.readdy.ai/image/1f4438e38b74ed87371441e676e628ff/1a60f71912f8cd467f961b5cfb3accb7.jfif"
-                        alt="Cách đọc nhãn chai rượu vang" class="w-full rounded-2xl shadow-2xl object-cover h-[100%] ">
+                    <img src="./assets/uploads/photo_banner_info.jpg" alt="Cách đọc nhãn chai rượu vang"
+                        class="w-full rounded-2xl shadow-2xl object-cover h-[100%] ">
                 </div>
 
             </div>
@@ -304,7 +307,7 @@
                     <div class="product-carousel overflow-hidden">
                         <div class="product-slides flex transition-transform duration-300">
                             <div class="product-slide w-full flex-shrink-0 pb-4">
-                                <img src="./assets/images/vang-gia.png" alt="Vang Đỏ Bordeaux"
+                                <img src="./assets/uploads/vang-gia.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
                             </div>
                         </div>
@@ -392,7 +395,7 @@
                             vang Bronzeo nhập khẩu nguyên chai:</p>
                         <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-4">
                             <div class="text-center">
-                                <img src="./assets/images/ruou-vang.png" alt="Bộ ly Pha Lê Bohemia 06 chiếc"
+                                <img src="./assets/uploads/ruou-vang-combo.jpg" alt="Bộ ly Pha Lê Bohemia 06 chiếc"
                                     class="w-full h-auto rounded-lg ">
                             </div>
                         </div>
@@ -559,7 +562,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Vì vậy...</h2>
                 <h3 class="text-5xl font-bold mb-4">Hãy đăng ký <span class="text-[#0E5E22]">COMBO</span></h3>
-                <h3 class="text-5xl font-bold text-[#0E5E22] mb-4"><del>2.370.000 VNĐ</del></h3>
+                <h3 class="text-5xl font-bold text-[#0E5E22] mb-4"> 2.370.000 VNĐ </h3>
                 <h3 class="text-5xl font-bold mb-6">ngay hôm nay để được</h3>
                 <p class="text-2xl">
                     <span class="text-[#CD853F]">Nhận ưu đãi</span> <span class="text-[#0E5E22]">trọn bộ 06 chai rượu
@@ -827,8 +830,7 @@
             </div>
             <div class="border-t border-red-200 pt-8">
                 <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo"
-                        class=" object-contain shadow-md">
+                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo" class=" object-contain ">
                     <div class="text-red-800 text-lg leading-relaxed">
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
                             thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
@@ -874,6 +876,12 @@
             <i class="ri-chat-smile-3-line text-xl"></i>
         </button>
     </div>
+
+    <!-- Thêm CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -991,7 +999,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const forms = document.querySelectorAll('form');
             const csrf_token = document.querySelector('meta[name="csrf_token"]')?.getAttribute('value');
-            const toast = document.getElementById('toast');
+            // const toast = document.getElementById('toast');
             forms.forEach(form => {
                 form.addEventListener('submit', async function(e) {
                     e.preventDefault();
@@ -1003,7 +1011,7 @@
                     submitButton.textContent = 'Đang xử lý...';
                     submitButton.disabled = true;
                     const formData = new FormData(form);
-                    toast.classList.remove('hidden');
+
                     try {
                         const response = await fetch(form.action, {
                             method: form.method,
@@ -1013,27 +1021,23 @@
                             body: formData
                         });
                         if (response.ok) {
-                            toast.textContent = 'Cảm ơn bạn đã đăng ký combo của chúng tôi!';
-                            toast.classList.add('show');
+                            Swal.fire('Thành công!',
+                                'Cảm ơn bạn đã đăng ký combo của chúng tôi', 'success')
                             form.reset();
-                            const result = await response.json(); 
+                            const result = await response.json();
                             if (result.status == 'success') {
                                 status = true;
                             }
                         } else {
-                            toast.textContent = 'Có lỗi xảy ra, vui lòng thử lại!';
-                            toast.classList.add('show');
+                            Swal.fire('Lỗi!', 'Có lỗi xảy ra, vui lòng thử lại!', 'error')
                         }
                     } catch (error) {
-                        toast.textContent = 'Lỗi kết nối!';
-                        toast.classList.add('show');
-                    } 
+                        Swal.fire('Lỗi!', 'Lỗi kết nối!', 'error')
+                    }
                     setTimeout(() => {
                         submitButton.textContent = originalText;
                         submitButton.disabled = false;
                         if (status) window.location.href = redirect;
-                        toast.classList.remove('show');
-                        toast.classList.add('hidden');
                     }, 3000);
                     return;
                 });

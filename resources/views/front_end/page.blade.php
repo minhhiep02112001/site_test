@@ -260,7 +260,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-[100px]">
                 <div class="flex items-center space-x-4">
-                    <a href="./index.php" data-readdy="true"
+                    <a href="/" data-readdy="true"
                         class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
                         <i class="ri-arrow-left-line text-primary ri-lg"></i>
                     </a>
@@ -268,7 +268,9 @@
                 </div>
 
                 <div class="flex items-center">
-                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
+                    <a href="/">
+                        <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
+                    </a>
                 </div>
                 <button type="button"
                     class="w-[120px] md:w-[200px] bg-gradient-to-r from-wineRed to-wineRed/80 hover:from-wineRed/90 hover:to-wineRed text-white  py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -292,7 +294,7 @@
                 <h2 class="italic text-2xl lg:text-4xl  text-wineRed mb-4">Cám ơn bạn đã đăng kí, để cảm ơn sự ủng hộ
                     tuyệt vời này của bạn, chúng tôi giành thêm 1 ưu đãi cuối cùng và duy nhất.</h2>
                 <div class="wine-badge mb-6 inline-block">Ưu Đãi Duy Nhất - Hôm Nay Thôi!</div>
-                <h1 class="font-playfair text-4xl lg:text-5xl font-bold text-wineRed mb-4">ƯU ĐÃI DUY NHẤT TRONG NGÀY
+                <h1 class="italic text-4xl lg:text-5xl font-bold text-wineRed mb-4">ƯU ĐÃI DUY NHẤT TRONG NGÀY
                     HÔM NAY KHI BẠN MUA 06 CHAI RƯỢU VANG ELLETRA PRIMITIVO</h1>
                 <img src="./assets/uploads/photo_2025.jpg" alt="Banner gt chai rượu"
                     class="max-w-full rounded-lg h-auto mx-auto mb-8">
@@ -342,10 +344,12 @@
                     </ol>
                     <div
                         class="bg-gradient-to-r from-wineRed/10  to-secondary/10 p-8 rounded-2xl text-center mb-10 shadow-lg transform hover:shadow-2xl transition-shadow duration-500">
-                        <h3 class="font-bold text-3xl text-[#fff] mb-4 animate-bounce">Tổng giá trị quà tặng:
+                        <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
+                            <h3 class="font-bold text-3xl text-[#333] mb-4 animate-bounce">Tổng giá trị quà tặng:
                             5.868.000VNĐ</h3>
-                        <p class="text-xl  text-[#fff] mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
+                        <p class="text-xl  text-[#333] mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
                             chúng tôi với chỉ một lần thanh toán 8.100.000VNĐ duy nhất.</p>
+                        </div>
                         <button id="buy-now-btn"
                             class="bg-wineRed hover:bg-wineRed/80 text-white px-10 py-5 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-110 animate-pulse">
                             MUA HÀNG NGAY
@@ -387,17 +391,17 @@
                         HẠN ĐĂNG KÍ COMBO CỦA BẠN</h2>
                     <div id="countdown" class="countdown-timer mb-10 flex justify-center gap-6">
                         <div
-                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
+                            class="countdown-unit bg-[#1599eb] p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
                             <span id="hours" class="text-[#fff]">00</span><span
                                 class="block text-sm text-[#fff]">Giờ</span>
                         </div>
                         <div
-                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
+                            class="countdown-unit bg-[#1599eb] p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
                             <span id="minutes" class="text-[#fff]">00</span><span
                                 class="block text-sm text-[#fff]">Phút</span>
                         </div>
                         <div
-                            class="countdown-unit bg-wineRed/10 p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
+                            class="countdown-unit bg-[#1599eb] p-6 rounded-2xl text-3xl font-bold text-[#fff] shadow-lg transform hover:scale-110 transition-all duration-300">
                             <span id="seconds" class="text-[#fff]">00</span><span
                                 class="block text-sm text-[#fff]">Giây</span>
                         </div>
@@ -419,7 +423,7 @@
                     Ký</h2>
                 <form id="register-form" action="{{ route('booking') }}" method="post"
                     data-redirect="{{ route('page') }}"
-                    class="bg-[#990e06]  text-[#fff] backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-wineRed/20 space-y-6 max-w-xl mx-auto transform hover:scale-102 transition-all duration-500">
+                    class="bg-[#990e06]  text-[#333] backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-wineRed/20 space-y-6 max-w-xl mx-auto transform hover:scale-102 transition-all duration-500">
                     <input type="hidden" name="form_type" value="form_2">
                     <div class="relative">
                         <label
@@ -452,7 +456,7 @@
                     </div>
                     <div class="relative">
                         <label class="block text-base font-medium text-[#fff] mb-2">Ghi chú</label>
-                        <textarea name="note" rows="5"
+                        <textarea name="note" rows="3"
                             class="w-full px-6 py-3 border text-[#333] border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white resize-none"></textarea>
                     </div>
                     <button type="submit"
@@ -536,11 +540,15 @@
             }
         </style>
 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+   
+
         <script id="form-handling">
             document.addEventListener('DOMContentLoaded', function() {
                 const form = document.getElementById('register-form');
                 const csrf_token = document.querySelector('meta[name="csrf_token"]')?.getAttribute('value');
-                const toast = document.getElementById('toast');
+                
                 form.addEventListener('submit', async function(e) {
                     e.preventDefault();
                     let status = false;
@@ -550,7 +558,7 @@
                     submitButton.textContent = 'Đang xử lý...';
                     submitButton.disabled = true;
                     const formData = new FormData(form);
-                    toast.classList.remove('hidden');
+                    
                     try {
                         const response = await fetch(form.action, {
                             method: form.method,
@@ -560,27 +568,24 @@
                             body: formData
                         });
                         if (response.ok) {
-                            toast.textContent = 'Đã gửi đăng ký thành công!';
-                            toast.classList.add('show');
+                             Swal.fire('Thành công!','Đã gửi đăng ký thành công!', 'success') 
+                            
                             form.reset();
                             const result = await response.json();
                             if (result.status == 'success') {
                                 status = true;
                             }
                         } else {
-                            toast.textContent = 'Có lỗi xảy ra, vui lòng thử lại!';
-                            toast.classList.add('show');
+                              Swal.fire('Lỗi!', 'Có lỗi xảy ra, vui lòng thử lại!', 'error')  
                         }
                     } catch (error) {
-                        toast.textContent = 'Lỗi kết nối!';
-                        toast.classList.add('show');
+                          Swal.fire('Lỗi!', 'Lỗi kết nối!', 'error')  
+                        
                     }
                     setTimeout(() => {
                         submitButton.textContent = originalText;
                         submitButton.disabled = false;
-                        if (status) window.location.href = redirect;
-                        toast.classList.remove('show');
-                        toast.classList.add('hidden');
+                        if (status) window.location.href = redirect; 
                     }, 3000);
                     return;
                 });
@@ -650,12 +655,12 @@
             <div class="border-t border-red-200 pt-8">
                 <div class="flex flex-col md:flex-row items-center gap-6">
                     <img src="/assets/uploads/logo_footer.png" alt="The Best Wine Logo"
-                        class="w-40 h-40 object-contain shadow-md">
+                        class="w-40 h-40 object-contain ">
                     <div class="text-red-800 text-lg leading-relaxed">
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
                             thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
                             để khách hàng lựa chọn các sản phẩm rượu vang nhập khẩu chính hãng uy tín và chất lượng.</p>
-                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS BEST"</span>, chúng tôi luôn cam kết sự
+                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết sự
                             lựa chọn của khách hàng ở The Best Wine sẽ luôn là TỐT NHẤT.</p>
                     </div>
                 </div>
