@@ -403,7 +403,7 @@
                 </div>
             </div>
             <div class="bg-[#990F07] py-4 text-center mb-8 rounded-lg shadow-md">
-                <p class="text-2xl font-bold text-white">TỔNG GIÁ TRỊ QUÀ TẶNG 1.699.000 VND</p>
+                <p class="text-2xl font-bold text-white">TỔNG GIÁ TRỊ QUÀ TẶNG 1.559.000 VND</p>
             </div>
             <a href="https://www.citra.it/en/wines/lines/bronzeo/bronzeo-red-wine" target="_blank"
                 class="block w-full md:w-auto bg-[#0E5E22] text-white px-8 py-4 rounded-full font-semibold text-center shadow-md">
@@ -576,7 +576,7 @@
                     <h3 class="font-playfair text-2xl font-bold text-gray-900 mb-4">Hộp 6 Chai Vang</h3>
                     <p class="text-gray-600 mb-4">Hộp gỗ sang trọng đựng 6 chai vang cao cấp, thiết kế tinh tế với lớp
                         đệm bảo vệ an toàn cho từng chai rượu.</p>
-                    <p class="text-xl font-semibold text-primary">300.000 VNĐ</p>
+                    <p class="text-xl font-semibold text-primary">160.000 VNĐ</p>
                 </div>
                 <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
                     <img src="./assets/uploads/bo-ly.jpg" alt="Bộ ly pha lê"
@@ -607,7 +607,7 @@
                 </div>
             </div>
             <div class="text-center mt-6">
-                <h3 class="text-4xl font-bold text-primary">TỔNG GIÁ TRỊ QUÀ TẶNG 1.699.000 VNĐ</h3>
+                <h3 class="text-4xl font-bold text-primary">TỔNG GIÁ TRỊ QUÀ TẶNG 1.559.000 VNĐ</h3>
             </div>
         </div>
     </section>
