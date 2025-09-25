@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vang Đỏ Cao Cấp Bronzeo- The Best Wine</title>
+    <title>Rượu vang nhập khẩu nguyên chai</title>
     <link rel="icon" type="image/png" href="./assets/uploads/logo.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 
@@ -395,7 +395,7 @@
                             vang Bronzeo nhập khẩu nguyên chai:</p>
                         <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-4">
                             <div class="text-center">
-                                <img src="./assets/uploads/ruou-vang-combo.jpg" alt="Bộ ly Pha Lê Bohemia 06 chiếc"
+                                <img src="./assets/uploads/ruou-vang-combo-1.jpg" alt="Bộ ly Pha Lê Bohemia 06 chiếc"
                                     class="w-full h-auto rounded-lg ">
                             </div>
                         </div>
@@ -860,12 +860,12 @@
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
             </a>
-            <a href="https://zalo.me/0988393000"
+            <a href="https://zalo.me/090464132"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-chat-1-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold">Zalo</span>
             </a>
-            <a href="https://m.me/yourmessenger"
+            <a href="https://www.facebook.com/messages/t/100824539542485"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-messenger-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold">Messenger</span>
