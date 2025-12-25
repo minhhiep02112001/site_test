@@ -153,6 +153,10 @@
             opacity: 1;
         }
 
+        .banner-sale {
+            min-height: 100px;
+        }
+
         @media (min-width: 640px) {
             #banner-title {
                 font-size: 1.875rem;
@@ -166,9 +170,16 @@
                 font-size: 2.25rem;
                 letter-spacing: 2px;
             }
+            .banner-sale {
+                min-height: 250px
+            }
         }
 
         @media (min-width: 1024px) {
+            .banner-sale {
+                min-height: 570px
+            }
+
             #banner-title {
                 font-size: 3rem;
                 padding: 2.5rem;
@@ -759,12 +770,12 @@
     <section class="py-10 relative overflow-hidden "
         style="background-image: url('./images/banner_sale_1.jpg') ; background-size:cover;"
         style="min-height: 570px;">
-        <div class=" banner-sale" style="min-height: 570px"></div>
+        <div class=" banner-sale"></div>
     </section>
 
     <section class="py-10 relative overflow-hidden "
         style="background-image: url('./images/banner_combo.jpg'); background-size:cover;" style="min-height: 570px;">
-        <div class=" banner-sale" style="min-height: 570px"></div>
+        <div class=" banner-sale"></div>
     </section>
     <!-- Warnning -->
     <section class="py-10 relative overflow-hidden">
