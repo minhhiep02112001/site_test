@@ -25,6 +25,10 @@ class HomeController extends Controller
     {
         return view('front_end.page', []);
     }
+    public function khuyenMai(Request $request)
+    {
+        return view('front_end.khuyen_mai', []);
+    }
 
     public function booking(Request $request)
     {

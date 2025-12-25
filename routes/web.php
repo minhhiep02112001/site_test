@@ -119,4 +119,5 @@ Route::group([
     Route::get('/',  [App\Http\Controllers\HomeController::class, 'dashboard'])->name('home')->middleware('cacheResponse:300');
     Route::post('/booking',  [App\Http\Controllers\HomeController::class, 'booking'])->name('booking');
     Route::get('/uu-dai-dac-biet', [App\Http\Controllers\HomeController::class, 'page'])->name('page')->where(['slug' => '[a-z0-9-_]+']);
+    Route::get('/khuyen-mai', [App\Http\Controllers\HomeController::class, 'khuyenMai']);
 });
