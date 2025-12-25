@@ -767,14 +767,14 @@
         </div>
     </section>
 
-    <section class="py-10 relative overflow-hidden "
-        style="background-image: url('./images/banner_sale_1.jpg') ; background-size:cover;"
+    {{-- <section class="py-10 relative overflow-hidden "
+        style="background-image: url('./assets/images/banner_sale_1.jpg') ; background-size:cover;"
         style="min-height: 570px;">
         <div class=" banner-sale"></div>
-    </section>
+    </section> --}}
 
     <section class="py-10 relative overflow-hidden "
-        style="background-image: url('./images/banner_combo.jpg'); background-size:cover;" style="min-height: 570px;">
+        style="background-image: url('./assets/images/banner_combo.jpg'); background-size:cover;" style="min-height: 570px;">
         <div class=" banner-sale"></div>
     </section>
     <!-- Warnning -->
