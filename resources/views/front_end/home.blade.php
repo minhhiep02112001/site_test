@@ -212,11 +212,14 @@
                     class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Về
                     chúng tôi</a>
                 <a href="#product"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Sản phẩm</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Sản
+                    phẩm</a>
                 <a href="#features"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Khuyến Mại</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Khuyến
+                    Mại</a>
                 <a href="#contact"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên hệ</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên
+                    hệ</a>
             </nav>
         </div>
     </header>
@@ -752,6 +755,17 @@
             </div>
         </div>
     </section>
+
+    <section class="py-10 relative overflow-hidden "
+        style="background-image: url('./images/banner_sale_1.jpg') ; background-size:cover;"
+        style="min-height: 570px;">
+        <div class=" banner-sale" style="min-height: 570px"></div>
+    </section>
+
+    <section class="py-10 relative overflow-hidden "
+        style="background-image: url('./images/banner_combo.jpg'); background-size:cover;" style="min-height: 570px;">
+        <div class=" banner-sale" style="min-height: 570px"></div>
+    </section>
     <!-- Warnning -->
     <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
@@ -860,7 +874,7 @@
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
             </a>
-            <a href="https://zalo.me/090464132"
+            <a href="https://zalo.me/0904641325"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-chat-1-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold">Zalo</span>
