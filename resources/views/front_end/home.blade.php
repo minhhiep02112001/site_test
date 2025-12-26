@@ -154,7 +154,7 @@
         }
 
         .banner-sale {
-            min-height: 100px;
+            min-height: 175px;
         }
 
         @media (min-width: 640px) {
@@ -781,8 +781,8 @@
         </div>
         <div class="max-w-6xl mx-auto mt-10">
             <a href="/khuyen-mai" target="_blank"
-                class="block w-full md:w-auto bg-[#990F07] text-white px-8 py-4 rounded-full font-semibold text-center shadow-md">
-                Tặng tủ bảo quản rượu vang
+                class="block w-full md:w-auto bg-[#0E5E22] text-white px-8 py-4 rounded-full font-semibold text-center shadow-md">
+                Bấm vào đây để nhận Ưu đãi Combo tặng tủ bảo quản rượu vang
             </a>
         </div>
     </section>

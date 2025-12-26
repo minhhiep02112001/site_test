@@ -41,7 +41,17 @@ class HomeController extends Controller
         $input = $request->only(['name', 'phone', 'form_type', 'address', 'note', 'count_combo']);
         try {
             $booking =  $this->bookingRepository->create($input);
-            $receiverEmail = !empty($input['form_type']) && $input['form_type']  == 'form_1' ? env("EMAIL_RECEIVER_1",  config('data.email_receiver_1')) : env("EMAIL_RECEIVER_2",  config('data.email_receiver_1'));
+            switch ($input['form_type']) {
+                case "form_1":
+                    $receiverEmail = env("EMAIL_RECEIVER_1",  config('data.email_receiver_1'));
+                    break;
+                case "form_2":
+                    $receiverEmail = env("EMAIL_RECEIVER_2",  config('data.email_receiver_1'));
+                    break;
+                case "form_3":
+                    $receiverEmail = env("EMAIL_RECEIVER_3",  config('data.email_receiver_1'));
+                    break;
+            }
             Mail::to($receiverEmail)->send(new \App\Mail\SendEmailBooking($booking));
             return response()->json(['status' => 'success'], 200);
         } catch (\Exception $ex) {

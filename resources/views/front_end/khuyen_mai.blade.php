@@ -219,6 +219,7 @@
 
             </div>
         </div>
+        
     </section>
     <!-- Produ
      ct Introduction -->
@@ -226,6 +227,10 @@
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            
+            <h1 class="italic text-2xl   font-bold text-wineRed mb-10">Chỉ với 12 chai rượu vang Le cerrate trị giá 16.200.000 VNĐ, quý khách có trọng bộ combo như sau:</h1> 
+      
+
             <div class="grid lg:grid-cols-2 gap-16 items-center">
 
                 <div class="relative">
@@ -235,8 +240,9 @@
                                 <img src="./assets/khuyen_mai/image_2.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full  mx-auto object-top object-cover rounded-2xl shadow-2xl">
 
-                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 06 Bộ Hợp Túc:
-                                    1.080.000 VNĐ</h3>
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 06 Bộ Hộp Túi:
+                                    1.080.000 VNĐ
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -247,19 +253,18 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_3.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full mx-auto object-top object-cover rounded-2xl shadow-2xl">
-                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 01 Bộ Ly Pha Lê: 650.000 VNĐ</h3>
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 01 Bộ Ly Pha Lê:
+                                    650.000 VNĐ</h3>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                <div>
             </div>
         </div>
     </section>
 
     <section id="ve-chung-toi" class="py-10 relative overflow-hidden">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-center justify-between" id="product">
                     <div class="text-center lg:text-left mb-8 lg:mb-0">
@@ -269,7 +274,8 @@
                                 <img src="./assets/khuyen_mai/image_4.jpg" alt="Bộ ly Pha Lê Bohemia 06 chiếc"
                                     class="w-full h-auto rounded-lg ">
                             </div>
-                            <h3 class="text-center text-2xl font-bold text-gray-900 mb-4"> 01 Tủ Bảo Quản: 6.500.000 VNĐ</h3>
+                            <h3 class="text-center text-2xl font-bold text-gray-900 mb-4"> 01 Tủ Bảo Quản: 6.500.000 VNĐ
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -280,16 +286,16 @@
     <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative mb-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
                         <div class="product-slides flex transition-transform duration-300">
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_5.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full  mx-auto object-top object-cover rounded-2xl shadow-2xl">
-                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 01 Decanter: 550.000 VNĐ</h3>
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 01 Decanter: 550.000
+                                    VNĐ</h3>
                             </div>
                         </div>
                     </div>
@@ -300,7 +306,8 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_6.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full mx-auto object-top object-cover rounded-2xl shadow-2xl">
-                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> Mở Chai: 199.000 VNĐ</h3>
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> Mở Chai: 199.000 VNĐ
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -308,6 +315,8 @@
 
             </div>
         </div>
+
+              <h1 class="italic text-2xl text-center   font-bold text-wineRed mb-5">Tổng giá trị quà tặng: 8.979.000 VNĐ</h1> 
     </section>
 
     <section class="py-10 relative overflow-hidden"
@@ -327,7 +336,7 @@
                     <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
                         class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-xl mt-8 text-left relative overflow-hidden">
                         @csrf
-                        <input type="hidden" name="form_type" value="form_2">
+                        <input type="hidden" name="form_type" value="form_3">
                         <div class="absolute inset-0 opacity-10"
                             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                         </div>
