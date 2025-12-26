@@ -170,6 +170,7 @@
                 font-size: 2.25rem;
                 letter-spacing: 2px;
             }
+
             .banner-sale {
                 min-height: 250px
             }
@@ -773,10 +774,19 @@
         <div class=" banner-sale"></div>
     </section> --}}
 
-    <section class="py-10 relative overflow-hidden "
-        style="background-image: url('./assets/images/banner_combo.jpg'); background-size:cover;" style="min-height: 570px;">
-        <div class=" banner-sale"></div>
+    <section class="my-10 relative overflow-hidden ">
+        <div class=" banner-sale"
+            style="background-image: url('./assets/images/banner_combo.jpg'); background-size:cover;"
+            style="min-height: 570px;">
+        </div>
+        <div class="max-w-6xl mx-auto mt-10">
+            <a href="/khuyen-mai" target="_blank"
+                class="block w-full md:w-auto bg-[#990F07] text-white px-8 py-4 rounded-full font-semibold text-center shadow-md">
+                Tặng tủ bảo quản rượu vang
+            </a>
+        </div>
     </section>
+
     <!-- Warnning -->
     <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>

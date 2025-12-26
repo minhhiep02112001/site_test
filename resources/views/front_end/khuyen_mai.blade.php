@@ -194,45 +194,14 @@
     <!-- Header -->
     <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm" id="main-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="flex items-center justify-between h-[80px]">
+            <div class="flex items-center justify-center h-[80px]">
                 <div class="flex items-center">
                     <a href="/">
                         <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[80px] w-auto p-1">
                     </a>
                 </div>
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="Javascript:void(0)" id="scrollBtn"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Về
-                        chúng
-                        tôi</a>
-                    <a href="#product"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Sản
-                        phẩm</a>
-                    <a href="#features"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Khuyến
-                        Mại</a>
-                    <a href="#contact"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Liên
-                        hệ</a>
-                </nav>
-                <button class="md:hidden w-8 h-8 flex items-center justify-center text-primary">
-                    <i class="ri-menu-line ri-lg"></i>
-                </button>
             </div>
-            <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
-                <a href="Javascript:void(0)" id="scrollBtnMB"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Về
-                    chúng tôi</a>
-                <a href="#product"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Sản
-                    phẩm</a>
-                <a href="#features"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Khuyến
-                    Mại</a>
-                <a href="#contact"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên
-                    hệ</a>
-            </nav>
+
         </div>
     </header>
     <!-- Wine Education Banner -->
@@ -256,7 +225,7 @@
     <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
 
                 <div class="relative">
@@ -265,6 +234,9 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_2.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full  mx-auto object-top object-cover rounded-2xl shadow-2xl">
+
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 06 Bộ Hợp Túc:
+                                    1.080.000 VNĐ</h3>
                             </div>
                         </div>
                     </div>
@@ -275,6 +247,7 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_3.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full mx-auto object-top object-cover rounded-2xl shadow-2xl">
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 01 Bộ Ly Pha Lê: 650.000 VNĐ</h3>
                             </div>
                         </div>
                     </div>
@@ -285,7 +258,7 @@
     </section>
 
     <section id="ve-chung-toi" class="py-10 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
             <div class="bg-white rounded-2xl shadow-xl p-2 mb-2 relative overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-center justify-between" id="product">
@@ -296,6 +269,7 @@
                                 <img src="./assets/khuyen_mai/image_4.jpg" alt="Bộ ly Pha Lê Bohemia 06 chiếc"
                                     class="w-full h-auto rounded-lg ">
                             </div>
+                            <h3 class="text-center text-2xl font-bold text-gray-900 mb-4"> 01 Tủ Bảo Quản: 6.500.000 VNĐ</h3>
                         </div>
                     </div>
                 </div>
@@ -306,7 +280,7 @@
     <section class="py-10 relative overflow-hidden">
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
 
                 <div class="relative">
@@ -315,6 +289,7 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_5.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full  mx-auto object-top object-cover rounded-2xl shadow-2xl">
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> 01 Decanter: 550.000 VNĐ</h3>
                             </div>
                         </div>
                     </div>
@@ -325,6 +300,7 @@
                             <div class="product-slide w-full flex-shrink-0 pb-4">
                                 <img src="./assets/khuyen_mai/image_6.jpg" alt="Vang Đỏ Bordeaux"
                                     class="w-full mx-auto object-top object-cover rounded-2xl shadow-2xl">
+                                <h3 class="mt-3 text-center text-2xl font-bold text-gray-900 mb-4"> Mở Chai: 199.000 VNĐ</h3>
                             </div>
                         </div>
                     </div>
@@ -333,7 +309,7 @@
             </div>
         </div>
     </section>
- 
+
     <section class="py-10 relative overflow-hidden"
         style="background-image: url('./assets/uploads/201b5a32936c69ad19ba28013da9b877.jpg')">
         <div class="absolute inset-0 wine-gradient opacity-90"></div>
@@ -410,7 +386,7 @@
             </div>
         </div>
     </section>
-  
+
     <!-- Footer -->
     <footer class="bg-white text-red-800 py-16" id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
