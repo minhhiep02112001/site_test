@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rượu vang nhập khẩu nguyên chai</title>
-    <link rel="icon" type="image/png" href="./assets/uploads/logo.png">
+    <link rel="icon" type="image/png" href="./assets/uploads/favicon.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 
     <meta name="csrf_token" value="{{ csrf_token() }}">

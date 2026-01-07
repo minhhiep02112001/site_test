@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rượu vang nhập khẩu nguyên chai</title>
-    <link rel="icon" type="image/png" href="./assets/uploads/logo.png">
+    <link rel="icon" type="image/png" href="./assets/uploads/favicon.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 
     <meta name="csrf_token" value="{{ csrf_token() }}">
@@ -236,8 +236,7 @@
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section
-        class="py-12 mt-[80px] sm:min-h-[400px] md:min-h-[850px]  md:h-[850px]  flex items-center "
+    <section class="py-12 mt-[80px] sm:min-h-[400px] md:min-h-[850px]  md:h-[850px]  flex items-center "
         style="background-image: url('./images/banner_qua_tet.jpg'); background-size: cover; background-position: center;">
         <div class="lg:w-[1200px] mx-auto px-0 md:px-2  sm:mt-12 md:pt-16 lg:mt-[-50px]">
             {{-- <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
@@ -258,16 +257,47 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid lg:grid-cols-2 gap-2 items-center">
                 <div class="relative">
+                    <div class="product-carousel overflow-hidden">  
+                        <div class="product-slides flex transition-transform duration-300">
+                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-tet-cat-tuong.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Tết Sum Vầy
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">599.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="relative">
                     <div class="product-carousel overflow-hidden">
                         <div class="product-slides flex transition-transform duration-300">
                             <div class="product-slide w-full flex-shrink-0 pb-4">
-                                <img src="./assets/uploads/vang-gia.jpg" alt="Vang Đỏ Bordeaux"
-                                    class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-tet-sac-xuan.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 mb-4"> 01 Tủ Bảo Quản:
-                                        6.500.000
-                                        VNĐ
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Tết Sắc Xuân
                                     </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">799.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
@@ -278,14 +308,150 @@
                     <div class="product-carousel overflow-hidden">
                         <div class="product-slides flex transition-transform duration-300">
                             <div class="product-slide w-full flex-shrink-0 pb-4">
-                                <img src="./assets/uploads/vang-gia.jpg" alt="Vang Đỏ Bordeaux"
-                                    class="w-full max-w-md mx-auto object-top object-cover rounded-2xl shadow-2xl">
-                            </div>
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-tet-nhu-y.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
 
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Tết Như Ý
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">850.000 VNĐ</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="relative">
+                    <div class="product-carousel overflow-hidden">
+                        <div class="product-slides flex transition-transform duration-300">
+                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-tet-cat-tuong.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Tết Cát Tường
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">1.350.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="relative">
+                    <div class="product-carousel overflow-hidden">
+                        <div class="product-slides flex transition-transform duration-300">
+                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-paradise.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Rượu Vang Paradise
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">550.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+
+                <div class="relative">
+                    <div class="product-carousel overflow-hidden">
+                        <div class="product-slides flex transition-transform duration-300">
+                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-elettra.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Rượu Vang Elettra
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">880.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                
+                 <div class="relative">
+                    <div class="product-carousel overflow-hidden">
+                        <div class="product-slides flex transition-transform duration-300">
+                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-guillemin.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Rượu Vang Guillemin
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">1.650.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="relative">
+                    <div class="product-carousel overflow-hidden">
+                        <div class="product-slides flex transition-transform duration-300">
+                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-don-panfilo.jpg" alt=""
+                                            class="absolute w-full h-full object-cover object-center" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                        Hộp Quà Rượu Vang Don Panfilo
+                                    </h3>
+                                    <p class="text-center font-bold text-gray-900 mb-4">1.850.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -395,24 +561,35 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-12">
                 <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                   Câu chuyện
+                    Văn Hoá Tặng Quà Doanh Nghiệp
                 </h2>
             </div>
             <div class="bg-white rounded-xl p-8 shadow-lg max-w-4xl mx-auto">
-                <p class="text-xl text-gray-700 leading-relaxed text-center">
-                    "Đây là chương trình <span class="text-2xl text-[#8B1538] font-semibold">Marketing không lợi
-                        nhuận</span>, xin nhắc lại đây là chương trình <span
-                        class="text-2xl text-[#8B1538] font-semibold">Marketing không lợi nhuận</span> vì chúng tôi
-                    muốn
-                    truyền bá một thứ đồ uống văn minh của nhân loại, hoàn toàn có lợi cho sức
-                    khỏe và được coi là món quà của Thượng Đế, chúng tôi muốn nhiều người nhất có thể sử dụng những sản
-                    phẩm rượu vang nhập khẩu nguyên chai, chính hãng tránh gây nhầm lẫn với các sản phẩm kém chất
-                    lượng."
+                <p class="text-xl text-gray-700 leading-relaxed ">
+                    “Trong môi trường kinh doanh ngày nay, việc tặng quà không chỉ đơn thuần là một hành động trao tặng
+                    vật chất mà còn là cơ hội để thể hiện sự quan tâm, trân trọng và xây dựng mối quan hệ bền chặt với
+                    đối tác, khách hàng và nhân viên. Một trong những món quà được ưa chuộng và dễ tạo ấn tượng mạnh mẽ
+                    chính là những hộp quà tặng sang trọng, kết hợp giữa trà, bánh, các loại hạt và rượu vang.
+                </p>
+
+                <h6 class="text-xl mt-4 "><b>Lời khuyên khi chọn hộp quà tặng doanh nghiệp:</b></h6>
+                <p class="text-xl mt-4 text-gray-700 leading-relaxed ">
+                    * Chọn lựa đúng sản phẩm: Đảm bảo rằng các món quà trong hộp quà là những sản phẩm cao cấp, có chất
+                    lượng tốt. Tránh chọn các món quà rẻ tiền, thiếu sự tỉ mỉ.
+                    * Cá nhân hóa món quà: Mỗi hộp quà có thể được cá nhân hóa với thông điệp chúc mừng, cảm ơn riêng
+                    biệt cho từng đối tác, khách hàng.
+                    * Đảm bảo tính thẩm mỹ: Hộp quà nên được thiết kế sang trọng, hài hòa và đẹp mắt. Việc đóng gói cẩn
+                    thận cũng sẽ làm tăng giá trị của món quà.
+                </p>
+                <p class="text-xl text-gray-700 leading-relaxed  mt-4">
+                    Văn hoá tặng quà là một cách tuyệt vời để tạo dựng, củng cố mối quan hệ và quảng bá thương hiệu. Với
+                    sự kết hợp hoàn hảo của trà, bánh, hạt và rượu vang, những món quà trên chắc chắn sẽ mang lại những
+                    ấn tượng khó quên cho người nhận.”
                 </p>
             </div>
         </div>
     </section>
- 
+
 
     <!-- Features Section -->
     <section id="features" class="py-5 relative overflow-hidden">
@@ -428,28 +605,48 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Khách hàng uy tín của chúng tôi</h2>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                    <img src="./assets/uploads/hop-ruou.jpg" alt="Hộp rượu vang"
+                    <img src="./assets/qua_tet/kh_1.jpg" alt="Vươn tới tầm cao"
                         class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
-                    
+
                 </div>
                 <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                    <img src="./assets/uploads/bo-ly.jpg" alt="Bộ ly pha lê"
+                    <img src="./assets/qua_tet/kh_2.jpg" alt="MB Bank"
                         class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
-                    
+
                 </div>
                 <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                    <img src="./assets/uploads/binh-decan.jpg" alt="Bình thở Decanter"
+                    <img src="./assets/qua_tet/kh_3.jpg" alt="Viettel"
                         class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
-                    
+
                 </div>
                 <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                    <img src="./assets/uploads/lap-mo.jpg" alt="Mở chai cao cấp"
+                    <img src="./assets/qua_tet/kh_4.jpg" alt="Petrovietnam"
                         class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
-                   
+
                 </div>
-            </div> 
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="./assets/qua_tet/kh_5.jpg" alt="Cảng Sài Gòn"
+                        class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
+
+                </div>
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="./assets/qua_tet/kh_6.jpg" alt="VCB Bank"
+                        class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
+
+                </div>
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="./assets/qua_tet/kh_7.jpg" alt="Vietjet Air"
+                        class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
+
+                </div>
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <img src="./assets/qua_tet/kh_8.jpg" alt="VNPT"
+                        class="w-full lg:h-[16rem] md:h-auto sm:h-auto object-cover rounded-xl shadow-lg mb-6">
+
+                </div>
+            </div>
         </div>
     </section>
 
