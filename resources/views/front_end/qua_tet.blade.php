@@ -833,41 +833,7 @@
             });
         });
     </script>
-    <script id="scroll-animations">
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('section');
-            const header = document.getElementById('main-header');
-            sections.forEach(section => {
-                section.classList.add('fade-in-section');
-            });
-            let lastScrollTop = 0;
-
-            function updateHeaderStyle() {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }
-            window.addEventListener('scroll', updateHeaderStyle);
-            updateHeaderStyle();
-
-            function checkScroll() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.offsetHeight;
-                    const windowHeight = window.innerHeight;
-                    if (scrollTop > sectionTop - windowHeight + sectionHeight / 4) {
-                        section.classList.add('is-visible');
-                    }
-                });
-                lastScrollTop = scrollTop;
-            }
-            window.addEventListener('scroll', checkScroll);
-            checkScroll();
-        });
-    </script>
+    
     <script id="form-handling">
         document.addEventListener('DOMContentLoaded', function() {
             const forms = document.querySelectorAll('form');
