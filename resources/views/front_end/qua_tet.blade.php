@@ -236,7 +236,7 @@
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section class="py-12 mt-[80px] sm:min-h-[400px] md:min-h-[850px]  md:h-[850px]  flex items-center "
+    <section class="py-12 mt-[80px] sm:min-h-[400px] md:min-h-[850px] h-[200px] md:h-[850px]  flex items-center "
         style="background-image: url('./images/banner_qua_tet.jpg'); background-size: cover; background-position: center;">
         <div class="lg:w-[1200px] mx-auto px-0 md:px-2  sm:mt-12 md:pt-16 lg:mt-[-50px]">
             {{-- <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
