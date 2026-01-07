@@ -575,9 +575,9 @@
                 <h6 class="text-xl mt-4 "><b>Lời khuyên khi chọn hộp quà tặng doanh nghiệp:</b></h6>
                 <p class="text-xl mt-4 text-gray-700 leading-relaxed ">
                     * Chọn lựa đúng sản phẩm: Đảm bảo rằng các món quà trong hộp quà là những sản phẩm cao cấp, có chất
-                    lượng tốt. Tránh chọn các món quà rẻ tiền, thiếu sự tỉ mỉ.
+                    lượng tốt. Tránh chọn các món quà rẻ tiền, thiếu sự tỉ mỉ. <br>
                     * Cá nhân hóa món quà: Mỗi hộp quà có thể được cá nhân hóa với thông điệp chúc mừng, cảm ơn riêng
-                    biệt cho từng đối tác, khách hàng.
+                    biệt cho từng đối tác, khách hàng.<br>
                     * Đảm bảo tính thẩm mỹ: Hộp quà nên được thiết kế sang trọng, hài hòa và đẹp mắt. Việc đóng gói cẩn
                     thận cũng sẽ làm tăng giá trị của món quà.
                 </p>
