@@ -55,8 +55,15 @@ class HomeController extends Controller
                 case "form_3":
                     $receiverEmail = env("EMAIL_RECEIVER_3",  config('data.email_receiver_1'));
                     break;
+                case "form_4":
+                    $receiverEmail = env("EMAIL_RECEIVER_4",  config('data.email_receiver_1'));
+                    $redirect = url('/uu-dai-dac-biet');
+                    break;
             }
             Mail::to($receiverEmail)->send(new \App\Mail\SendEmailBooking($booking));
+            if(!empty($redirect)){
+                return redirect($redirect);
+            }
             return response()->json(['status' => 'success'], 200);
         } catch (\Exception $ex) {
             return response()->json(['status' => 'error'], 500);

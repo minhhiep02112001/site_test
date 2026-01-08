@@ -202,13 +202,13 @@
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="#product"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Hộp
+                        class="text-primary font-playfair text-xl hover:text-primary/80 transition-colors font-medium uppercase">Hộp
                         quà tết</a>
                     <a href="#order"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Đặt
+                        class="text-primary font-playfair text-xl hover:text-primary/80 transition-colors font-medium uppercase">Đặt
                         hàng</a>
                     <a href="#contact"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Liên
+                        class="text-primary font-playfair text-xl hover:text-primary/80 transition-colors font-medium uppercase">Liên
                         hệ</a>
                 </nav>
                 <button class="md:hidden w-8 h-8 flex items-center justify-center text-primary">
@@ -217,19 +217,19 @@
             </div>
             <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
                 <a href="#product"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Hộp
+                    class="text-primary font-playfair hover:text-primary/80 transition-colors font-medium text-center uppercase">Hộp
                     quà tết</a>
                 <a href="#order"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Đặt
+                    class="text-primary font-playfair hover:text-primary/80 transition-colors font-medium text-center uppercase">Đặt
                     hàng</a>
                 <a href="#contact"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên
+                    class="text-primary font-playfair hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên
                     hệ</a>
             </nav>
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section class="py-12 mt-[80px] sm:min-h-[400px] md:min-h-[850px] h-[200px] md:h-[850px]  flex items-center "
+    <section class="py-12 mt-[80px]  md:min-h-[500px] h-[110px] md:h-[500px]  flex items-center "
         style="background-image: url('./images/banner_qua_tet.jpg'); background-size: cover; background-position: center;">
         <div class="lg:w-[1200px] mx-auto px-0 md:px-2  sm:mt-12 md:pt-16 lg:mt-[-50px]">
             {{-- <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
@@ -322,13 +322,13 @@
                                     <!-- box để center -->
                                     <div class="product-slide">
                                         <div class="absolute inset-0 flex items-center justify-center">
-                                            <img src="/assets/qua_tet/hop-qua-tet-nhu-y.jpg" alt=""
+                                            <img src="/assets/qua_tet/hop-qua-nhu-y-1.jpg" alt=""
                                                 class="absolute w-full h-full object-cover object-center" />
                                         </div>
                                     </div>
                                     <div class="product-slide">
                                         <div class="absolute inset-0 flex items-center justify-center">
-                                            <img src="/assets/qua_tet/hop-qua-nhu-y-1.jpg" alt=""
+                                            <img src="/assets/qua_tet/hop-qua-nhu-y-2.jpg" alt=""
                                                 class="absolute w-full h-full object-cover object-center" />
                                         </div>
                                     </div>
@@ -496,7 +496,7 @@
                 ĐẶT HÀNG NGAY HÔM NAY
             </h2>
             <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                Để Nhận Ưu Đãi Cho Đơn Hàng Đầu Tiên và Miễn Phí giao hàng tại Hà Nội và TP. Hồ Chí Minh
+                Để Nhận Ưu Đãi Cho Đơn Hàng Đầu Tiên và Miễn Phí giao hàng <br>tại Hà Nội và TP. Hồ Chí Minh
             </p>
             <div class="bg-white rounded-xl p-8 text-center max-w-3xl mx-auto mb-8">
                 <h4 class="text-3xl font-bold text-[#B91C1C] mb-8">THÔNG TIN ĐẶT HÀNG</h4>
@@ -504,7 +504,7 @@
                     <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
                         class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-xl mt-8 text-left relative overflow-hidden">
                         @csrf
-                        <input type="hidden" name="form_type" value="form_2">
+                        <input type="hidden" name="form_type" value="form_4">
                         <div class="absolute inset-0 opacity-10"
                             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                         </div>
@@ -542,7 +542,7 @@
                                     placeholder="">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">Ghi chú</label>
+                                <label class="block text-sm font-medium text-red-800 mb-1">Ghi chú tên hộp quà</label>
                                 <textarea name="note"
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-green-600 focus:border-transparent bg-white/80"
                                     rows="3" placeholder=""></textarea>
@@ -632,7 +632,7 @@
                         <i class="ri-truck-line text-primary text-4xl"></i>
                     </div>
                     <p class="text-gray-700 text-center font-medium">
-                        Thời gian giao hàng nhanh nhất, chỉ 30 phút trong nội thành Hà Nội và TP HCM.
+                        Thời gian giao hàng nhanh nhất, chỉ 1 giờ trong nội thành Hà Nội và TP HCM.
                     </p>
                 </div>
                 <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
@@ -640,8 +640,7 @@
                         <i class="ri-headphone-line text-primary text-4xl"></i>
                     </div>
                     <p class="text-gray-700 text-center font-medium">
-                        Đội ngũ chuyên gia giàu kinh nghiệm sẵn sàng tư vấn 24/7 để mang đến khách hàng sự lựa chọn tốt
-                        nhất.
+                        Đội ngũ chuyên gia 15 năm kinh nghiệm sẵn sàng tư vấn 24/7 để mang đến khách hàng sự lựa chọn tốt nhất.
                     </p>
                 </div>
             </div>
@@ -654,13 +653,13 @@
         <div class="absolute inset-0 opacity-25"
             style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="  mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-12">
                 <h2 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                     Văn Hoá Tặng Quà Doanh Nghiệp
                 </h2>
             </div>
-            <div class="bg-white rounded-xl p-8 shadow-lg max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl p-8 shadow-lg max-w-[76rem] mx-auto">
                 <p class="text-xl text-gray-700 leading-relaxed ">
                     “Trong môi trường kinh doanh ngày nay, việc tặng quà không chỉ đơn thuần là một hành động trao tặng
                     vật chất mà còn là cơ hội để thể hiện sự quan tâm, trân trọng và xây dựng mối quan hệ bền chặt với
@@ -699,7 +698,7 @@
             style="background: radial-gradient(circle at 30% 70%, #8B1538 0%, transparent 70%)"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Khách hàng uy tín của chúng tôi</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Đối tác của chúng tôi</h2>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
@@ -757,14 +756,14 @@
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG HÀ NỘI</h3>
                             <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
-                            <p class="text-red-600">Hotline: <a href="tel:0903481086"
+                            <p class="text-red-600">Hotline: <a href="tel:090.348.1086"
                                     class="hover:text-red-700">090.348.1086</a></p>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
                             <p class="text-red-600">Địa chỉ: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
-                            <p class="text-red-600">Hotline: <a href="tel:093623919"
-                                    class="hover:text-red-700">090.464.1325</a></p>
+                            <p class="text-red-600">Hotline: <a href="tel:0988393000"
+                                    class="hover:text-red-700">0988393000</a></p>
                         </div>
                         <div class="flex space-x-4 mt-6">
                             <a href="#" class="text-red-800 hover:text-red-600 transition-colors">
@@ -824,7 +823,7 @@
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
             </a>
-            <a href="tel:0904641325"
+            <a href="tel:0988393000"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
@@ -917,33 +916,41 @@
             document.querySelectorAll(".product-slides").forEach(slider => {
 
                 const slides = slider.querySelectorAll(".product-slide");
-                if (slides.length <= 1) {
-                    slider.querySelector(".product-slide").classList.add("active");
-                    return;
-                }
+                if (slides.length == 0) return;
 
                 let index = 0;
                 slides[index].classList.add("active");
+                if (slides.length == 1) return;
+                let timer;
 
                 function randomTime() {
-                    return Math.floor(Math.random() * (8000 - 5000 + 1)) + 5000;
+                    return Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
                 }
 
                 function runSlide() {
-                    setTimeout(() => {
+                    timer = setTimeout(() => {
                         slides[index].classList.remove("active");
                         index = (index + 1) % slides.length;
                         slides[index].classList.add("active");
-                        runSlide(); // gọi lại với time mới
+                        runSlide();
                     }, randomTime());
                 }
 
                 runSlide();
+
+                // 👉 CLICK ĐỂ NEXT SLIDE
+                slider.addEventListener("click", () => {
+                    clearTimeout(timer);
+                    slides[index].classList.remove("active");
+                    index = (index + 1) % slides.length;
+                    slides[index].classList.add("active");
+                    runSlide();
+                });
+
             });
 
         });
     </script>
-
 
 </body>
 

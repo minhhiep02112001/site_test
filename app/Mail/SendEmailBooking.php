@@ -33,6 +33,23 @@ class SendEmailBooking extends Mailable
     public function envelope()
     {
         $formType = $this->booking->form_type == 'form_1' ? "Form 1" : "Form 2";
+        switch ($this->booking->form_type) {
+            case "form_1":
+                $formType = "Form 1";
+                break;
+            case "form_2":
+                $formType = "Form 2";
+                break;
+            case "form_3":
+                $formType = "Form 3";
+                break;
+            case "form_4":
+                $formType = "Form hộp quà";
+                break;
+            default:
+                $formType = "Form 1";
+        }
+
         return new Envelope(
             subject: "Booking mới từ {$this->booking->name} - {$formType}",
         );
