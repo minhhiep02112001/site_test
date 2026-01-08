@@ -196,21 +196,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="flex items-center justify-between h-[80px]">
                 <div class="flex items-center">
-                    <a href="/">
-                        <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[80px] w-auto p-1">
-                    </a>
+
+                    <img src="./assets/uploads/logo.png" alt="The Best Wine Logo" class="h-[80px] w-auto p-1">
+
                 </div>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="Javascript:void(0)" id="scrollBtn"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Về
-                        chúng
-                        tôi</a>
                     <a href="#product"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Sản
-                        phẩm</a>
-                    <a href="#features"
-                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Khuyến
-                        Mại</a>
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Hộp
+                        quà tết</a>
+                    <a href="#order"
+                        class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Đặt
+                        hàng</a>
                     <a href="#contact"
                         class="text-primary text-xl hover:text-primary/80 transition-colors font-medium uppercase">Liên
                         hệ</a>
@@ -220,15 +216,12 @@
                 </button>
             </div>
             <nav class="nav-mobile hidden flex-col space-y-4 bg-white py-4 absolute top-full left-0 w-full md:hidden">
-                <a href="Javascript:void(0)" id="scrollBtnMB"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Về
-                    chúng tôi</a>
                 <a href="#product"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Sản
-                    phẩm</a>
-                <a href="#features"
-                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Khuyến
-                    Mại</a>
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Hộp
+                    quà tết</a>
+                <a href="#order"
+                    class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Đặt
+                    hàng</a>
                 <a href="#contact"
                     class="text-primary hover:text-primary/80 transition-colors font-medium text-center uppercase">Liên
                     hệ</a>
@@ -254,50 +247,66 @@
         <div class="absolute inset-0 bg-[#FDF7F9] transform -skew-y-6 origin-top-left"></div>
         <div class="absolute inset-0 opacity-30"
             style="background: radial-gradient(circle at 70% 30%, #8B1538 0%, transparent 50%)"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" id="product">
             <div class="grid lg:grid-cols-2 gap-2 items-center">
                 <div class="relative">
-                    <div class="product-carousel overflow-hidden">  
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                    <div class="product-carousel overflow-hidden">
+                        <div class="flex transition-transform duration-300">
+                            <div class="w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-tet-cat-tuong.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-tet-sum-vay.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
+                                    </div>
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-sum-vay-2.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
                                         Hộp Quà Tết Sum Vầy
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">599.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">599.000 VNĐ</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                        <div class="flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-tet-sac-xuan.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-tet-sac-xuan.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
+                                    </div>
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-sac-xuan-2.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff] ">
                                         Hộp Quà Tết Sắc Xuân
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">799.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">799.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
@@ -306,22 +315,31 @@
 
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                        <div class=" flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-tet-nhu-y.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-tet-nhu-y.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-nhu-y-1.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
                                         Hộp Quà Tết Như Ý
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">850.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">850.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
@@ -330,22 +348,30 @@
 
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                        <div class=" flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-tet-cat-tuong.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-tet-cat-tuong.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
+                                    </div>
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-cat-tuong-2.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
                                         Hộp Quà Tết Cát Tường
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">1.350.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">1.350.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
@@ -356,72 +382,49 @@
 
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                        <div class=" flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-paradise.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-ruou-vang-paradise.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
                                         Hộp Quà Rượu Vang Paradise
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">550.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">550.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
- 
+
 
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                        <div class=" flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-elettra.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-ruou-vang-elettra.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
                                         Hộp Quà Rượu Vang Elettra
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">880.000 VNĐ</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 
-                
-                 <div class="relative">
-                    <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
-                                <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
-                                    <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-guillemin.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
-                                        Hộp Quà Rượu Vang Guillemin
-                                    </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">1.650.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">880.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
@@ -431,27 +434,56 @@
 
                 <div class="relative">
                     <div class="product-carousel overflow-hidden">
-                        <div class="product-slides flex transition-transform duration-300">
-                            <div class="product-slide w-full flex-shrink-0 pb-4">
+                        <div class=" flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
                                 <div
-                                    class="relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
                                     <!-- box để center -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <img src="/assets/qua_tet/hop-qua-ruou-vang-don-panfilo.jpg" alt=""
-                                            class="absolute w-full h-full object-cover object-center" />
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-ruou-vang-guillemin.jpg" alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-center text-2xl font-bold text-gray-900 ">
-                                        Hộp Quà Rượu Vang Don Panfilo
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
+                                        Hộp Quà Rượu Vang Guillemin
                                     </h3>
-                                    <p class="text-center font-bold text-gray-900 mb-4">1.850.000 VNĐ</p>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">1.650.000 VNĐ</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+
+
+                <div class="relative">
+                    <div class="product-carousel overflow-hidden">
+                        <div class=" flex transition-transform duration-300">
+                            <div class=" w-full flex-shrink-0 pb-4">
+                                <div
+                                    class="product-slides relative h-[250px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white mb-3">
+                                    <!-- box để center -->
+                                    <div class="product-slide">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <img src="/assets/qua_tet/hop-qua-ruou-vang-don-panfilo.jpg"
+                                                alt=""
+                                                class="absolute w-full h-full object-cover object-center" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="font-playfair text-2xl font-bold  text-center text-[#0001ff]">
+                                        Hộp Quà Rượu Vang Don Panfilo
+                                    </h3>
+                                    <p class="text-xl font-semibold text-primary text-center mb-4">1.850.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -461,15 +493,14 @@
         <div class="absolute inset-0 wine-gradient opacity-90"></div>
         <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 class="font-playfair text-4xl lg:text-6xl font-bold text-white mb-6">
-                Ưu Đãi Đặc Biệt
+                ĐẶT HÀNG NGAY HÔM NAY
             </h2>
             <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                Đặt hàng ngay hôm nay để nhận ưu đãi cho đơn hàng đầu tiên
-                và miễn phí giao hàng toàn quốc
+                Để Nhận Ưu Đãi Cho Đơn Hàng Đầu Tiên và Miễn Phí giao hàng tại Hà Nội và TP. Hồ Chí Minh
             </p>
             <div class="bg-white rounded-xl p-8 text-center max-w-3xl mx-auto mb-8">
                 <h4 class="text-3xl font-bold text-[#B91C1C] mb-8">THÔNG TIN ĐẶT HÀNG</h4>
-                <div class="space-y-8">
+                <div class="space-y-8" id="order">
                     <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
                         class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-xl mt-8 text-left relative overflow-hidden">
                         @csrf
@@ -504,7 +535,7 @@
                                     placeholder="">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-red-800 mb-1">Số Lượng combo <span
+                                <label class="block text-sm font-medium text-red-800 mb-1">Số Lượng Hộp Quà <span
                                         class="text-danger">*</span></label>
                                 <input type="number" name="count_combo" required min="1"
                                     class="w-full px-4 py-2 rounded-md border-red-200 focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white/80"
@@ -518,7 +549,7 @@
                             </div>
                             <button type="submit"
                                 class="w-full bg-[#990e06]  text-white px-6 py-3 rounded-md font-semibold">
-                                ĐĂNG KÝ NGAY
+                                MUA NGAY
                             </button>
                         </div>
                     </form>
@@ -551,6 +582,71 @@
             </a>
         </div>
     </section> --}}
+
+    <section id="reasons" class="py-5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[#FFF5F5] transform -skew-y-3 origin-bottom-right"></div>
+        <div class="absolute inset-0 opacity-25"
+            style="background: radial-gradient(circle at 50% 50%, #8B1538 0%, transparent 70%), radial-gradient(circle at 80% 20%, #D4AF37 0%, transparent 50%)">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-5">
+                <h2 class="font-playfair text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+                    Lý do khách hàng <span class="text-primary">chọn chúng tôi</span>
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="ri-checkbox-circle-line text-primary text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 text-center font-medium">
+                        Sản phẩm được tuyển chọn kỹ lưỡng qua 5 vòng, được bảo quản kho lạnh theo tiêu chuẩn quốc tế.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="ri-money-dollar-circle-line text-primary text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 text-center font-medium">
+                        Giá bán luôn tốt nhất.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="ri-global-line text-primary text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 text-center font-medium">
+                        Hàng nhập khẩu nguyên chai có giấy tờ nhập khẩu, xuất xứ rõ ràng, có hóa đơn đỏ VAT.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="ri-loop-left-line text-primary text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 text-center font-medium">
+                        Cam kết đổi trả hàng, hoàn tiền 100% nếu khách hàng không hài lòng.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="ri-truck-line text-primary text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 text-center font-medium">
+                        Thời gian giao hàng nhanh nhất, chỉ 30 phút trong nội thành Hà Nội và TP HCM.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="ri-headphone-line text-primary text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 text-center font-medium">
+                        Đội ngũ chuyên gia giàu kinh nghiệm sẵn sàng tư vấn 24/7 để mang đến khách hàng sự lựa chọn tốt
+                        nhất.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Warnning -->
     <section class="py-10 relative overflow-hidden">
@@ -661,8 +757,8 @@
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG HÀ NỘI</h3>
                             <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
-                            <p class="text-red-600">Hotline: <a href="tel:0988393000"
-                                    class="hover:text-red-700">0988.393.000</a></p>
+                            <p class="text-red-600">Hotline: <a href="tel:0903481086"
+                                    class="hover:text-red-700">090.348.1086</a></p>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
@@ -723,7 +819,7 @@
                     <i class="ri-close-line text-lg"></i>
                 </button>
             </div>
-            <a href="tel:0988393000"
+            <a href="tel:0903481086"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
@@ -733,15 +829,10 @@
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
             </a>
-            <a href="https://zalo.me/0904641325"
+            <a href="https://zalo.me/0903481086"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-chat-1-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold">Zalo</span>
-            </a>
-            <a href="https://www.facebook.com/messages/t/100824539542485"
-                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-                <i class="ri-messenger-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold">Messenger</span>
             </a>
         </div>
         <button id="cta-toggle"
@@ -801,144 +892,59 @@
             }
         });
     </script>
-    <script id="smooth-scroll">
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('a[href^="#"], button.scroll-to-form');
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href') || '#special-promotion';
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                        // Close mobile menu if open
-                        const nav = document.querySelector('.nav-mobile');
-                        const menuButton = document.querySelector('button[class*="md:hidden"]');
-                        if (nav && !nav.classList.contains('hidden')) {
-                            nav.classList.add('hidden');
-                            nav.classList.remove('flex');
-                            const icon = menuButton.querySelector('i');
-                            icon.classList.remove('ri-close-line');
-                            icon.classList.add('ri-menu-line');
-                            const header = document.getElementById('main-header');
-                            if (window.scrollY <= 50) {
-                                header.classList.remove('scrolled');
-                            }
-                        }
-                    }
-                });
-            });
-        });
-    </script>
-    
-    <script id="form-handling">
-        document.addEventListener('DOMContentLoaded', function() {
-            const forms = document.querySelectorAll('form');
-            const csrf_token = document.querySelector('meta[name="csrf_token"]')?.getAttribute('value');
-            // const toast = document.getElementById('toast');
-            forms.forEach(form => {
-                form.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    let status = false;
-                    const redirect = form.getAttribute('data-redirect');
-
-                    const submitButton = this.querySelector('button[type="submit"]');
-                    const originalText = submitButton.textContent;
-                    submitButton.textContent = 'Đang xử lý...';
-                    submitButton.disabled = true;
-                    const formData = new FormData(form);
-
-                    try {
-                        const response = await fetch(form.action, {
-                            method: form.method,
-                            headers: {
-                                'X-CSRF-TOKEN': csrf_token
-                            },
-                            body: formData
-                        });
-                        if (response.ok) {
-                            Swal.fire('Thành công!',
-                                'Cảm ơn bạn đã đăng ký combo của chúng tôi', 'success')
-                            form.reset();
-                            const result = await response.json();
-                            if (result.status == 'success') {
-                                status = true;
-                            }
-                        } else {
-                            Swal.fire('Lỗi!', 'Có lỗi xảy ra, vui lòng thử lại!', 'error')
-                        }
-                    } catch (error) {
-                        Swal.fire('Lỗi!', 'Lỗi kết nối!', 'error')
-                    }
-                    setTimeout(() => {
-                        submitButton.textContent = originalText;
-                        submitButton.disabled = false;
-                        if (status) window.location.href = redirect;
-                    }, 3000);
-                    return;
-                });
-            });
-        });
-    </script>
-    <script id="product-carousel">
-        document.addEventListener('DOMContentLoaded', function() {
-            const carousel = document.querySelector('.product-carousel');
-            const slides = document.querySelector('.product-slides');
-            const prevBtn = carousel.querySelector('.prev');
-            const nextBtn = carousel.querySelector('.next');
-            const dots = document.querySelectorAll('.carousel-dot');
-            const infoSlides = document.querySelectorAll('.product-info-slide');
-            let currentSlide = 0;
-            const totalSlides = 1;
-
-            function updateSlide(index) {
-                slides.style.transform = `translateX(-${index * 100}%)`;
-                dots.forEach((dot, i) => {
-                    dot.classList.toggle('bg-primary', i === index);
-                    dot.classList.toggle('bg-primary/30', i !== index);
-                });
-                infoSlides.forEach((slide, i) => {
-                    slide.classList.toggle('hidden', i !== index);
-                    slide.classList.toggle('active', i === index);
-                });
-                currentSlide = index;
-            }
 
 
-            updateSlide(0);
-        });
-    </script>
+    <style>
+        .product-slides {
+            position: relative;
+        }
+
+        .product-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .product-slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+    </style>
     <script>
-        document.getElementById("scrollBtn").addEventListener("click", function() {
-            const element = document.getElementById("ve-chung-toi");
-            const headerOffset = 80; // chiều cao header
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        document.addEventListener("DOMContentLoaded", () => {
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        });
-        document.getElementById("scrollBtnMB").addEventListener("click", function() {
-            const element = document.getElementById("ve-chung-toi");
-            const headerOffset = 80; // chiều cao header
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            document.querySelectorAll(".product-slides").forEach(slider => {
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
+                const slides = slider.querySelectorAll(".product-slide");
+                if (slides.length <= 1) {
+                    slider.querySelector(".product-slide").classList.add("active");
+                    return;
+                }
+
+                let index = 0;
+                slides[index].classList.add("active");
+
+                function randomTime() {
+                    return Math.floor(Math.random() * (8000 - 5000 + 1)) + 5000;
+                }
+
+                function runSlide() {
+                    setTimeout(() => {
+                        slides[index].classList.remove("active");
+                        index = (index + 1) % slides.length;
+                        slides[index].classList.add("active");
+                        runSlide(); // gọi lại với time mới
+                    }, randomTime());
+                }
+
+                runSlide();
             });
+
         });
     </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"version":"2024.11.0","token":"192c87cdce3a4ada85917427f34033cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
