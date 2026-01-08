@@ -406,8 +406,8 @@
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG HÀ NỘI</h3>
                             <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
-                            <p class="text-red-600">Hotline: <a href="tel:0988393000"
-                                    class="hover:text-red-700">0988.393.000</a></p>
+                            <p class="text-red-600">Hotline: <a href="tel:0903481086"
+                                    class="hover:text-red-700">090.348.1086</a></p>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
@@ -468,7 +468,7 @@
                     <i class="ri-close-line text-lg"></i>
                 </button>
             </div>
-            <a href="tel:0988393000"
+            <a href="tel:0903481086"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>

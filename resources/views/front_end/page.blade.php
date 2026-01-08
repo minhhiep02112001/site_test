@@ -269,7 +269,8 @@
 
                 <div class="flex items-center">
                     <a href="/">
-                        <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo" class="h-[100px] w-auto p-1">
+                        <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo"
+                            class="h-[100px] w-auto p-1">
                     </a>
                 </div>
                 <button type="button"
@@ -344,11 +345,12 @@
                     </ol>
                     <div
                         class="bg-gradient-to-r from-wineRed/10  to-secondary/10 p-8 rounded-2xl text-center mb-10 shadow-lg transform hover:shadow-2xl transition-shadow duration-500">
-                        <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
+                        <div
+                            class="bg-gray-50 p-4 rounded-xl shadow-md hover:bg-wineRed/5 transition-colors duration-300">
                             <h3 class="font-bold text-3xl text-[#333] mb-4 animate-bounce">Tổng giá trị quà tặng:
-                            5.868.000VNĐ</h3>
-                        <p class="text-xl  text-[#333] mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
-                            chúng tôi với chỉ một lần thanh toán 8.100.000VNĐ duy nhất.</p>
+                                5.868.000VNĐ</h3>
+                            <p class="text-xl  text-[#333] mb-6">Như vậy, với Combo này bạn đã có tất cả các ưu đãi của
+                                chúng tôi với chỉ một lần thanh toán 8.100.000VNĐ duy nhất.</p>
                         </div>
                         <button id="buy-now-btn"
                             class="bg-wineRed hover:bg-wineRed/80 text-white px-10 py-5 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-110 animate-pulse">
@@ -446,7 +448,7 @@
                         <input type="text" name="address" required
                             class="w-full px-6 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-wineRed/30 focus:border-wineRed bg-gray-50 placeholder-gray-400 transition-all duration-300 hover:bg-white">
                     </div>
-                    
+
                     <div class="relative">
                         <label
                             class="block text-base font-medium text-[#fff] mb-2 after:content-['*'] after:text-red-500 after:ml-1">Số
@@ -476,7 +478,7 @@
                         <i class="ri-close-line text-lg"></i>
                     </button>
                 </div>
-                <a href="tel:0988393000"
+                <a href="tel:0903481086"
                     class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                     <i class="ri-phone-line text-2xl mb-1"></i>
                     <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
@@ -541,14 +543,14 @@
         </style>
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- 
-   
+
+
 
         <script id="form-handling">
             document.addEventListener('DOMContentLoaded', function() {
                 const form = document.getElementById('register-form');
                 const csrf_token = document.querySelector('meta[name="csrf_token"]')?.getAttribute('value');
-                
+
                 form.addEventListener('submit', async function(e) {
                     e.preventDefault();
                     let status = false;
@@ -558,7 +560,7 @@
                     submitButton.textContent = 'Đang xử lý...';
                     submitButton.disabled = true;
                     const formData = new FormData(form);
-                    
+
                     try {
                         const response = await fetch(form.action, {
                             method: form.method,
@@ -568,24 +570,24 @@
                             body: formData
                         });
                         if (response.ok) {
-                             Swal.fire('Thành công!','Đã gửi đăng ký thành công!', 'success') 
-                            
+                            Swal.fire('Thành công!', 'Đã gửi đăng ký thành công!', 'success')
+
                             form.reset();
                             const result = await response.json();
                             if (result.status == 'success') {
                                 status = true;
                             }
                         } else {
-                              Swal.fire('Lỗi!', 'Có lỗi xảy ra, vui lòng thử lại!', 'error')  
+                            Swal.fire('Lỗi!', 'Có lỗi xảy ra, vui lòng thử lại!', 'error')
                         }
                     } catch (error) {
-                          Swal.fire('Lỗi!', 'Lỗi kết nối!', 'error')  
-                        
+                        Swal.fire('Lỗi!', 'Lỗi kết nối!', 'error')
+
                     }
                     setTimeout(() => {
                         submitButton.textContent = originalText;
                         submitButton.disabled = false;
-                        if (status) window.location.href = redirect; 
+                        if (status) window.location.href = redirect;
                     }, 3000);
                     return;
                 });
@@ -601,10 +603,10 @@
                     <img src="/assets/logo/logo-thebestwine-official.png" alt="Rượu Nhập Logo" class="h-24 mb-6">
                     <div class="space-y-4">
                         <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH HÀ NỘI</h3>
+                            <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG HÀ NỘI</h3>
                             <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
-                            <p class="text-red-600">Hotline: <a href="tel:0988393000"
-                                    class="hover:text-red-700">0988.393.000</a></p>
+                            <p class="text-red-600">Hotline: <a href="tel:0903481086"
+                                    class="hover:text-red-700">090.348.1086</a></p>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">CHI NHÁNH TP.HCM</h3>
@@ -660,7 +662,8 @@
                         <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
                             thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
                             để khách hàng lựa chọn các sản phẩm rượu vang nhập khẩu chính hãng uy tín và chất lượng.</p>
-                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết sự
+                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết
+                            sự
                             lựa chọn của khách hàng ở The Best Wine sẽ luôn là TỐT NHẤT.</p>
                     </div>
                 </div>
