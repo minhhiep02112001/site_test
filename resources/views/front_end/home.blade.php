@@ -829,8 +829,8 @@
                         <div>
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
                             <p class="text-red-600">Địa chỉ: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
-                            <p class="text-red-600">Hotline: <a href="tel:093623919"
-                                    class="hover:text-red-700">090.464.1325</a></p>
+                            <p class="text-red-600">Hotline: <a href="tel: 0988393000"
+                                    class="hover:text-red-700">0988.393.000</a></p>
                         </div>
                         <div class="flex space-x-4 mt-6">
                             <a href="#" class="text-red-800 hover:text-red-600 transition-colors">
@@ -890,7 +890,7 @@
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
             </a>
-            <a href="tel:0904641325"
+            <a href="tel:0988393000"
                 class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
                 <i class="ri-phone-line text-2xl mb-1"></i>
                 <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>

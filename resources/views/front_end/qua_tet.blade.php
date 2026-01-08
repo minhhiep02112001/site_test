@@ -763,7 +763,7 @@
                             <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
                             <p class="text-red-600">Địa chỉ: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
                             <p class="text-red-600">Hotline: <a href="tel:0988393000"
-                                    class="hover:text-red-700">0988393000</a></p>
+                                    class="hover:text-red-700">0988.393.000</a></p>
                         </div>
                         <div class="flex space-x-4 mt-6">
                             <a href="#" class="text-red-800 hover:text-red-600 transition-colors">
