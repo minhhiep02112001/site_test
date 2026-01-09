@@ -229,17 +229,11 @@
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section class="py-12 mt-[80px]  md:min-h-[750px] h-[220px] md:h-[750px] lg:min-h-[950px] lg:h-[950px]  flex items-center "
-        style="background-image: url('./images/banner_qua_tet.jpg'); background-size: cover; background-position: center;">
-        <div class="lg:w-[1200px] mx-auto px-0 md:px-2  sm:mt-12 md:pt-16 lg:mt-[-50px]">
-            {{-- <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
-                <div class="w-full  ">
-                    <img src="{{asset('./images/banner_qua_tet.jpg')}}" alt="Cách đọc nhãn chai rượu vang"
-                        class="w-full rounded-2xl shadow-2xl object-cover h-[100%] ">
-                </div>
-
-            </div> --}}
-        </div>
+    <section
+        class="py-12 mt-[80px] h-[220px] md:h-[750px] lg:h-[950px] flex items-center
+         bg-[url('./images/banner_qua_tet.jpg')]
+         md:bg-[url('./images/banner_qua_tet_desk.jpg')]
+         bg-cover bg-center">
     </section>
     <!-- Produ
      ct Introduction -->
@@ -640,7 +634,8 @@
                         <i class="ri-headphone-line text-primary text-4xl"></i>
                     </div>
                     <p class="text-gray-700 text-center font-medium">
-                        Đội ngũ chuyên gia 15 năm kinh nghiệm sẵn sàng tư vấn 24/7 để mang đến khách hàng sự lựa chọn tốt nhất.
+                        Đội ngũ chuyên gia 15 năm kinh nghiệm sẵn sàng tư vấn 24/7 để mang đến khách hàng sự lựa chọn
+                        tốt nhất.
                     </p>
                 </div>
             </div>
@@ -812,7 +807,8 @@
         </div>
     </footer>
     <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
-        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl" style="justify-content: center;">
+        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl"
+            style="justify-content: center;">
             <div class="hidden justify-end p-1 md:flex ">
                 <button id="cta-close" class="text-white hover:text-gray-300">
                     <i class="ri-close-line text-lg"></i>
