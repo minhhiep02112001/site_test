@@ -462,7 +462,7 @@
         </div>
     </footer>
     <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
-        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
+        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl" style="justify-content: center;">
             <div class="hidden justify-end p-1 md:flex ">
                 <button id="cta-close" class="text-white hover:text-gray-300">
                     <i class="ri-close-line text-lg"></i>

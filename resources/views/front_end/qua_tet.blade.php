@@ -229,7 +229,7 @@
         </div>
     </header>
     <!-- Wine Education Banner -->
-    <section class="py-12 mt-[80px]  md:min-h-[500px] h-[110px] md:h-[500px]  flex items-center "
+    <section class="py-12 mt-[80px]  md:min-h-[750px] h-[220px] md:h-[750px] lg:min-h-[950px] lg:h-[950px]  flex items-center "
         style="background-image: url('./images/banner_qua_tet.jpg'); background-size: cover; background-position: center;">
         <div class="lg:w-[1200px] mx-auto px-0 md:px-2  sm:mt-12 md:pt-16 lg:mt-[-50px]">
             {{-- <div class="flex flex-col md:flex-row items-center gap-10 h-full ">
@@ -812,7 +812,7 @@
         </div>
     </footer>
     <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
-        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl">
+        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl" style="justify-content: center;">
             <div class="hidden justify-end p-1 md:flex ">
                 <button id="cta-close" class="text-white hover:text-gray-300">
                     <i class="ri-close-line text-lg"></i>
