@@ -8,11 +8,8 @@
      <h3 style="text-align: center;">
          @switch($form)
              @case('form_1')
-                 {{ 'COMBO 2.370.000 VNĐ' }}
-             @break
-
              @case('form_2')
-                 {{ 'Ưu đãi đặc biệt - 6 CHAI RƯỢU VANG ELLETRA PRIMITIVO' }}
+                 {{ 'COMBO 2.370.000 VNĐ' }}
              @break
 
              @case('form_3')
