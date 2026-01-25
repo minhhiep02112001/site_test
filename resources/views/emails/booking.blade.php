@@ -17,7 +17,7 @@
              @break
 
              @case('form_4')
-                 {{ 'Quà tặng Tết' }}
+                 {{ 'Khuyến Mại tủ' }}
              @break
          @endswitch
      </h3>
