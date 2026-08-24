@@ -1,74 +1,34 @@
-
- 
-@if (!empty($config_social))
-    <ul class="socials">
-        @if (!empty($config_social->yelp))
-            <li>
-                <a href="{{ $config_social->yelp }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/yelp.png" alt="yelp" width="30px" height="30px">
-                </a>
-            </li>
-        @endif
-        @if (!empty($config_social->tripadvisor))
-            <li>
-                <a href="{{ $config_social->tripadvisor }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/tripadvisor.png" alt="tripadvisor" width="30px" height="30px">
-                </a>
-            </li>
-        @endif
-        @if (!empty($config_social->facebook))
-            <li>
-                <a href="{{ $config_social->facebook }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/facebook-1.png" alt="facebook" width="30px" height="30px">
-                </a>
-            </li>
-        @endif
-        @if (!empty($config_social->pinterest))
-            <li>
-                <a href="{{ $config_social->pinterest }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/Pinterest-icon.png" alt="pinterest" width="30px" height="30px">
-                </a></li>
-        @endif
-        
-        @if (!empty($config_social->instagram))
-            <li>
-                <a href="{{ $config_social->instagram }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/instagram.png" alt="pinterest" width="30px" height="30px">
-                </a></li>
-        @endif
-
-        @if (!empty($config_social->twitter))
-            <li><a href="{{ $config_social->twitter }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/twitter.png" alt="twitter" width="30px" height="30px">
-                </a></li>
-        @endif
-        @if (!empty($config_social->telegram))
-            <li><a href="{{ $config_social->telegram }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/telegram.png" alt="twitter" width="30px" height="30px">
-                </a></li>
-        @endif
-        @if (!empty($config_social->tiktok))
-            <li><a href="{{ $config_social->tiktok }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/tiktok.png" alt="tiktok" width="30px" height="30px">
-                </a></li>
-        @endif
-        @if (!empty($config_social->zalo))
-            <li><a href="{{ $config_social->zalo }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/zalo.png" alt="zalo" width="30px" height="30px">
-                </a></li>
-        @endif
-        @if (!empty($config_social->whatsapp))
-            <li><a href="{{ $config_social->whatsapp }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/whatsapp.png" alt="whatsapp" width="30px" height="30px">
-                </a></li>
-        @endif
-
-        @if (!empty($config_social->youtobe))
-            <li><a href="{{ $config_social->youtobe }}" rel="nofollow" target="_blank">
-                    <img src="/assets/images/youtube.png" alt="youtube" width="30px" height="30px">
-                </a></li>
-        @endif
-
-    </ul>
-@endif
-
+<div id="cta-container" class="fixed w-full md:w-[150px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
+    <div id="cta-full" class="  flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl"
+        style="justify-content: center;">
+        <div class="hidden justify-end p-1 md:flex ">
+            <button id="cta-close" class="text-white hover:text-gray-300">
+                <i class="ri-close-line text-lg"></i>
+            </button>
+        </div>
+        <a href="tel:0903481086"
+            class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+            <i class="ri-phone-line text-2xl mb-1"></i>
+            <span class="text-sm font-bold">Hotline HN</span>
+        </a>
+        <a href="tel:0904641325"
+            class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+            <i class="ri-phone-line text-2xl mb-1"></i>
+            <span class="text-sm font-bold">Hotline SG</span>
+        </a>
+        <a href="https://zalo.me/0988393000"
+            class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+            <i class="ri-chat-1-line text-2xl mb-1"></i>
+            <span class="text-sm font-bold">Zalo</span>
+        </a>
+        <a href="https://m.me/yourmessenger"
+            class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
+            <i class="ri-messenger-line text-2xl mb-1"></i>
+            <span class="text-sm font-bold">Messenger</span>
+        </a>
+    </div>
+    <button id="cta-toggle"
+        class="hidden bg-[#990F07] text-white p-2 rounded-full shadow-md hover:bg-[#800D05] transition-colors">
+        <i class="ri-chat-smile-3-line text-xl"></i>
+    </button>
+</div>

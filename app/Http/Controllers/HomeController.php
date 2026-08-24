@@ -85,25 +85,5 @@ class HomeController extends Controller
         }
         return abort(404);;
     }
-    private function redirectUrl($link, $request)
-    {
-        if (!empty($link->type)) {
-            switch ($link->type) {
-                // case 'category':
-                //     return $this->category($request, $link->slug, $link->key_id);
-                //     break;
-                // case 'post':
-                //     return $this->post($request, $link->slug);
-                //     break;
-                // case 'page':
-                //     return $this->page($request, $link->slug);
-                //     break;
-                default:
-                    return abort(404);
-                    break;
-            }
-        }
 
-        return abort(404);
-    }
 }

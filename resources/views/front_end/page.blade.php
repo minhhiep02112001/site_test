@@ -7,7 +7,7 @@
     <title>Ưu Đãi Đặc Biệt - Elletra Primitivo</title>
     <link rel="icon" type="image/png" href="./assets/uploads/favicon.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <meta name="csrf_token" value="{{ csrf_token() }}">
+    <meta name="csrf_token" value="wZFmV9LxlU0i8B055RVfbjymBHzfdJaBfVidLqa8">
     <script>
         tailwind.config = {
             theme: {
@@ -423,8 +423,8 @@
                     Form
                     Đăng
                     Ký</h2>
-                <form id="register-form" action="{{ route('booking') }}" method="post"
-                    data-redirect="{{ route('page') }}"
+                <form id="register-form" action="https://vangcaocap.vn/booking" method="post"
+                    data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
                     class="bg-[#990e06]  text-[#333] backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-wineRed/20 space-y-6 max-w-xl mx-auto transform hover:scale-102 transition-all duration-500">
                     <input type="hidden" name="form_type" value="form_2">
                     <div class="relative">
@@ -471,8 +471,8 @@
             </div>
         </section>
         <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
-            <div id="cta-full"
-                class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl" style="justify-content: center;">
+            <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl"
+                style="justify-content: center;">
                 <div class="hidden justify-end p-1 md:flex " style="justify-content: center;">
                     <button id="cta-close" class="text-white hover:text-gray-300">
                         <i class="ri-close-line text-lg"></i>

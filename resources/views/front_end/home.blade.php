@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -8,7 +9,7 @@
     <link rel="icon" type="image/png" href="./assets/uploads/favicon.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 
-    <meta name="csrf_token" value="{{ csrf_token() }}">
+    <meta name="csrf_token" value="wZFmV9LxlU0i8B055RVfbjymBHzfdJaBfVidLqa8">
 
     <script>
         tailwind.config = {
@@ -485,7 +486,7 @@
                         </div>
                     </div>
                     <div>
-                        <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
+                        <form action="https://vangcaocap.vn/booking" method="post" data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
                             class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-3xl shadow-xl relative overflow-hidden">
                             <div class="absolute inset-0 opacity-10"
                                 style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
@@ -705,10 +706,9 @@
             <div class="bg-white rounded-xl p-8 text-center max-w-3xl mx-auto mb-8">
                 <h4 class="text-3xl font-bold text-[#B91C1C] mb-8">THÔNG TIN ĐẶT HÀNG</h4>
                 <div class="space-y-8">
-                    <form action="{{ route('booking') }}" method="post" data-redirect="{{ route('page') }}"
+                    <form action="https://vangcaocap.vn/booking" method="post" data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
                         class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-xl mt-8 text-left relative overflow-hidden">
-                        @csrf
-                        <input type="hidden" name="form_type" value="form_2">
+                        <input type="hidden" name="_token" value="wZFmV9LxlU0i8B055RVfbjymBHzfdJaBfVidLqa8">                        <input type="hidden" name="form_type" value="form_2">
                         <div class="absolute inset-0 opacity-10"
                             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                         </div>
@@ -768,11 +768,7 @@
         </div>
     </section>
 
-    {{-- <section class="py-10 relative overflow-hidden "
-        style="background-image: url('./assets/images/banner_sale_1.jpg') ; background-size:cover;"
-        style="min-height: 570px;">
-        <div class=" banner-sale"></div>
-    </section> --}}
+
 
     <section class="my-10 relative overflow-hidden ">
         <div class=" banner-sale"
