@@ -25,4 +25,10 @@ Route::group([
     Route::get('/uu-dai-dac-biet', [App\Http\Controllers\HomeController::class, 'page'])->name('page')->where(['slug' => '[a-z0-9-_]+']);
     Route::get('/khuyen-mai', [App\Http\Controllers\HomeController::class, 'khuyenMai']);
     Route::get('/qua-tet', [App\Http\Controllers\HomeController::class, 'quaTet']);
+    Route::get('/chinh-sach-bao-mat', [App\Http\Controllers\HomeController::class, 'chinhSachBaoMat']);
+    Route::get('/chinh-sach-thanh-toan', [App\Http\Controllers\HomeController::class, 'chinhSachThanhToan']);
+    Route::get('/chinh-sach-ve-gia', [App\Http\Controllers\HomeController::class, 'chinhSachVeGia']);
+    Route::get('/chinh-sach-van-chuyen-va-doi-tra-hang', [App\Http\Controllers\HomeController::class, 'chinhSachVanChuyenVaDoiTraHang']);
+    Route::get('/phuong-thuc-tiep-can-va-khieu-nai', [App\Http\Controllers\HomeController::class, 'phuongThucTiepCanVaKhieuNai']);
+    Route::get('/dieu-kien-han-che-trong-viec-cung-cap-hang-hoa', [App\Http\Controllers\HomeController::class, 'dieuKienHanCheTrongViecCungCapHangHoa']);
 });

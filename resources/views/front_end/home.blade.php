@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -486,7 +485,8 @@
                         </div>
                     </div>
                     <div>
-                        <form action="https://vangcaocap.vn/booking" method="post" data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
+                        <form action="https://vangcaocap.vn/booking" method="post"
+                            data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
                             class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-3xl shadow-xl relative overflow-hidden">
                             <div class="absolute inset-0 opacity-10"
                                 style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
@@ -706,9 +706,11 @@
             <div class="bg-white rounded-xl p-8 text-center max-w-3xl mx-auto mb-8">
                 <h4 class="text-3xl font-bold text-[#B91C1C] mb-8">THÔNG TIN ĐẶT HÀNG</h4>
                 <div class="space-y-8">
-                    <form action="https://vangcaocap.vn/booking" method="post" data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
+                    <form action="https://vangcaocap.vn/booking" method="post"
+                        data-redirect="https://vangcaocap.vn/uu-dai-dac-biet"
                         class="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-xl mt-8 text-left relative overflow-hidden">
-                        <input type="hidden" name="_token" value="wZFmV9LxlU0i8B055RVfbjymBHzfdJaBfVidLqa8">                        <input type="hidden" name="form_type" value="form_2">
+                        <input type="hidden" name="_token" value="wZFmV9LxlU0i8B055RVfbjymBHzfdJaBfVidLqa8"> <input
+                            type="hidden" name="form_type" value="form_2">
                         <div class="absolute inset-0 opacity-10"
                             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23800020\' fill-opacity=\'1\' d=\'M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,133.3C960,139,1056,181,1152,192C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E'); background-size: cover; background-repeat: repeat-y;">
                         </div>
@@ -809,104 +811,11 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer class="bg-white text-red-800 py-16" id="contact">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="flex flex-col md:flex-row items-start gap-8 mb-16">
-                <div class="w-full md:w-1/3">
-                    <img src="./assets/uploads/logo.png" alt="Rượu Nhập Logo" class="h-24 mb-6">
-                    <div class="space-y-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG HÀ NỘI</h3>
-                            <p class="text-red-600">Địa chỉ: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
-                            <p class="text-red-600">Hotline: <a href="tel:0903481086"
-                                    class="hover:text-red-700">090.348.1086</a></p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-2">VĂN PHÒNG TP.HCM</h3>
-                            <p class="text-red-600">Địa chỉ: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
-                            <p class="text-red-600">Hotline: <a href="tel: 0988393000"
-                                    class="hover:text-red-700">0988.393.000</a></p>
-                        </div>
-                        <div class="flex space-x-4 mt-6">
-                            <a href="#" class="text-red-800 hover:text-red-600 transition-colors">
-                                <i class="ri-facebook-fill ri-lg"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-1 w-full">
-                    <h2 class="text-2xl font-bold text-red-900 mb-8">BẢN ĐỒ</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-4">Văn Phòng Hà Nội</h3>
-                            <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.9085414087895!2d105.801156!3d21.014502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab005f399e4d%3A0x76cb4c55e88d43b3!2sThe%20Best%20Wine!5e0!3m2!1svi!2s!4v1756420834643!5m2!1svi!2s"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-red-900 mb-4">Văn Phòng TP HCM</h3>
-                            <div class="bg-gray-50 rounded-lg overflow-hidden aspect-[4/3]">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1899815783077!2d106.68876817584616!3d10.796756758816784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cef41a3e99%3A0x6d9f736ab46da8bc!2zMjMgSG9hIExhbiwgUGjGsOG7nW5nIDcsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmggNzI1NTA3LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1756202313395!5m2!1svi!2s"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen=""
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-red-200 pt-8">
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img src="./assets/uploads/logo_footer.png" alt="The Best Wine Logo" class=" object-contain ">
-                    <div class="text-red-800 text-lg leading-relaxed">
-                        <p class="mb-4">The Best Wine luôn là công ty tiên phong và dẫn đầu về truyền bá nghệ thuật
-                            thưởng thức rượu vang và văn hóa giao tiếp trên bàn tiệc, và là thương hiệu, địa chỉ tin cậy
-                            để khách hàng lựa chọn các sản phẩm rượu vang nhập khẩu chính hãng uy tín và chất lượng.</p>
-                        <p>Với Sứ mệnh <span class="font-bold">"YOUR CHOICE IS THE BEST"</span>, chúng tôi luôn cam kết
-                            sự
-                            lựa chọn của khách hàng ở The Best Wine sẽ luôn là TỐT NHẤT.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div id="cta-container" class="fixed w-full md:w-[100px] bottom-0 md:bottom-4 right:0 md:right-4 z-50">
-        <div id="cta-full" class="flex md:flex-col sm:flex-row bg-[#990F07] rounded-xl overflow-hidden shadow-xl" style="justify-content: center;">
-            <div class="hidden justify-end p-1 md:flex ">
-                <button id="cta-close" class="text-white hover:text-gray-300">
-                    <i class="ri-close-line text-lg"></i>
-                </button>
-            </div>
-            <a href="tel:0903481086"
-                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-                <i class="ri-phone-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold whitespace-nowrap">Hotline HN</span>
-            </a>
-            <a href="tel:0988393000"
-                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-                <i class="ri-phone-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold whitespace-nowrap">Hotline SG</span>
-            </a>
-            <a href="https://zalo.me/0904641325"
-                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-                <i class="ri-chat-1-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold">Zalo</span>
-            </a>
-            <a href="https://www.facebook.com/messages/t/100824539542485"
-                class="flex flex-col items-center justify-center py-2 px-4 text-white hover:bg-[#800D05] transition-colors border-t border-red-900/30">
-                <i class="ri-messenger-line text-2xl mb-1"></i>
-                <span class="text-sm font-bold">Messenger</span>
-            </a>
-        </div>
-        <button id="cta-toggle"
-            class="hidden bg-[#990F07] text-white p-2 rounded-full shadow-md hover:bg-[#800D05] transition-colors">
-            <i class="ri-chat-smile-3-line text-xl"></i>
-        </button>
-    </div>
+    @include('front_end.layout.footer')
+
+    @include('front_end.block.share_social')
 
     <!-- Thêm CDN -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -1131,6 +1040,7 @@
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"192c87cdce3a4ada85917427f34033cd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
+    @include('front_end.block.age_verification_popup')
 </body>
 
 </html>

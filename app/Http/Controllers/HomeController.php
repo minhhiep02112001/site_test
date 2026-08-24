@@ -34,6 +34,35 @@ class HomeController extends Controller
         return view('front_end.qua_tet', []);
     }
 
+    public function chinhSachThanhToan()
+    {
+        return view('front_end.chinh-sach-thanh-toan');
+    }
+    public function chinhSachVeGia()
+    {
+        return view('front_end.chinh-sach-ve-gia');
+    }
+    public function chinhSachBaoMat()
+    {
+        return view('front_end.chinh-sach-bao-mat');
+    }
+
+    public function chinhSachVanChuyenVaDoiTraHang()
+    {
+        return view('front_end.chinh-sach-van-chuyen-va-doi-tra-hang');
+    }
+
+    public function phuongThucTiepCanVaKhieuNai()
+    {
+        return view('front_end.phuong-thuc-tiep-can-va-khieu-nai');
+    }
+
+    public function dieuKienHanCheTrongViecCungCapHangHoa()
+    {
+        return view('front_end.dieu-kien-han-che-trong-viec-cung-cap-hang-hoa');
+    }
+
+
     public function booking(Request $request)
     {
         $request->validate([
@@ -61,7 +90,7 @@ class HomeController extends Controller
                     break;
             }
             Mail::to($receiverEmail)->send(new \App\Mail\SendEmailBooking($booking));
-            if(!empty($redirect)){
+            if (!empty($redirect)) {
                 return redirect($redirect);
             }
             return response()->json(['status' => 'success'], 200);
@@ -85,5 +114,4 @@ class HomeController extends Controller
         }
         return abort(404);;
     }
-
 }
