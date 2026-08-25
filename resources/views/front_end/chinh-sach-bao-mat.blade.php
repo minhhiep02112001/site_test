@@ -207,7 +207,7 @@
                             </p>
 
                             <p>
-                                Thành lập và hoạt động theo Giấy chứng nhận đăng ký thuế số <dd class="text-gray-700">{{ config('data.company.mst') }}</dd> do Sở tài chính
+                                Thành lập và hoạt động theo Giấy chứng nhận đăng ký thuế số {{ config('data.company.mst') }} do Sở tài chính
                                 Thành phố Hà Nội cấp ngày {{ config('data.company.date') }}
                             </p>
                         </section>
