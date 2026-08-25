@@ -47,30 +47,64 @@
         .age-popup__actions{flex-direction:column}.age-popup__button{width:100%;font-size:19px}
     }
 </style>
-
 <script>
-    (function(){
-        const key='ruou_vang_24h_age_verified';
-        const popup=document.getElementById('age-verification-popup');
-        const accept=document.getElementById('age-popup-accept');
-        const reject=document.getElementById('age-popup-reject');
-        if(!popup||!accept||!reject)return;
+    (function () {
+        const key = 'ruou_vang_cao_cap_age_verified';
+        const duration = 30 * 60 * 1000; // 30 phút
 
-        let verified=false;
-        try{verified=localStorage.getItem(key)==='true'}catch(error){}
-        if(!verified){
-            popup.hidden=false;
-            document.documentElement.style.overflow='hidden';
-            accept.focus();
+        const popup = document.getElementById('age-verification-popup');
+        const accept = document.getElementById('age-popup-accept');
+        const reject = document.getElementById('age-popup-reject');
+
+        if (!popup || !accept || !reject) {
+            return;
         }
 
-        accept.addEventListener('click',function(){
-            try{localStorage.setItem(key,'true')}catch(error){}
-            popup.hidden=true;
-            document.documentElement.style.overflow='';
+        let verified = false;
+
+        try {
+            const storedValue = localStorage.getItem(key);
+
+            if (storedValue) {
+                const data = JSON.parse(storedValue);
+
+                if (data.verified === true && Date.now() < data.expiresAt) {
+                    verified = true;
+                } else {
+                    localStorage.removeItem(key);
+                }
+            }
+        } catch (error) {
+            localStorage.removeItem(key);
+        }
+
+        if (!verified) {
+            popup.hidden = false;
+            document.documentElement.style.overflow = 'hidden';
+
+            setTimeout(function () {
+                accept.focus();
+            }, 0);
+        }
+
+        accept.addEventListener('click', function () {
+            try {
+                localStorage.setItem(
+                    key,
+                    JSON.stringify({
+                        verified: true,
+                        expiresAt: Date.now() + duration
+                    })
+                );
+            } catch (error) {
+                console.warn('Không thể lưu xác nhận độ tuổi:', error);
+            }
+
+            popup.hidden = true;
+            document.documentElement.style.overflow = '';
         });
 
-        reject.addEventListener('click',function(){
+        reject.addEventListener('click', function () {
             window.location.replace('https://www.google.com/');
         });
     })();
