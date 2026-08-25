@@ -2,9 +2,9 @@
 <div id="age-verification-popup" class="age-popup" role="dialog" aria-modal="true" aria-labelledby="age-popup-title" hidden>
     <div class="age-popup__backdrop"></div>
     <div class="age-popup__content">
-        <h2 id="age-popup-title">WELCOME TO RƯỢU VANG 24H</h2>
+        <h2 id="age-popup-title">WELCOME TO RƯỢU VANG CAO CẤP</h2>
         <p class="age-popup__notice">
-            Các Sản Phẩm Của Rượu Vang 24H<br>
+            Các Sản Phẩm Của Rượu Vang Cao Cấp<br>
             Không Dành Cho Phụ Nữ Mang Thai<br>
             Và Người Dưới 18 Tuổi
         </p>
