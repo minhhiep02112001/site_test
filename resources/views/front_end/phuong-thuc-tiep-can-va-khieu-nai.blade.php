@@ -175,10 +175,20 @@
                                 <strong>Địa chỉ tiếp nhận (nếu có):</strong>
                             </p>
 
-                            <p>
-                                {{ config('data.company.name', '[.....]') }}<br>
-                                {!! config('data.company.address', '[.....]') !!}
-                            </p>
+
+                            <ul>
+                                <li>
+                                    <p><strong>VĂN PHÒNG HÀ NỘI </strong></p>
+                                    <p><strong>Địa chỉ</strong>: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                                    <p><strong>Hotline</strong>: 090.348.1086</p>
+                                </li>
+
+                                <li>
+                                    <p><strong>VĂN PHÒNG TP.HCM</strong></p>
+                                    <p><strong>Địa chỉ</strong>: 23 Hoa Lan, P2, Phú Nhuận, TP HCM</p>
+                                    <p><strong>Hotline</strong>: 0988.393.000</p>
+                                </li>
+                            </ul>
 
                             <p>Khách hàng vui lòng cung cấp đầy đủ các thông tin sau:</p>
 
@@ -394,7 +404,10 @@
 
                             <p>
                                 <strong>Website:</strong>
-                                {{ config('data.company.website', '[.....]') }}
+                                <a href="{{ env('APP_URL', config('data.company.website')) }}" target="_blank"
+                                    rel="noopener noreferrer">
+                                    {{ config('data.company.website', '[.....]') }}
+                                </a>
                             </p>
 
                             <p>

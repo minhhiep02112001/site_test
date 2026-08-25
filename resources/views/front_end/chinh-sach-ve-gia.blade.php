@@ -116,7 +116,10 @@
                             </div>
 
                             <p>
-                                Website <strong>{{ config('data.company.website', '[.....]') }}</strong> cam kết công khai, minh bạch về giá bán hàng hóa
+                                Website <strong><a href="{{ env('APP_URL', config('data.company.website')) }}" target="_blank"
+                                        rel="noopener noreferrer">
+                                        {{ config('data.company.website', '[.....]') }}
+                                    </a></strong> cam kết công khai, minh bạch về giá bán hàng hóa
                                 và các khoản chi phí liên quan nhằm giúp khách hàng dễ dàng lựa chọn và đưa ra quyết
                                 định mua sắm.
                             </p>
@@ -240,7 +243,10 @@
                             </div>
 
                             <p>
-                                Website <strong>{{ config('data.company.website', '[.....]') }}</strong> là website bán
+                                Website <strong><a href="{{ env('APP_URL', config('data.company.website')) }}" target="_blank"
+                                        rel="noopener noreferrer">
+                                        {{ config('data.company.website', '[.....]') }}
+                                    </a></strong> là website bán
                                 hàng của doanh nghiệp và
                                 <strong>
                                     không thu phí mở tài khoản, duy trì tài khoản, phí xử lý đơn hàng
