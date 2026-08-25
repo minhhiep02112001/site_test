@@ -203,17 +203,12 @@
                             </div>
 
                             <p>
-                                Tên doanh nghiệp: CÔNG TY CỔ PHẦN THE BEST WINE
+                                Tên doanh nghiệp: <dd class="text-gray-700">{{ config('data.company.name') }}</dd>
                             </p>
 
                             <p>
-                                Thành lập và hoạt động theo Giấy chứng nhận đăng ký thuế số [.....] do Sở tài chính
-                                Thành phố Hà Nội cấp ngày [.....]
-                            </p>
-
-                            <p>
-                                Thành lập và hoạt động theo Giấy chứng nhận đăng ký thuế số [.....] do Sở tài chính
-                                Thành phố Hà Nội cấp ngày [.....]
+                                Thành lập và hoạt động theo Giấy chứng nhận đăng ký thuế số <dd class="text-gray-700">{{ config('data.company.mst') }}</dd> do Sở tài chính
+                                Thành phố Hà Nội cấp ngày {{ config('data.company.date') }}
                             </p>
                         </section>
 
@@ -230,8 +225,8 @@
                                 đã cung cấp, quý khách có thể:
                             </p>
                             <ul  class="policy-simple-list">
-                                <li>Gọi điện trực tiếp về số điện thoại: [.....]</li>
-                                <li>Gửi mail: [.....]</li>
+                                <li>Gọi điện trực tiếp về số điện thoại: {{ config('data.company.phone', '[.....]') }}</li>
+                                <li>Gửi mail: {{ config('data.company.email', '[.....]') }}</li>
                             </ul>
 
                             <h3>*Cơ chế tiếp nhận và giải quyết khiếu nại của người tiêu dùng liên quan đến việc thông
@@ -254,7 +249,7 @@
                                     chính là trách nhiệm của chúng tôi nên trong bất kỳ trường hợp có thắc mắc, góp ý
                                     nào liên quan đến chính sách bảo mật của Vangcaocap.vn, và liên quan đến việc thông
                                     tin cá nhân bị sử dụng sai mục đích hoặc phạm vi đã thông báo vui lòng liên hệ qua
-                                    số hotline [.....] hoặc email: [.....] để xử lý và làm việc trực tiếp với khách
+                                    số hotline {{ config('data.company.hotline', '[.....]') }} hoặc email: {{ config('data.company.email', '[.....]') }} để xử lý và làm việc trực tiếp với khách
                                     hàng.
                                 </li>
                             </ul>

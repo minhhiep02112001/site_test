@@ -45,4 +45,21 @@ return [
         4 => ['title' => 'Bị từ chối', 'class' => "badge badge-danger"],
     ],
 
+    'company' => [
+        'name' => 'CÔNG TY CỔ PHẦN THE BEST WINE',
+        'website' => 'vangcaocap.vn',
+        'address' => 'Hà Nội: 115 Xuân Quỳnh, Trung Hòa, Cầu Giấy, Hà Nội <br>TP.HCM: 23 Hoa Lan, P2, Phú Nhuận, TP HCM',
+        'email' => '',
+        'phone' => '',
+        'hotline' => '090.348.1086',
+        'bank_name' => '',
+        'bank_number' => '',
+        'bank_revice' => '',
+        'mst' =>  '0109629903',
+        'date' => '13/05/2021',
+        'issued_by' => 'Sở tài chính TP Hà Nội',
+        'retail_alcohol_license_number' => '410 /GP - BCT',
+        'retail_alcohol_license_date' => '23/11/2021',
+        'retail_alcohol_license_issued_by' => 'Bộ Công Thương'
+    ]
 ];

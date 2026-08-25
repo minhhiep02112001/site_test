@@ -126,7 +126,7 @@
 
                             <p>
                                 Chính sách này áp dụng đối với mọi khách hàng phát sinh giao dịch mua hàng hoặc sử dụng
-                                dịch vụ trên website <strong>[Tên website]</strong>.
+                                dịch vụ trên website <strong>{{ config('data.company.website', '[.....]') }}</strong>.
                             </p>
                         </section>
 
@@ -147,19 +147,22 @@
                             <ul>
                                 <li>
                                     <strong>Website:</strong>
-                                    <a href="https://tenwebsite.com" target="_blank" rel="noopener noreferrer">
-                                        https://tenwebsite.com
+                                    <a href="{{ env('APP_URL', config('data.company.website')) }}" target="_blank"
+                                        rel="noopener noreferrer">
+                                        {{ config('data.company.website', '[.....]') }}
                                     </a>
                                 </li>
 
                                 <li>
                                     <strong>Hotline:</strong>
-                                    <a href="tel:[Số điện thoại]">[Số điện thoại]</a>
+                                    <a
+                                        href="tel:{{ config('data.company.hotline', '[.....]') }}">{{ config('data.company.hotline', '[.....]') }}</a>
                                 </li>
 
                                 <li>
                                     <strong>Email:</strong>
-                                    <a href="mailto:[Email]">[Email]</a>
+                                    <a
+                                        href="mailto:{{ config('data.company.email', '[.....]') }}">{{ config('data.company.email', '[.....]') }}</a>
                                 </li>
 
                                 <li>
@@ -173,8 +176,8 @@
                             </p>
 
                             <p>
-                                [Công ty]<br>
-                                [Địa chỉ]
+                                {{ config('data.company.name', '[.....]') }}<br>
+                                {!! config('data.company.address', '[.....]') !!}
                             </p>
 
                             <p>Khách hàng vui lòng cung cấp đầy đủ các thông tin sau:</p>
@@ -391,17 +394,19 @@
 
                             <p>
                                 <strong>Website:</strong>
-                                [Tên website]
+                                {{ config('data.company.website', '[.....]') }}
                             </p>
 
                             <p>
                                 <strong>Hotline:</strong>
-                                <a href="tel:[Số điện thoại]">[Số điện thoại]</a>
+                                <a
+                                    href="tel:{{ config('data.company.hotline', '[.....]') }}">{{ config('data.company.hotline', '[.....]') }}</a>
                             </p>
 
                             <p>
                                 <strong>Email:</strong>
-                                <a href="mailto:[Email]">[Email]</a>
+                                <a
+                                    href="mailto:{{ config('data.company.email', '[.....]') }}">{{ config('data.company.email', '[.....]') }}</a>
                             </p>
                         </section>
 

@@ -219,8 +219,8 @@
                                 hoàn tiền hoặc giao lại đơn mới như đã đặt.
                             </p>
                             <p>
-                                Trong trường hợp yêu cầu hoàn tiền hoặc đổi đơn quý khách liên hệ qua Email: [.....]
-                                hoặc số điện thoại [.....] chúng tôi cam kết sẽ giải quyết mọi yêu cầu của quý khách.
+                                Trong trường hợp yêu cầu hoàn tiền hoặc đổi đơn quý khách liên hệ qua Email: {{ config('data.company.email', '[.....]') }}
+                                hoặc số điện thoại {{ config('data.company.phone', '[.....]') }} chúng tôi cam kết sẽ giải quyết mọi yêu cầu của quý khách.
                             </p>
 
                         </section>
@@ -277,7 +277,7 @@
                             <p>Mọi chi tiết xin quý khách vui lòng liên hệ với chúng tôi:</p>
                             <p>Chúng tôi cũng rất sẵn lòng lắng nghe các góp ý và yêu cầu của quý khách hàng.
                             </p>
-                            <p>Quý khách có thể liên hệ số hotline: [.....] (giờ hành chính) để đóng góp ý kiến của quý
+                            <p>Quý khách có thể liên hệ số hotline: {{ config('data.company.hotline', '[.....]') }} (giờ hành chính) để đóng góp ý kiến của quý
                                 khách về sản phẩm và dịch vụ của chúng tôi
                             </p>
                         </section>

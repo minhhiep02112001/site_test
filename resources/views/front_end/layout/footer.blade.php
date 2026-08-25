@@ -55,17 +55,17 @@
                      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-900 text-white"><i class="ri-building-4-line ri-lg"></i></span>
                      <div>
                          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-red-500">Thông tin pháp lý</p>
-                         <h2 class="mt-1 text-xl font-bold text-red-950">CÔNG TY CỔ PHẦN THE BEST WINE</h2>
+                         <h2 class="mt-1 text-xl font-bold text-red-950">{{ config('data.company.name') }}</h2>
                      </div>
                  </div>
                  <dl class="divide-y divide-red-100 px-6">
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Công ty</dt><dd class="text-gray-700">CÔNG TY CỔ PHẦN THE BEST WINE</dd></div>
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Mã số thuế</dt><dd class="italic text-gray-500">Đang cập nhật</dd></div>
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Ngày cấp</dt><dd class="italic text-gray-500">Đang cập nhật</dd></div>
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Nơi cấp</dt><dd class="italic text-gray-500">Đang cập nhật</dd></div>
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Giấy phép bán lẻ rượu</dt><dd class="italic text-gray-500">Đang cập nhật</dd></div>
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Ngày cấp giấy phép</dt><dd class="italic text-gray-500">Đang cập nhật</dd></div>
-                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Nơi cấp giấy phép</dt><dd class="italic text-gray-500">Đang cập nhật</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Công ty</dt><dd class="text-gray-700">{{ config('data.company.name') }}</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Mã số thuế</dt><dd class="italic text-gray-500">{{ config('data.company.mst') }}</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Ngày cấp</dt><dd class="italic text-gray-500">{{ config('data.company.date') }}</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Nơi cấp</dt><dd class="italic text-gray-500">{{ config('data.company.issued_by') }}</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Giấy phép bán lẻ rượu</dt><dd class="italic text-gray-500">{{ config('data.company.retail_alcohol_license_number') }}</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Ngày cấp giấy phép</dt><dd class="italic text-gray-500">{{ config('data.company.retail_alcohol_license_date') }}</dd></div>
+                     <div class="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[190px_1fr] sm:gap-4"><dt class="font-semibold text-red-900">Nơi cấp giấy phép</dt><dd class="italic text-gray-500">{{ config('data.company.retail_alcohol_license_issued_by') }}</dd></div>
                  </dl>
              </section>
 

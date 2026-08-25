@@ -118,20 +118,20 @@
                         </p>
 
                         <p>
-                            Nộp tiền mặt tại ngân hàng hoặc chuyển khoản đến tài khoản của [.....]. Trong đó ghi đầy đủ
+                            Nộp tiền mặt tại ngân hàng hoặc chuyển khoản đến tài khoản của {{ config('data.company.bank_name', '[.....]') }}. Trong đó ghi đầy đủ
                             các thông tin như: Tên khách hàng, số tiền, nội dung chuyển khoản
 
                         </p>
-                        <p>Thông báo cho [.....] ngay sau khi quý khách đã thực hiện chuyển tiền/chuyển khoản.</p>
+                        <p>Thông báo cho {{ config('data.company.bank_revice', '[.....]') }} ngay sau khi quý khách đã thực hiện chuyển tiền/chuyển khoản.</p>
                         <p>Ngay sau khi nhận được thông báo xác nhận từ phía ngân hàng. Chúng tôi sẽ tiến hành thông báo
                             lại cho quý khách đồng thời xuất sản phẩm để giao cho quý khách trong thời gian theo quy
                             định.</p>
                         <p>Thông tin chi tiết chuyển tiền cụ thể như sau:
                         </p>
                         <ul>
-                            <li>Tên tài khoản: [.....]
+                            <li>Tên tài khoản: {{ config('data.company.bank_name', '[.....]') }}
                             </li>
-                            <li>Số tài khoản: [.....]
+                            <li>Số tài khoản: {{ config('data.company.bank_number', '[.....]') }}
                             </li>
                         </ul>
                         </section>

@@ -110,11 +110,13 @@
                         <section id="muc-dich" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">01</span>
-                                <div><h2>Mục đích</h2></div>
+                                <div>
+                                    <h2>Mục đích</h2>
+                                </div>
                             </div>
 
                             <p>
-                                Website <strong>[Tên website]</strong> cam kết công khai, minh bạch về giá bán hàng hóa
+                                Website <strong>{{ config('data.company.website', '[.....]') }}</strong> cam kết công khai, minh bạch về giá bán hàng hóa
                                 và các khoản chi phí liên quan nhằm giúp khách hàng dễ dàng lựa chọn và đưa ra quyết
                                 định mua sắm.
                             </p>
@@ -124,7 +126,9 @@
                         <section id="gia-ban-san-pham" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">02</span>
-                                <div><h2>Giá bán sản phẩm</h2></div>
+                                <div>
+                                    <h2>Giá bán sản phẩm</h2>
+                                </div>
                             </div>
 
                             <p>
@@ -148,7 +152,9 @@
                         <section id="chi-phi-van-chuyen" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">03</span>
-                                <div><h2>Chi phí vận chuyển</h2></div>
+                                <div>
+                                    <h2>Chi phí vận chuyển</h2>
+                                </div>
                             </div>
 
                             <p>
@@ -174,7 +180,9 @@
                         <section id="chi-phi-phat-sinh" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">04</span>
-                                <div><h2>Các chi phí phát sinh khác</h2></div>
+                                <div>
+                                    <h2>Các chi phí phát sinh khác</h2>
+                                </div>
                             </div>
 
                             <p>
@@ -198,7 +206,9 @@
                         <section id="thay-doi-gia" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">05</span>
-                                <div><h2>Chính sách thay đổi giá</h2></div>
+                                <div>
+                                    <h2>Chính sách thay đổi giá</h2>
+                                </div>
                             </div>
 
                             <p>Website có quyền điều chỉnh giá bán trong các trường hợp:</p>
@@ -224,11 +234,14 @@
                         <section id="chi-phi-dich-vu" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">06</span>
-                                <div><h2>Chi phí sử dụng dịch vụ</h2></div>
+                                <div>
+                                    <h2>Chi phí sử dụng dịch vụ</h2>
+                                </div>
                             </div>
 
                             <p>
-                                Website <strong>[Tên website]</strong> là website bán hàng của doanh nghiệp và
+                                Website <strong>{{ config('data.company.website', '[.....]') }}</strong> là website bán
+                                hàng của doanh nghiệp và
                                 <strong>
                                     không thu phí mở tài khoản, duy trì tài khoản, phí xử lý đơn hàng
                                     hoặc bất kỳ khoản phí dịch vụ nào đối với khách hàng khi truy cập
@@ -248,24 +261,29 @@
                         <section id="lien-he" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">07</span>
-                                <div><h2>Liên hệ</h2></div>
+                                <div>
+                                    <h2>Liên hệ</h2>
+                                </div>
                             </div>
 
                             <p>
                                 <strong>Website:</strong>
-                                <a href="[URL website]" target="_blank" rel="noopener noreferrer">
-                                    [Tên website]
+                                <a href="{{ env('APP_URL', 'https://' . config('data.company.website')) }}"
+                                    target="_blank" rel="noopener noreferrer">
+                                    {{ config('data.company.website', '[.....]') }}
                                 </a>
                             </p>
 
                             <p>
                                 <strong>Hotline:</strong>
-                                <a href="tel:[Số điện thoại]">[Số điện thoại]</a>
+                                <a
+                                    href="tel:{{ config('data.company.hotline', '[.....]') }}">{{ config('data.company.hotline', '[.....]') }}</a>
                             </p>
 
                             <p>
                                 <strong>Email:</strong>
-                                <a href="mailto:[Email]">[Email]</a>
+                                <a
+                                    href="mailto:{{ config('data.company.email', '[.....]') }}">{{ config('data.company.email', '[.....]') }}</a>
                             </p>
                         </section>
 

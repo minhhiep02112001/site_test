@@ -309,17 +309,20 @@
                         <section id="thong-tin-lien-he" class="policy-block">
                             <div class="policy-section-heading">
                                 <span class="policy-section-number">08</span>
-                                <div><h2>Thông tin liên hệ</h2></div>
+                                <div>
+                                    <h2>Thông tin liên hệ</h2>
+                                </div>
                             </div>
                             <ul>
                                 <li>
-                                    Website: ;
+                                    Website: <a
+                                        href="{{ env('APP_URL', 'https://' . config('data.company.website')) }}">{{ config('data.company.website', '[.....]') }}</a>;
                                 </li>
                                 <li>
-                                    Hotline: ;
+                                    Hotline: {{ config('data.company.hotline', '[.....]') }};
                                 </li>
                                 <li>
-                                    Email: ;
+                                    Email: {{ config('data.company.email', '[.....]') }};
                                 </li>
 
                             </ul>
@@ -331,7 +334,7 @@
         </section>
     </main>
 
-  <!-- Footer -->
+    <!-- Footer -->
     @include('front_end.layout.footer')
 
     @include('front_end.block.share_social')
