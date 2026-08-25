@@ -57,7 +57,7 @@
         if(!popup||!accept||!reject)return;
 
         let verified=false;
-        try{verified=sessionStorage.getItem(key)==='true'}catch(error){}
+        try{verified=localStorage.getItem(key)==='true'}catch(error){}
         if(!verified){
             popup.hidden=false;
             document.documentElement.style.overflow='hidden';
@@ -65,7 +65,7 @@
         }
 
         accept.addEventListener('click',function(){
-            try{sessionStorage.setItem(key,'true')}catch(error){}
+            try{localStorage.setItem(key,'true')}catch(error){}
             popup.hidden=true;
             document.documentElement.style.overflow='';
         });
