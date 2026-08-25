@@ -116,7 +116,10 @@
                             </div>
 
                             <p>
-                                Website <strong>[Tên website]</strong> luôn đặt quyền lợi của khách hàng lên hàng đầu.
+                                Website <strong><a href="{{ env('APP_URL', config('data.company.website')) }}" target="_blank"
+                                        rel="noopener noreferrer">
+                                        {{ config('data.company.website', '[.....]') }}
+                                    </a></strong> luôn đặt quyền lợi của khách hàng lên hàng đầu.
                                 Chúng tôi xây dựng cơ chế tiếp nhận và giải quyết phản ánh, yêu cầu, khiếu nại nhằm đảm
                                 bảo
                                 mọi ý kiến của khách hàng được tiếp nhận đầy đủ, xử lý minh bạch và phản hồi trong thời
@@ -126,7 +129,10 @@
 
                             <p>
                                 Chính sách này áp dụng đối với mọi khách hàng phát sinh giao dịch mua hàng hoặc sử dụng
-                                dịch vụ trên website <strong>{{ config('data.company.website', '[.....]') }}</strong>.
+                                dịch vụ trên website <strong><a href="{{ env('APP_URL', config('data.company.website')) }}" target="_blank"
+                                        rel="noopener noreferrer">
+                                        {{ config('data.company.website', '[.....]') }}
+                                    </a></strong>.
                             </p>
                         </section>
 
@@ -342,7 +348,124 @@
                                 khách hàng.
                             </p>
                         </section>
+                        <style>/* ==============================
+   Bảng thời gian phản hồi
+================================= */
 
+#thoi-gian-phan-hoi .table-responsive {
+    width: 100%;
+    margin: 24px 0 20px;
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #ffffff;
+    -webkit-overflow-scrolling: touch;
+}
+
+#thoi-gian-phan-hoi table {
+    width: 100%;
+    min-width: 720px;
+    margin: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#thoi-gian-phan-hoi th,
+#thoi-gian-phan-hoi td {
+    padding: 15px 18px;
+    border-right: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#thoi-gian-phan-hoi th:last-child,
+#thoi-gian-phan-hoi td:last-child {
+    border-right: 0;
+}
+
+#thoi-gian-phan-hoi tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+/* Header */
+#thoi-gian-phan-hoi thead th {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: 700;
+}
+
+/* Nội dung */
+#thoi-gian-phan-hoi tbody td {
+    color: #4b5563;
+    background-color: #ffffff;
+}
+
+#thoi-gian-phan-hoi tbody td:first-child {
+    color: #111827;
+    font-weight: 600;
+}
+
+#thoi-gian-phan-hoi tbody tr:nth-child(even) td {
+    background-color: #f9fafb;
+}
+
+#thoi-gian-phan-hoi tbody tr:hover td {
+    background-color: #f3f4f6;
+}
+
+/* Chiều rộng các cột */
+#thoi-gian-phan-hoi th:nth-child(1),
+#thoi-gian-phan-hoi td:nth-child(1) {
+    width: 28%;
+}
+
+#thoi-gian-phan-hoi th:nth-child(2),
+#thoi-gian-phan-hoi td:nth-child(2) {
+    width: 30%;
+}
+
+#thoi-gian-phan-hoi th:nth-child(3),
+#thoi-gian-phan-hoi td:nth-child(3) {
+    width: 42%;
+}
+
+/* Đoạn ghi chú dưới bảng */
+#thoi-gian-phan-hoi .table-responsive + p {
+    margin: 0;
+    padding: 14px 16px;
+    border-left: 4px solid #d4a017;
+    border-radius: 0 8px 8px 0;
+    background-color: #fffbeb;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    #thoi-gian-phan-hoi .table-responsive {
+        margin: 18px 0 16px;
+        border-radius: 8px;
+    }
+
+    #thoi-gian-phan-hoi table {
+        min-width: 650px;
+        font-size: 14px;
+    }
+
+    #thoi-gian-phan-hoi th,
+    #thoi-gian-phan-hoi td {
+        padding: 12px 14px;
+    }
+
+    #thoi-gian-phan-hoi .table-responsive + p {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}</style>
 
                         <section id="bien-phap-ho-tro" class="policy-block">
                             <div class="policy-section-heading">
